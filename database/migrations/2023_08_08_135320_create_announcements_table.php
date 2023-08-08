@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('announcements', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('category');
             $table->text('description');
             $table->float('price', 4,2);
             $table->timestamps();

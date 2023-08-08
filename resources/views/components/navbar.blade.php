@@ -19,7 +19,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li class="nav-item"> 
-                            <a class="dropdown-item" href="#">Inserisci Annuncio</a>
+                            <a class="dropdown-item" href="{{route('announcement_create')}}">Inserisci Annuncio</a>
                         </li>
                         <li class="nav-item">
                             <form action="{{route('logout')}}" method="POST">
