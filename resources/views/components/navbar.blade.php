@@ -11,19 +11,37 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
-                </li>
+                </li> 
+                @auth {{--puo'vedere solo chi ha fatto l'accesso --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Benvenuto Utente
+                        Benvenuto {{Auth::user()->name}}
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Registrati</a></li>
-                        <li><a class="dropdown-item" href="#">Accedi</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li class="nav-item"> 
+                            <a class="dropdown-item" href="#">Inserisci Annuncio</a>
+                        </li>
+                        <li class="nav-item">
+                            <form action="{{route('logout')}}" method="POST">
+                                @csrf
+                                <li><button class="dropdown-item">Logout</button></li>
+
+                            </form>
+                        </li>
                     </ul>
                 </li>
-               
+                @else
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Benvenuto utente
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{route('register')}}">Registrati</a></li>
+                        <li><a class="dropdown-item" href="{{route('login')}}">Accedi</a></li>
+                    </ul>
+                </li>
+                @endauth
+                
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
