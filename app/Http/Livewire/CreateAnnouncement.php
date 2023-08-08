@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\Category;
 use App\Models\Announcement;
+use Illuminate\Support\Facades\Auth;
 
 class CreateAnnouncement extends Component
 {
@@ -38,11 +39,14 @@ class CreateAnnouncement extends Component
         $category = Category::find($this->category); 
 
         // Relazione creazione annuncio con categoria relazionata
-        $category->announcements()->create([
+        $announcement = $category->announcements()->create([
             'title'=>$this->title,
             'description'=>$this->description,
             'price'=>$this->price,
         ]);
+
+        // Relazione Announcement - utente loggato - Nicola
+        Auth::user()->announcements()->save($announcement);
 
         // NON SERVE PIU' PERCHE' ABBIAMO ACCESSO AGLI ANNUNCI TRAMITE LA RELAZIONE CON LE CATEGORIE - Nicola
 
@@ -53,7 +57,7 @@ class CreateAnnouncement extends Component
         // ]);
         
         // messagio conferma e pulizia form - Nicola
-        session()->flash('message', 'Annuncio caricato!');
+        session()->flash('message_announcement', 'Annuncio caricato!');
         $this->reset();
     }
 

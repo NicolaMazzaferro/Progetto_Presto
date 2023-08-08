@@ -1,9 +1,9 @@
 <form wire:submit.prevent='store'>
     
     {{-- Conferma Caricamento - Nicola --}}
-    @if (session('message'))
+    @if (session('message_announcement'))
     <div class="alert alert-success">
-        {{ session('message') }}
+        {{ session('message_announcement') }}
     </div>
     @endif
     
@@ -35,13 +35,16 @@
     
     {{-- Categorie - Nicola --}}
     
-    <label for='category'>Category</label>
-    <select wire:model.defer="category" id="category" class="form-control mb-3">
+    <label class="form-label" for='category'>Category</label>
+    <select wire:model.defer="category" id="category" class="form-control @error('category') is-invalid @enderror">
         <option>Scegli la categoria</option>
         @foreach ($categories as $category)
         <option value="{{$category->id}}">{{$category->name}}</option>   
         @endforeach
     </select>
+    @error('category')
+    <div class="text-danger">{{$message}}</div>
+    @enderror
     
-    <button type="submit" class="btn btn-primary">Crea</button>
+    <button type="submit" class="btn btn-primary mt-3">Crea</button>
 </form>

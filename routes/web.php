@@ -22,6 +22,4 @@ Route::get('/', [PublicController::class, 'home'])->name('home');
 Route::get('/annunci',[AnnouncementController::class, 'index'])->name('announcement_index');
 
 //Rotta per create
-Route::get('/annunci/create', [AnnouncementController::class, 'create'])->name('announcement_create');
-
-//
+Route::get('/annunci/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcement_create');
