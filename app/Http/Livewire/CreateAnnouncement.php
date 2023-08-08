@@ -2,8 +2,9 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Announcement;
 use Livewire\Component;
+use App\Models\Category;
+use App\Models\Announcement;
 
 class CreateAnnouncement extends Component
 {
@@ -12,11 +13,15 @@ class CreateAnnouncement extends Component
     public $description;
     public $price;
 
+    // Categoria - Nicola
+    public $category;
+
     // Validation - Nicola
     protected $rules = [
         'title' => 'required | min:4',
         'description' => 'required | min:8',
         'price' => 'required | numeric',
+        'category' => 'required',
     ];
 
     protected $messages = [
@@ -28,12 +33,24 @@ class CreateAnnouncement extends Component
     public function store(){
 
         $this->validate();
+        
+        // Store category - Nicola
+        $category = Category::find($this->category); 
 
-        $announcement = Announcement::create([
+        // Relazione creazione annuncio con categoria relazionata
+        $category->announcements()->create([
             'title'=>$this->title,
             'description'=>$this->description,
-            'price'=>$this->price
+            'price'=>$this->price,
         ]);
+
+        // NON SERVE PIU' PERCHE' ABBIAMO ACCESSO AGLI ANNUNCI TRAMITE LA RELAZIONE CON LE CATEGORIE - Nicola
+
+        // $announcement = Announcement::create([
+        //     'title'=>$this->title,
+        //     'description'=>$this->description,
+        //     'price'=>$this->price
+        // ]);
         
         // messagio conferma e pulizia form - Nicola
         session()->flash('message', 'Annuncio caricato!');

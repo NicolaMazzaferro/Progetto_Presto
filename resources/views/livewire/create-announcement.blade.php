@@ -32,5 +32,16 @@
         <span class="text-danger">{{$message}}</span>
         @enderror
     </div>
+    
+    {{-- Categorie - Nicola --}}
+    
+    <label for='category'>Category</label>
+    <select wire:model.defer="category" id="category" class="form-control mb-3">
+        <option>Scegli la categoria</option>
+        @foreach ($categories as $category)
+        <option value="{{$category->id}}">{{$category->name}}</option>   
+        @endforeach
+    </select>
+    
     <button type="submit" class="btn btn-primary">Crea</button>
 </form>
