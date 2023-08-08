@@ -13,13 +13,14 @@ class CreateAnnouncement extends Component
     public $price;
 
     public function store(){
-        Announcement::create([
+        $announcement = Announcement::create([
             'title'=>$this->title,
             'description'=>$this->description,
             'price'=>$this->price
         ]);
 
-        
+        session()->flash('message', 'Annuncio caricato!');
+        $this->reset();
     }
 
     public function render()
