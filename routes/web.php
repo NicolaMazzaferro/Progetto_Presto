@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnnouncementController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 
@@ -15,3 +16,6 @@ use App\Http\Controllers\PublicController;
 */
 
 Route::get('/', [PublicController::class, 'home'])->name('home');
+// rotta per index
+
+Route::get('/annunci',[AnnouncementController::class, 'index'])->name('announcement_index');
