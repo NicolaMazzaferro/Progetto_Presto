@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->float('price', 6,2);
+            $table->float('price', 6,2); // Corretto limite prezzo - Nicola
             $table->timestamps();
         });
     }
