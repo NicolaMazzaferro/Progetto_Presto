@@ -12,7 +12,8 @@ class AnnouncementController extends Controller
      */
     public function index()
     {
-        return view('announcement.index');
+        $announcements = Announcement::all(); // richiamata collection - Nicola
+        return view('announcement.index', compact('announcements'));
     }
 
     /**
