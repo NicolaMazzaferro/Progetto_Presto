@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AnnouncementController;
+use App\Http\Controllers\FrontController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 use App\Models\Announcement;
@@ -16,10 +17,15 @@ use App\Models\Announcement;
 |
 */
 
-Route::get('/', [PublicController::class, 'home'])->name('home');
+Route::get('/', [FrontController::class, 'home'])->name('home');
 // rotta per index
 
 Route::get('/annunci',[AnnouncementController::class, 'index'])->name('announcement_index');
 
+
+// Gabriele nuove rotte per gli annunci e categorie
 //Rotta per create
 Route::get('/annunci/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcement_create');
+
+//Rotta categoria
+Route::get('/categoria/{category}', [FrontController::class, 'categoryShow'])->name('categoryShow');

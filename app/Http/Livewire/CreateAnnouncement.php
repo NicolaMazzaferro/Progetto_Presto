@@ -65,6 +65,4 @@ class CreateAnnouncement extends Component
     {
         return view('livewire.create-announcement');
     }
-
-
 }
