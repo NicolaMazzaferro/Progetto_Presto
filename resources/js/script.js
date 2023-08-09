@@ -9,25 +9,30 @@ let swiper = new Swiper(".mySwiper", {
     },
 });
 
+// e passato Stefano
+
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
+
 window.addEventListener("scroll", function() {
-    // Seleziona la navbar e i link
-    let navbar = document.getElementById("navbar");
-    let links = document.querySelectorAll(".nav-link");
+    let scrollTop = window.scrollY;
 
-    // Controllo la posizione di scorrimento
-    if (window.scrollY > 0) { // Cambia "50" a qualunque valore desideri
-        // Se l'utente ha scorso oltre 50px, cambia lo stile
-        navbar.style.backgroundColor = "rgba(0,0,0,0.5)";
-
-        for (let link of links) {
-            link.style.color = "white";
-        }
+    if (scrollTop > lastScrollTop) { 
+        navbar.classList.remove("scrolling-up");
+        navbar.classList.add("scrolling-down");
+    } else if (scrollTop <= 20) {  // Se sei vicino all'inizio della pagina
+        navbar.classList.remove("scrolling-down");
+        navbar.classList.remove("scrolling-up");
     } else {
-        // Altrimenti, torna allo stile originale
-        navbar.style.backgroundColor = "transparent";
-
-        for (let link of links) {
-            link.style.color = "black";
-        }
+        navbar.classList.remove("scrolling-down");
+        navbar.classList.add("scrolling-up");
     }
+
+    lastScrollTop = scrollTop;
 });
+
+
+
+
+
+

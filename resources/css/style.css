@@ -27,21 +27,33 @@
 
 /* swiper end */
 
+
+
+/* e passato Stefano */
 #navbar {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.nav-link{
-    color: white;
-}
-
-.text.w{
-    color: white;
-}
-.text.b{
+    transition: background-color 0.5s; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent; 
     color: black;
+    height: 80px;
 }
 
-.nav-link:hover{
+#navbar a {
+    color: black; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+#navbar.scrolling-up {
+    background-color: rgba(16, 16, 16, 0.95); 
+}
+
+#navbar.scrolling-up a {
     color: white;
+}
+
+#navbar.scrolling-down {
+    transform: translateY(-100%);
 }

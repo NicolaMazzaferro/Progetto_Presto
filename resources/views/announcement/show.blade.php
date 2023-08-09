@@ -1,5 +1,13 @@
 <x-layout> 
-    <h1>Dettaglio Annuncio</h1>
+    <div class="container-fluid p-5  mb-4">
+        <div class="row">
+            <div class="col-12 p-5">
+                <h1>Dettaglio Annuncio</h1>
+            </div>
+        </div>
+        
+
+    </div>
     
     <!-- Swiper -->
     <div class="swiper mySwiper">
@@ -17,4 +25,11 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
+
+
+
+    <div style="height:2000px">
+
+    </div>
 </x-layout>
+
