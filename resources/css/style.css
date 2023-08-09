@@ -29,19 +29,21 @@
 
 
 
-/* e passato Stefano */
+/* Navbar - e passato Stefano */
 #navbar {
     transition: background-color 0.5s; 
-    position: fixed;
-    top: 0;
+    position: fixed; 
+    top: 0; 
     width: 100%;
     background-color: transparent; 
-    color: black;
-    height: 80px;
+    /* color: black; Cambiato stile nav - Nicola*/
+    /* height: 80px; */
+    padding-bottom: 0px; /* stacca la nav dagli elementi - Nicola */
+    box-shadow: none; /* tolta ombra - Nicola */
 }
 
 #navbar a {
-    color: black; 
+     color: rgb(255, 255, 255); /*Cambiato stile nav - Nicola*/
     text-decoration: none; 
     transition: color 0.3s; 
 }
@@ -57,3 +59,49 @@
 #navbar.scrolling-down {
     transform: translateY(-100%);
 }
+
+/* Fine Navbar */
+
+
+
+/* Carosello Video - Nicola */
+
+
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 108vh;
+      }
+  
+      .carousel-item:nth-child(1) {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+  
+      .carousel-item:nth-child(2) {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+  
+      .carousel-item:nth-child(3) {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+  
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+      }
+  
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+
+      /* Fine Carosello Video */

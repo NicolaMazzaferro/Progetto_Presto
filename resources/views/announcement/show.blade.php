@@ -1,7 +1,7 @@
 <x-layout> 
-    <div class="container-fluid p-5  mb-4">
+    <div class="container-fluid mb-4">
         <div class="row">
-            <div class="col-12 p-5">
+            <div class="col-12">
                 <h1>Dettaglio Annuncio</h1>
             </div>
         </div>
