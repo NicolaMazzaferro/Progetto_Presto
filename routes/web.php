@@ -29,3 +29,6 @@ Route::get('/annunci/create', [AnnouncementController::class, 'create'])->middle
 
 //Rotta categoria
 Route::get('/categoria/{category}', [FrontController::class, 'categoryShow'])->name('categoryShow');
+
+//Ilaria nuova rotta dettaglio
+Route::get('/dettaglio/annunci/{announcement}', [AnnouncementController::class, 'showAnnouncement'])->name('announcement_show');

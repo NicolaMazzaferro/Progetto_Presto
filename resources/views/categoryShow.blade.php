@@ -13,7 +13,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{$announcement->title}}</h5>
                                 <p class="card-text">{{$announcement->description}}</p>
-                                <a href="#" class="btn btn-primary">Dettaglio</a>
+                                <a href="{{route('announcement_show', compact('announcement'))}}" class="btn btn-primary">Dettaglio</a>
                                 <p class="card-footer my-2">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} - Autore: {{$announcement->user->name ?? ''}}</p>
                             </div>
                             </div>

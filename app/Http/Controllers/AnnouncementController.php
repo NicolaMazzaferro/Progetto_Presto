@@ -27,9 +27,9 @@ class AnnouncementController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Announcement $announcement)
+    public function showAnnouncement(Announcement $announcement)
     {
-        //
+        return view('announcement.show', compact('announcement'));
     }
     
 }
