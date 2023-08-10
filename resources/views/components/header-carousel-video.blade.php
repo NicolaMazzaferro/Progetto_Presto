@@ -43,9 +43,9 @@
             class="d-flex justify-content-center align-items-center h-100"
             >
             <div class="text-white text-center">
-                <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
+                <h1 class="mb-3">Presto</h1>
                 <h5 class="mb-4">
-                    Best & free guide of responsive web design
+                    Vendilo Presto con noi.
                 </h5>
                 <a
                 class="btn btn-outline-light btn-lg m-2"
@@ -53,14 +53,14 @@
                 role="button"
                 rel="nofollow"
                 target="_blank"
-                >Start tutorial</a
+                >Lorem</a
                 >
                 <a
                 class="btn btn-outline-light btn-lg m-2"
                 href="https://mdbootstrap.com/docs/standard/"
                 target="_blank"
                 role="button"
-                >Download MDB UI KIT</a
+                >Lorem</a
                 >
             </div>
         </div>
@@ -87,7 +87,8 @@
     class="d-flex justify-content-center align-items-center h-100"
     >
     <div class="text-white text-center">
-        <h2>You can place here any content</h2>
+        <h2>Presto</h2>
+        <h3>Vendilo Presto con noi.</h3>
     </div>
 </div>
 </div>
@@ -122,13 +123,13 @@ rgba(91, 14, 214, 0.7) 100%
 class="d-flex justify-content-center align-items-center h-100"
 >
 <div class="text-white text-center">
-    <h2>And cover it with any mask</h2>
+    <h2>Lorem Ipsum</h2>
     <a
     class="btn btn-outline-light btn-lg m-2"
     href="https://mdbootstrap.com/docs/standard/content-styles/masks/"
     target="_blank"
     role="button"
-    >Learn about masks</a
+    >Lorem Ipsum</a
     >
 </div>
 </div>
