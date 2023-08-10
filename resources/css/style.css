@@ -60,6 +60,9 @@
     transform: translateY(-100%);
 }
 
+.dropdown-item{
+  color: black!important;
+}
 /* Fine Navbar */
 
 

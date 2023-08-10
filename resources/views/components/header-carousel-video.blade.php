@@ -52,13 +52,11 @@
                 href="#"
                 role="button"
                 rel="nofollow"
-                target="_blank"
                 >Lorem</a
                 >
                 <a
                 class="btn btn-outline-light btn-lg m-2"
                 href="#"
-                target="_blank"
                 role="button"
                 >Lorem</a
                 >
@@ -127,7 +125,6 @@ class="d-flex justify-content-center align-items-center h-100"
     <a
     class="btn btn-outline-light btn-lg m-2"
     href="#"
-    target="_blank"
     role="button"
     >Lorem Ipsum</a
     >
