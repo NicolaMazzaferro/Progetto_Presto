@@ -34,7 +34,7 @@
 </head>
 <body>
     <x-navbar></x-navbar>
-    <x-header-carousel-video />
+    <x-header-carousel-video /> 
 
     @if (session('message'))
         <div class="alert alert-success">
