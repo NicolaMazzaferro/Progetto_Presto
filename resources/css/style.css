@@ -75,7 +75,7 @@
 .carousel-inner,
 .carousel-item,
 .carousel-item.active {
-  height: 108vh;
+  height: 100vh;
 }
 
 .carousel-item:nth-child(1) {
@@ -111,6 +111,13 @@
 
 
 /* inizio form Stefano */
+body{
+  background: rgb(81,180,184);
+  background: linear-gradient(240deg, rgba(81,180,184,1) 1%, rgba(105,83,186,1) 52%);
+
+}
+
+
 .box{
   position: relative;
   width: 380px;
@@ -194,7 +201,7 @@
 .box form{
   position: absolute;
   inset: 4px;
-  background:#222;
+  background:linear-gradient(240deg, rgba(81,180,184,1) 1%, rgba(105,83,186,1) 52%);;
   padding: 50px 40px;
   border-radius: 8px;
   z-index: 2;

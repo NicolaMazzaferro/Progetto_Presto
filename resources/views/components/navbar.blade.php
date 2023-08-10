@@ -35,7 +35,7 @@
                 @if (Auth::user()->is_revisor)
                 <li class="nav-item"> 
                     {{-- Sistemare il tag a (count) per il responsive... --}}
-                    <a class="nav-link btn btn-outline-success btn-sm position-relative" href="{{route('revisor_index')}}">Area revisore <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}} <span class="visually-hidden">unread messages</span></span></a>
+                    <a class="nav-link position-relative" href="{{route('revisor_index')}}">Area revisore <span class="position-absolute top-0 badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}} <span class="visually-hidden">unread messages</span></span></a>
                 </li>
                 @endif
                 {{-- G-N Zona revisore end--}}
