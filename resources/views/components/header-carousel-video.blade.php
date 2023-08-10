@@ -49,7 +49,7 @@
                 </h5>
                 <a
                 class="btn btn-outline-light btn-lg m-2"
-                href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+                href="#"
                 role="button"
                 rel="nofollow"
                 target="_blank"
@@ -57,7 +57,7 @@
                 >
                 <a
                 class="btn btn-outline-light btn-lg m-2"
-                href="https://mdbootstrap.com/docs/standard/"
+                href="#"
                 target="_blank"
                 role="button"
                 >Lorem</a
@@ -126,7 +126,7 @@ class="d-flex justify-content-center align-items-center h-100"
     <h2>Lorem Ipsum</h2>
     <a
     class="btn btn-outline-light btn-lg m-2"
-    href="https://mdbootstrap.com/docs/standard/content-styles/masks/"
+    href="#"
     target="_blank"
     role="button"
     >Lorem Ipsum</a

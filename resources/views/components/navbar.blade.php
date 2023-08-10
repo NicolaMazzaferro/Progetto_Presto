@@ -19,7 +19,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="categoriesDropDown">
                         @foreach ($categories as $category)
-                            <li><a href="{{ route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->name}}</a></li>  
+                            <li><a href="{{ route('categoryShow', compact('category'))}}" class="dropdown-item text-dark">{{$category->name}}</a></li>  
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -50,8 +50,8 @@
                         Benvenuto utente
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{route('register')}}">Registrati</a></li>
-                        <li><a class="dropdown-item" href="{{route('login')}}">Accedi</a></li>
+                        <li><a class="dropdown-item text-dark" href="{{route('register')}}">Registrati</a></li>
+                        <li><a class="dropdown-item text-dark" href="{{route('login')}}">Accedi</a></li>
                     </ul>
                 </li>
                 @endauth
