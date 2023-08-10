@@ -4,6 +4,7 @@ use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\FrontController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\RevisorController;
 use App\Models\Announcement;
 
 /*
@@ -30,5 +31,15 @@ Route::get('/annunci/create', [AnnouncementController::class, 'create'])->middle
 //Rotta categoria
 Route::get('/categoria/{category}', [FrontController::class, 'categoryShow'])->name('categoryShow');
 
-//Ilaria nuova rotta dettaglio
+//Ilaria nuova rotta dettaglio(non è vero)
 Route::get('/dettaglio/annunci/{announcement}', [AnnouncementController::class, 'showAnnouncement'])->name('announcement_show');
+
+//Gabriele Nicola - Nuove Rotte revisore, accetta annuncio, rifiuta annuncio
+//Rotta Home revisore
+Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor_index');
+
+// Rotta accetta annuncio
+Route::patch('/accetta/annucio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->name('revisor_accept_announcement');
+
+// Rotta rifiuta annuncio
+Route::patch('/rifiuta/annucio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->name('revisor_reject_announcement');

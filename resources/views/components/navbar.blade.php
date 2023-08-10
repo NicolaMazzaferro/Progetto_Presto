@@ -1,4 +1,4 @@
-<nav id="navbar" class="navbar navbar-expand-lg sticky-top ">
+<nav id="navbar" class="navbar navbar-expand-lg sticky-top py-3">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">LOGO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,14 +27,23 @@
                     </ul>
                 </li>
                 @auth {{--puo'vedere solo chi ha fatto l'accesso --}}
+                {{-- Nicola Gabriele nuova lista dentro navbar (Crea annuncio) --}}
+                <li class="nav-item"> 
+                    <a class="nav-link" href="{{route('announcement_create')}}">Crea Annuncio</a>
+                </li>
+                {{-- G-N Zona revisore --}}
+                @if (Auth::user()->is_revisor)
+                <li class="nav-item"> 
+                    {{-- Sistemare il tag a (count) per il responsive... --}}
+                    <a class="nav-link btn btn-outline-success btn-sm position-relative" href="{{route('revisor_index')}}">Area revisore <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}} <span class="visually-hidden">unread messages</span></span></a>
+                </li>
+                @endif
+                {{-- G-N Zona revisore end--}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Benvenuto {{Auth::user()->name}}
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="nav-item"> 
-                            <a class="dropdown-item" href="{{route('announcement_create')}}">Inserisci Annuncio</a>
-                        </li>
                         <li class="nav-item">
                             <form action="{{route('logout')}}" method="POST">
                                 @csrf
