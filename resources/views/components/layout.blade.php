@@ -25,12 +25,15 @@
     />
     
     
-    
-    
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    {{-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> --}}
     
     @livewireStyles
     @vite('resources/css/app.css')
-    <title>Document</title>
+
+    <title>
+        Presto.it
+    </title>
 </head>
 <body>
     <x-navbar></x-navbar>

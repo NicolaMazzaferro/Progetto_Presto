@@ -1,2 +1,45 @@
+/* impot componenti */
+
 @import 'bootstrap/dist/css/bootstrap';
 @import './style.css';
+@import './carousel_video.css';
+@import './navbar.css';
+@import './details_carousel.css';
+@import './form_login.css';
+
+/* import swiper */
+@import 'swiper/css';
+@import 'swiper/css/bundle';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+/* variabili colori */
+:root {
+    --primary:#745ec6;
+    --secondary:#434343;
+    --alternative: #ece9f6;
+}
+
+.color-v{
+    color:var(--primary);
+}
+
+.color-g{
+    color:var(--secondary);
+}
+
+.color-l{
+    color:var(--alternative);
+}
+
+.bg-v{
+    background-color: var(--primary);
+}
+
+.bg-l{
+    background-color: var(--alternative);
+}
+
+.bg-g{
+    background-color: var(--secondary);
+}

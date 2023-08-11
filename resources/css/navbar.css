@@ -1,0 +1,35 @@
+/* Navbar - e passato Stefano */
+#navbar {
+    transition: background-color 0.5s; 
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    background-color: transparent; 
+    /* color: black; Cambiato stile nav - Nicola*/
+    /* height: 80px; */
+    padding-bottom: 0px; /* stacca la nav dagli elementi - Nicola */
+    box-shadow: none; /* tolta ombra - Nicola */
+}
+
+#navbar a {
+    color: var(--alternative); /*Cambiato stile nav - Nicola*/
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+#navbar.scrolling-up {
+    background-color: rgba(16, 16, 16, 0.95); 
+}
+
+#navbar.scrolling-up a {
+    color: white;
+}
+
+#navbar.scrolling-down {
+    transform: translateY(-100%);
+}
+
+.dropdown-item{
+    color: black!important;
+}
+/* Fine Navbar */

@@ -38,7 +38,7 @@
             type="video/mp4"
             />
         </video>
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+        <div class="mask video-filter">
             <div
             class="d-flex justify-content-center align-items-center h-100"
             >
@@ -80,7 +80,7 @@
     type="video/mp4"
     />
 </video>
-<div class="mask" style="background-color: rgba(0, 0, 0, 0.3)">
+<div class="mask video-filter ">
     <div
     class="d-flex justify-content-center align-items-center h-100"
     >
@@ -108,15 +108,7 @@
     />
 </video>
 <div
-class="mask"
-style="
-background: linear-gradient(
-45deg,
-rgba(29, 236, 197, 0.7),
-rgba(91, 14, 214, 0.7) 100%
-);
-"
->
+class="mask video-filter">
 <div
 class="d-flex justify-content-center align-items-center h-100"
 >
@@ -142,7 +134,7 @@ href="#introCarousel"
 role="button"
 data-mdb-slide="prev"
 >
-<span aria-hidden="true"><i class="fa-solid fa-chevron-left fa-2xl" style="color: #ffffff;"></i></span>
+<span aria-hidden="true"><i class="fa-solid fa-chevron-left fa-2xl"></i></span>
 <span class="sr-only">Previous</span>
 </a>
 <a
@@ -151,7 +143,7 @@ href="#introCarousel"
 role="button"
 data-mdb-slide="next"
 >
-<span aria-hidden="true"><i class="fa-solid fa-chevron-right fa-2xl" style="color: #ffffff;"></i></span>
+<span aria-hidden="true"><i class="fa-solid fa-chevron-right fa-2xl"></i></span>
 <span class="sr-only">Next</span>
 </a>
 </div>
