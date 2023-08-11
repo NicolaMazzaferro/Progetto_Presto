@@ -12,6 +12,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('announcement_index')}}">Annunci</a>
                 </li>
+                {{-- lavora con noi da spostare in footer - Nicola --}}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('revisor_become')}}">Lavora con noi</a>
+                </li>
                 {{-- Gabriele - Lista delle cateogrie presenti --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="categoriesDropDown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

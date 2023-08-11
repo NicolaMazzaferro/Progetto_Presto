@@ -36,10 +36,16 @@ Route::get('/dettaglio/annunci/{announcement}', [AnnouncementController::class, 
 
 //Gabriele Nicola - Nuove Rotte revisore, accetta annuncio, rifiuta annuncio
 //Rotta Home revisore
-Route::get('/revisor/home', [RevisorController::class, 'index'])->name('revisor_index');
+Route::get('/revisor/home', [RevisorController::class, 'index'])->middleware('isRevisor')->name('revisor_index');
 
 // Rotta accetta annuncio
-Route::patch('/accetta/annucio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->name('revisor_accept_announcement');
+Route::patch('/accetta/annucio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->middleware('isRevisor')->name('revisor_accept_announcement');
 
 // Rotta rifiuta annuncio
-Route::patch('/rifiuta/annucio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->name('revisor_reject_announcement');
+Route::patch('/rifiuta/annucio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor_reject_announcement');
+
+// Rotta diventa revisore - Nicola
+Route::get('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('revisor_become');
+
+// Rendi revisore un utente - Nicola
+Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('revisor_make');
