@@ -12,8 +12,13 @@ class AnnouncementController extends Controller
      */
     public function index()
     {
-        $announcements = Announcement::all(); // richiamata collection - Nicola
+        $announcements = Announcement::where('is_accepted', true)->orderBy('created_at', 'desc')->get();
         return view('announcement.index', compact('announcements'));
+
+        // $announcements = Announcement::all(); // richiamata collection - Nicola
+        // return view('announcement.index', compact('announcements'));
+        // $announcement_to_check = Announcement::where('is_accepted' , null)->first();
+        // return view('announcement.index', compact('announcement_to_check'));
     }
 
     /**

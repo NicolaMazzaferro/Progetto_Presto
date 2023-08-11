@@ -43,7 +43,7 @@
 }
 
 #navbar a {
-     color: rgb(255, 255, 255); /*Cambiato stile nav - Nicola*/
+    color: rgb(255, 255, 255); /*Cambiato stile nav - Nicola*/
     text-decoration: none; 
     transition: color 0.3s; 
 }
@@ -104,7 +104,7 @@
 }
 
 .navbar .nav-link {
-  color: #fff !important;
+  color: #fff;
 }
 
 /* Fine Carosello Video */

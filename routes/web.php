@@ -49,3 +49,7 @@ Route::get('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->
 
 // Rendi revisore un utente - Nicola
 Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('revisor_make');
+
+//Gabriele
+//Rotta Ricerca annuncio
+Route::get('/ricerca/annuncio', [FrontController::class, 'searchAnnouncements'])->name('announcement_search');

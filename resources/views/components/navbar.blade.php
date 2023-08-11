@@ -1,6 +1,6 @@
 <nav id="navbar" class="navbar navbar-expand-lg sticky-top py-3">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">LOGO</a>
+        <a class="navbar-brand" href="/">LOGO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,19 +35,19 @@
                 <li class="nav-item"> 
                     <a class="nav-link" href="{{route('announcement_create')}}">Crea Annuncio</a>
                 </li>
-                {{-- G-N Zona revisore --}}
-                @if (Auth::user()->is_revisor)
-                <li class="nav-item"> 
-                    {{-- Sistemare il tag a (count) per il responsive... --}}
-                    <a class="nav-link position-relative" href="{{route('revisor_index')}}">Area revisore <span class="position-absolute top-0 badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}} <span class="visually-hidden">unread messages</span></span></a>
-                </li>
-                @endif
                 {{-- G-N Zona revisore end--}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Benvenuto {{Auth::user()->name}}
                     </a>
                     <ul class="dropdown-menu">
+                        {{-- G-N Zona revisore --}}
+                        @if (Auth::user()->is_revisor)
+                        <li class="nav-item"> 
+                            {{-- Sistemare il tag a (count) per il responsive... --}}
+                            <a class="dropdown-item position-relative text-dark" href="{{route('revisor_index')}}">Area revisore <span class="position-absolute top-0 badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRevisionedCount()}} <span class="visually-hidden">unread messages</span></span></a>
+                        </li>
+                        @endif
                         <li class="nav-item">
                             <form action="{{route('logout')}}" method="POST">
                                 @csrf
@@ -70,6 +70,10 @@
                 @endauth
                 
             </ul>
+            <form action="{{route('announcement_search')}}" method="get" class="d-flex">
+                <input type="search" name="searched" class="form-control me-2" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outiline-success text-light" type="submit">Search</button>
+            </form>
         </div>
     </div>
 </nav>

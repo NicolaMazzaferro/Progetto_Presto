@@ -1,7 +1,6 @@
 <x-layout>
 
-    
-    <h1 class="text-center">Presto.it</h1>
+    <x-header-carousel-video /> 
     
     
     

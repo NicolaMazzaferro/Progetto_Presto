@@ -35,7 +35,7 @@
 <body>
     <x-navbar></x-navbar>
 
-    <x-header-carousel-video /> 
+    
     
     @if (session('access.denied'))
     <div class="alert alert-danger">
