@@ -1,5 +1,6 @@
 
 body{
   background-color: var(--alternative);
-
+  margin: 0;
+  padding: 0;
 }

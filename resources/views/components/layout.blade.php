@@ -28,6 +28,9 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     {{-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> --}}
     
+    <link rel="stylesheet" href="{{asset('swiper-bundle.min.css')}}">
+
+
     @livewireStyles
     @vite('resources/css/app.css')
 
@@ -69,7 +72,7 @@
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
     ></script>
-    
+    <script src="{{asset('swiper-bundle.min.js')}}"></script>
     
     
     @livewireScripts

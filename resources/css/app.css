@@ -6,12 +6,15 @@
 @import './navbar.css';
 @import './details_carousel.css';
 @import './form_login.css';
+@import './card_carousel.css';
+
 
 /* import swiper */
 @import 'swiper/css';
 @import 'swiper/css/bundle';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
+
 
 /* variabili colori */
 :root {
