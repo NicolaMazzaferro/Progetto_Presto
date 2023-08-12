@@ -3,15 +3,53 @@
 
 <!--Main Navigation-->
 <header>
+
     
     <!-- Carousel wrapper -->
     <div
     id="introCarousel"
-    class="carousel slide carousel-fade shadow-2-strong"
+    class="carousel slide carousel-fade shadow-2-strong "
     data-mdb-ride="carousel"
+    data-mdb-interval="4000"
+    data-mdb-loop="true"
     >
     <!-- Indicators -->
+    <ol class="carousel-indicators video-filter h-100 m-0">
+        <li class=" sarch-carousel">
+            <div
+            class="d-flex justify-content-center align-items-center h-100"
+            >
+            <div class="text-white text-center">
+                <h1 class="mb-3 titolo-header">Presto</h1>
+                <h5 class="mb-4 sottotitolo-header">
+                    Vendilo Presto con noi.
+                </h5>
+                {{-- serachbar --}}
+    
+                <form action="{{route('announcement_search')}}" method="get" class="d-flex container-item-carousel">
+                    <input type="search" name="searched" class=" search-header form-control me-2 " placeholder="Search" aria-label="Search">
+                    <button class="btn-nav" type="submit">Search</button>
+                </form>
+    
+                {{-- end searchbar --}}
+                <a
+                class="btn btn-header"
+                href="#"
+                role="button"
+                rel="nofollow"
+                >Accedi</a
+                >
+                <a
+                class="btn btn-header"
+                href="#"
+                role="button"
+                >Registrati</a
+                >
+            </div>
+        </div>
+    </li>
     <ol class="carousel-indicators">
+
         <li
         data-mdb-target="#introCarousel"
         data-mdb-slide-to="0"
@@ -19,10 +57,12 @@
         ></li>
         <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
         <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+
+    </ol>
     </ol>
     
     <!-- Inner -->
-    <div class="carousel-inner">
+    <div class="carousel-inner ">
         <!-- Single item -->
         <div class="carousel-item active">
             <video
@@ -38,31 +78,7 @@
             type="video/mp4"
             />
         </video>
-        <div class="mask video-filter">
-            <div
-            class="d-flex justify-content-center align-items-center h-100"
-            >
-            <div class="text-white text-center">
-                <h1 class="mb-3">Presto</h1>
-                <h5 class="mb-4">
-                    Vendilo Presto con noi.
-                </h5>
-                <a
-                class="btn btn-outline-light btn-lg m-2"
-                href="#"
-                role="button"
-                rel="nofollow"
-                >Lorem</a
-                >
-                <a
-                class="btn btn-outline-light btn-lg m-2"
-                href="#"
-                role="button"
-                >Lorem</a
-                >
-            </div>
-        </div>
-    </div>
+        {{--  --}}
 </div>
 
 <!-- Single item -->
@@ -80,16 +96,7 @@
     type="video/mp4"
     />
 </video>
-<div class="mask video-filter ">
-    <div
-    class="d-flex justify-content-center align-items-center h-100"
-    >
-    <div class="text-white text-center">
-        <h2>Presto</h2>
-        <h3>Vendilo Presto con noi.</h3>
-    </div>
-</div>
-</div>
+{{--  --}}
 </div>
 
 <!-- Single item -->
@@ -107,28 +114,13 @@
     type="video/mp4"
     />
 </video>
-<div
-class="mask video-filter">
-<div
-class="d-flex justify-content-center align-items-center h-100"
->
-<div class="text-white text-center">
-    <h2>Lorem Ipsum</h2>
-    <a
-    class="btn btn-outline-light btn-lg m-2"
-    href="#"
-    role="button"
-    >Lorem Ipsum</a
-    >
-</div>
-</div>
-</div>
+{{--  --}}
 </div>
 </div>
 <!-- Inner -->
 
 <!-- Controls -->
-<a
+{{-- <a
 class="carousel-control-prev"
 href="#introCarousel"
 role="button"
@@ -145,8 +137,7 @@ data-mdb-slide="next"
 >
 <span aria-hidden="true"><i class="fa-solid fa-chevron-right fa-2xl"></i></span>
 <span class="sr-only">Next</span>
-</a>
-</div>
+</a> --}}
 <!-- Carousel wrapper -->
 </header>
 <!--Main Navigation-->
