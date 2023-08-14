@@ -5,25 +5,31 @@
     <section class="container dati vh-40">
         <div class="row justify-content-around">
             <div class="col-12 col-md-3 dato pt-3 text-center">
-                <i class="bi bi-award-fill text-light fs-3"></i>
-                <h4 class="text-center text-light fs-3">Anni di esperienza</h4>
+                <i class="bi bi-award-fill stats-item"></i>
+                <h4 class="text-center text-bianco fs-5">Anni di esperienza</h4>
+                <p class="text-center text-nero stats-number">35</p>
             </div>
             <div class="col-12 col-md-3 dato pt-3 text-center">
-                <i class="bi bi-people-fill text-light fs-3"></i>
-                <h4 class="text-center text-light fs-3">Skill professionali</h4>
+                <i class="bi bi-people-fill stats-item"></i>
+                <h4 class="text-center text-bianco fs-5">Skill professionali</h4>
+                <p class="text-center text-nero stats-number">150</p>
             </div>
             <div class="col-12 col-md-3 dato pt-3 text-center">
-                <i class="bi bi-box-seam-fill text-light fs-3"></i>
-                <h4 class="text-center text-light fs-3">Prodotti totali</h4>
+                <i class="bi bi-box-seam-fill stats-item"></i>
+                <h4 class="text-center text-bianco fs-5">Prodotti totali</h4>
+                <p class="text-center text-nero stats-number">3500</p>
             </div>
             <div class="col-12 col-md-3 dato pt-3 text-center">
-                <i class="bi bi-cart3 text-light fs-3"></i>
-                <h4 class="text-center text-light fs-3">Ordini ogni giorno</h4>
+                <i class="bi bi-cart3 stats-item"></i>
+                <h4 class="text-center text-bianco fs-5">Ordini ogni giorno</h4>
+                <p class="text-center text-nero stats-number">1250</p>
             </div>
         </div>
     </section>
 
-    <section class="container my-5 vh-60">
+    {{-- About us --}}
+
+    {{-- <section class="container my-5 vh-60">
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="quadrato"></div>
@@ -42,18 +48,20 @@
                         <p class="fs-5"><i class="bi bi-check-lg text-warning fs-2"></i> Lorem</p>
                         <p class="fs-5"><i class="bi bi-check-lg text-warning fs-2"></i> Lorem</p>
                     </div>
-                </div>
+                </div> --}}
                 {{-- Da rivedere il bottone --}}
-                <div class="buttons">
-                    <a href="/" class="myButton">About us
+                {{-- <div class="buttons">
+                    <a href="/" class="myButton">About us --}}
                     {{-- <span class="overlay"></span> --}}
-                    </a>
+                    {{-- </a>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
-    <x-cards-carousel :announcements="$announcements"></x-cards-carousel>
+    {{-- END About us --}}
+
+    {{-- <x-cards-carousel :announcements="$announcements"></x-cards-carousel> --}}
 
 
 
