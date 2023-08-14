@@ -23,7 +23,9 @@
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
     rel="stylesheet"
     />
-    
+
+    {{-- Icon Bootstrap --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     {{-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> --}}

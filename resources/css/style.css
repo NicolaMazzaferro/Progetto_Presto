@@ -4,3 +4,69 @@ body{
   margin: 0;
   padding: 0;
 }
+
+.dati{
+  margin-top: 150px;
+}
+
+.dato{
+  background: var(--secondary);
+  margin-inline: 5px;
+  width: 220px;
+  border-radius: 50%;
+  height: 220px;
+}
+
+.quadrato{
+  height: 410px;
+  width: 410px;
+  background: #fdb924ec;
+  border-radius: 25px;
+}
+
+.titolo-au{
+  font-size: 3em;
+}
+
+.buttons .myButton{
+  position: relative;
+  display: inline-block;
+  padding: 12px 36px;
+  margin: 10px 0;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #f87016ec,#fdb924ec);
+  box-shadow: 3px 5px rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.buttons .myButton .overlay{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.5;
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+  0%{
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  100%{
+    width: 400;
+    height: 400;
+    opacity: 0;
+  }
+}
