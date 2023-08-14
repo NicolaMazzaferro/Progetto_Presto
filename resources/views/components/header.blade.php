@@ -1,1 +1,3 @@
-<img src="/media/header.jpeg" alt="header">
+<div class="header-general">
+    
+</div>

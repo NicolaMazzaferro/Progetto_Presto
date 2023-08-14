@@ -1,7 +1,19 @@
+/* Header General */
+
+.header-general{
+  height: 50vh;
+  background-image: linear-gradient(rgba(30, 25, 22, 0.9), rgba(67, 59, 54, 0.4)), url(../../public/media/header.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* END Header-general */
+
 /* Stats */
 
 .dati{
-  margin-top: 150px;
+  margin-top: 400px;
 }
 
 .dato{
@@ -28,10 +40,59 @@
 /* About Us */
 
 .quadrato{
-  height: 410px;
-  width: 410px;
-  background: #fdb924ec;
-  border-radius: 25px;
+  height: 70%;
+  width: 90%;
+  background-color: var(--bianco);
+  border-radius: 20px;
+}
+
+.quadrato-orange{
+  position: relative;
+  height: 80%;
+  width: 80%;
+  background-color: var(--arancio);
+}
+
+.img-about-1{
+  position: absolute;
+  bottom: 100px;
+  left: -150px;
+  height: 120%;
+  width: 80%;
+  background-color: var(--nero);
+  border-radius: 50px;
+  background-image: url("../../public/media/about1.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-about-2{
+  position: absolute;
+  top: 100px;
+  right: -150px;
+  height: 120%;
+  width: 80%;
+  background-color: var(--nero);
+  border-radius: 50px;
+  background-image: url("../../public/media/about2.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-about-us{
+  margin-top: 400px;
+}
+
+@media screen and (max-width: 990px) {
+  .container-about-us{
+    margin-top: 100px;
+  }
+
+  .wrapper-about-us{
+    width: 100%;
+  }
 }
 
 .titolo-au{
@@ -82,3 +143,48 @@
 }
 
 /* END About Us */
+
+
+/* Our Team */
+
+.container-our-team{
+  margin-top: 370px;
+}
+
+.title-our-team{
+  font-size: 80px;
+  margin-bottom: 150px;
+  width: 700px;
+}
+
+.card-our-team{
+  border-radius: 40px!important;
+  border: none!important;
+  background-color: var(--bianco)!important;
+}
+
+.img-card-our-team{
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+@media screen and (max-height: 768px){
+  .title-our-team {
+    font-size: 40px;
+    margin-bottom: 100px;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .title-our-team {
+    font-size: 40px;
+    margin-bottom: 100px;
+    width: 500px;
+  }
+  .container-our-team{
+    margin-top: 70px;
+  }
+}
+
+/* END Our Team */
