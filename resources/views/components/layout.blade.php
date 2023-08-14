@@ -6,12 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     
-    {{-- CDN Carosello video ecc ... - Nicola --}}
-    <!-- MDB -->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
-    rel="stylesheet"
-    />
     
     <!-- Font Awesome -->
     <link
@@ -69,11 +63,6 @@
     
     
     
-    <!-- MDB (Carosello video) - Nicola-->
-    <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"
-    ></script>
     <script src="{{asset('swiper-bundle.min.js')}}"></script>
     
     

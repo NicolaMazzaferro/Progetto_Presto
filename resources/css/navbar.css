@@ -1,35 +1,87 @@
-/* Navbar - e passato Stefano */
+/* Navbar */
 #navbar {
-    transition: background-color 0.5s; 
-    position: fixed; 
-    top: 0; 
-    width: 100%;
-    background-color: transparent; 
-    /* color: black; Cambiato stile nav - Nicola*/
-    /* height: 80px; */
-    padding-bottom: 0px; /* stacca la nav dagli elementi - Nicola */
-    box-shadow: none; /* tolta ombra - Nicola */
-}
-
-#navbar a {
-    color: var(--alternative); /*Cambiato stile nav - Nicola*/
-    text-decoration: none; 
+    transition: background-color 0.5s;
+  }
+  
+  #navbar a {
+    color: var(--bianco);
     transition: color 0.3s; 
-}
-
-#navbar.scrolling-up {
-    background-color: rgba(16, 16, 16, 0.95); 
-}
-
-#navbar.scrolling-up a {
-    color: white;
-}
-
-#navbar.scrolling-down {
+  }
+  
+  #navbar a:hover{
+    color: var(--arancio);
+  }
+  
+  #navbar.scrolling-up {
+    background-color: rgba(30, 25, 22, 0.95); 
+  }
+  
+  #navbar.scrolling-down {
     transform: translateY(-100%);
-}
-
-.dropdown-item{
-    color: black!important;
-}
-/* Fine Navbar */
+  }
+  
+  .dropdown-menu{
+    background-color: var(--nero);
+  }
+  
+  .dropdown-menu a{
+    color: var(--bianco);
+  }
+  
+  .dropdown-menu a:hover{
+    background-color: var(--nero);
+  }
+  
+  .dropdown-menu button{
+    color: var(--bianco);
+  }
+  
+  .dropdown-menu button:hover{
+    background:none;
+    color: var(--arancio);
+  }
+  
+  .dropdown-divider{
+    background-color: var(--arancio);
+    margin: 10px;
+  }
+  
+  .menu-burger{
+    color: var(--bianco);
+    font-size: 25px;
+  }
+  
+  .navbar-toggler{
+    border: none;
+  }
+  
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .navbar-collapse{
+      background-color: rgba(30, 25, 22, 0.9); 
+      text-align: end;
+      padding: 20px;
+      margin-bottom: 100px;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 30px;
+    }
+  
+    #navbar.navbar-collapse{
+      background-color: rgba(30, 25, 22, 0.9); 
+      text-align: end;
+      padding: 20px;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 30px;
+    }
+  
+    #navbar.scrolling-up {
+      height: 55px;
+    }
+  }
+  
+  /* Fine Navbar */

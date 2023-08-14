@@ -1,143 +1,68 @@
-{{-- Carousel Video Header - Nicola --}}
+<!-- Header -->
 
-
-<!--Main Navigation-->
 <header>
+    <div class="d-flex justify-content-center text-center">
+        <div class="container-titolo">
+            <h1 class="mb-3 titolo-header">Presto</h1>
+            <h5 class="mb-4 sottotitolo-header">
+                Vendilo Presto con noi.
+            </h5>
+        </div>
+    </div>
 
+
+    <div class="d-flex justify-content-center text-center">
+        <form action="{{route('announcement_search')}}" method="get" class="container-searchbar">
+            <input type="search" name="searched" class=" search-header me-3 " placeholder='Es. "Maglietta"' aria-label="Search">
+            <button class="btn-search" type="submit">Cerca</button>
+        </form>
+    </div>
     
-    <!-- Carousel wrapper -->
-    <div
-    id="introCarousel"
-    class="carousel slide carousel-fade shadow-2-strong "
-    data-mdb-ride="carousel"
-    data-mdb-interval="4000"
-    data-mdb-loop="true"
-    >
-    <!-- Indicators -->
-    <ol class="carousel-indicators video-filter h-100 m-0">
-        <li class=" sarch-carousel">
-            <div
-            class="d-flex justify-content-center align-items-center h-100"
-            >
-            <div class="text-white text-center">
-                <h1 class="mb-3 titolo-header">Presto</h1>
-                <h5 class="mb-4 sottotitolo-header">
-                    Vendilo Presto con noi.
-                </h5>
-                {{-- serachbar --}}
     
-                <form action="{{route('announcement_search')}}" method="get" class="d-flex container-item-carousel">
-                    <input type="search" name="searched" class=" search-header form-control me-2 " placeholder="Search" aria-label="Search">
-                    <button class="btn-nav" type="submit">Search</button>
-                </form>
     
-                {{-- end searchbar --}}
-                <a
-                class="btn btn-header"
-                href="#"
-                role="button"
-                rel="nofollow"
-                >Accedi</a
-                >
-                <a
-                class="btn btn-header"
-                href="#"
-                role="button"
-                >Registrati</a
-                >
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade bg-body" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
+        <div class="video-filter"></div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video autoplay muted loop>
+                    <source src="./media/AdobeStock_221975011.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video autoplay muted loop>
+                    <source src="./media/AdobeStock_209011994.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="carousel-item">
+                <video autoplay muted loop>
+                    <source src="./media/AdobeStock_437450604.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
-    </li>
-    <ol class="carousel-indicators">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-        <li
-        data-mdb-target="#introCarousel"
-        data-mdb-slide-to="0"
-        class="active"
-        ></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
 
-    </ol>
-    </ol>
-    
-    <!-- Inner -->
-    <div class="carousel-inner ">
-        <!-- Single item -->
-        <div class="carousel-item active">
-            <video
-            style="min-width: 100%; min-height: 100%"
-            playsinline
-            autoplay
-            muted
-            loop
-            >
-            <source
-            class="h-100"
-            src="/media/AdobeStock_221975011.mov"
-            type="video/mp4"
-            />
-        </video>
-        {{--  --}}
-</div>
-
-<!-- Single item -->
-<div class="carousel-item">
-    <video
-    style="min-width: 100%; min-height: 100%"
-    playsinline
-    autoplay
-    muted
-    loop
-    >
-    <source
-    class="h-100"
-    src="/media/AdobeStock_209011994.mov"
-    type="video/mp4"
-    />
-</video>
-{{--  --}}
-</div>
-
-<!-- Single item -->
-<div class="carousel-item">
-    <video
-    style="min-width: 100%; min-height: 100%"
-    playsinline
-    autoplay
-    muted
-    loop
-    >
-    <source
-    class="h-100"
-    src="/media/AdobeStock_437450604.mov"
-    type="video/mp4"
-    />
-</video>
-{{--  --}}
-</div>
-</div>
-<!-- Inner -->
-
-<!-- Controls -->
-{{-- <a
-class="carousel-control-prev"
-href="#introCarousel"
-role="button"
-data-mdb-slide="prev"
->
-<span aria-hidden="true"><i class="fa-solid fa-chevron-left fa-2xl"></i></span>
-<span class="sr-only">Previous</span>
-</a>
-<a
-class="carousel-control-next"
-href="#introCarousel"
-role="button"
-data-mdb-slide="next"
->
-<span aria-hidden="true"><i class="fa-solid fa-chevron-right fa-2xl"></i></span>
-<span class="sr-only">Next</span>
-</a> --}}
-<!-- Carousel wrapper -->
+    <div class="d-flex justify-content-center">
+        <div class="container-triangle">
+            <div class="triangle"></div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="container-arrow">
+            <i class="fa-solid fa-angle-down arrow"></i>
+        </div>
+    </div>
 </header>
-<!--Main Navigation-->
+
+<!-- END Header -->

@@ -16,36 +16,40 @@
 @import 'swiper/css/pagination';
 
 
-/* variabili colori */
-:root {
-    --primary:#745ec6;
-    --secondary:#434343;
-    --alternative: #ece9f6;
-}
+/* COLOR */
 
-.color-v{
-    color:var(--primary);
-}
-
-.color-g{
-    color:var(--secondary);
-}
-
-.color-l{
-    color:var(--alternative);
-}
-
-.bg-v{
-    background-color: var(--primary);
-}
-
-.bg-l{
-    background-color: var(--alternative);
-}
-
-.bg-g{
-    background-color: var(--secondary);
-}
+:root{
+    --arancio: #eaa636;
+    --bianco: #fdf5eb;
+    --nero: #1e1916;
+  }
+  
+  .text-arancio{
+    color: var(--arancio);
+  }
+  
+  .text-bianco{
+    color: var(--bianco);
+  }
+  
+  .text-nero{
+    color: var(--nero);
+  }
+  
+  .bg-arancio{
+    background-color: var(--arancio);
+  }
+  
+  .bg-bianco{
+    background-color: var(--bianco);
+  }
+  
+  .bg-nero{
+    background-color: var(--nero);
+  }
+  
+  /* END COLOR */
+  
 
 .vh-40{
     height: 40vh;

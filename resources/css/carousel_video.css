@@ -1,100 +1,173 @@
-/* Carosello Video - Nicola */
+/* Video Carousel */
 
-/* Carousel styling */
+#carouselExampleAutoplaying{
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  video{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .video-filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 25, 22, 0.6);
+    z-index: 2;
+  }
+  
+  .carousel-control-next, .carousel-control-prev{
+    z-index: 3;
+  }
+  
+  .carousel-inner{
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* END Video Carousel */
 
-#introCarousel,
-.carousel-inner,
-.carousel-item,
-.carousel-item.active {
-    height: 107vh;
-}
+  /* Titolo Header */
 
-.carousel-item:nth-child(1) {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.carousel-item:nth-child(2) {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.carousel-item:nth-child(3) {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-/* Height for devices larger than 576px */
-@media (min-width: 992px) {
-    #introCarousel {
-        margin-top: -58.59px;
+.container-titolo{
+    position: absolute;
+    z-index: 3;
+    top: 100px;
+  }
+  
+  .titolo-header{
+    font-size: 12rem;
+    color: var(--bianco);
+  }
+  
+  .sottotitolo-header{
+    font-size: 3rem;
+    color: var(--bianco);
+  }
+  
+  @media screen and (max-height: 768px){
+    .titolo-header {
+      font-size: 7em;
+      padding-top: 0px;
     }
-}
-
-.video-filter{
-    background-color: rgba(71, 68, 80, 0.4);
-}
-
-.carousel-indicators{
-    padding-bottom: 50px;
-}
-
-
-.titolo-header{
-    font-size: 160px;
-    margin: 0;
-}
-
-.sottotitolo-header{
-    font-size: 40px;
-}
-
-/* Searchbar */
-
-.container-item-carousel{
-    margin: 100px;
-    width: 500px;
-    
-}
-
-.btn-nav{
-    height: 40px;
-    width: 150px;
-    background-color: orange;
+    .sottotitolo-header {
+      font-size: 1.8em;
+    }
+  }
+  
+  @media screen and (max-width: 768px){
+    .titolo-header {
+      font-size: 7em;
+      padding-top: 80px;
+    }
+    .sottotitolo-header {
+      font-size: 1.8em;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .container-titolo{
+      top: 0;
+    }
+  }
+  
+  /* END Titolo Header */
+  
+  /* Searchbar */
+  
+  .container-searchbar{
+    position: absolute;
+    z-index: 3;
+    bottom: 300px;
+    display: flex;
+  }
+  
+  .search-header{
+    border-radius: 100px;
+    border: solid 1px var(--arancio);
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+  }
+  
+  .search-header:focus{
+    box-shadow: 1px 1px 9px rgba(255, 165, 0, 0.5);
+    border-color: var(--arancio);
+  }
+  
+  .search-header:focus-visible{
+    border: solid 2px var(--arancio);
+    outline-color: var(--arancio);
+  }
+  
+  .btn-search{
+    background-color: var(--arancio);
     border-radius: 50px;
     border: none;
-}
-
-.search-header{
-    border-radius: 100px;
-    border: solid 1px orange;
-}
-
-.btn-nav:hover{
-    background-color: antiquewhite!important;
-    color: black;
-}
-
-/* end Searchbar */
-
-
-.btn-header{
-    height: 40px;
     width: 100px;
-    background-color: orange;
-    color: aliceblue;
-    border-radius: 5px;
-    border: none;
-    text-align: center;
-    margin: 50px;
-}
-
-.btn-header:hover{
-    background-color: antiquewhite;
-    color: black;
-}
-
-/* Fine Carosello Video */
+  }
+  
+  .btn-search:hover{
+    background-color: var(--bianco);
+    color: var(--nero);
+  }
+  
+  @media screen and (max-height: 768px){
+    .container-searchbar{
+      bottom: 150px;
+    }
+  }
+  
+  @media screen and (max-width: 576px){
+    .btn-search{
+      width: 70px;
+    }
+    .search-header{
+      width: 250px;
+    }
+    .container-searchbar{
+      bottom: 200px;
+    }
+  }
+  
+  /* end Searchbar */
+  
+  /* Triangolo con freccia */
+  
+  .container-triangle{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+  
+  .triangle {
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 120px solid white;
+  }
+  
+  .container-arrow{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+  
+  .arrow{
+    color: var(--arancio);
+    font-size: 4rem;
+    animation: 0.5s mover alternate infinite;
+  }
+  
+  @keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+  }
+  
+  /* END Triangolo con freccia */
+  
