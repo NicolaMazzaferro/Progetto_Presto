@@ -6,7 +6,7 @@
 .carousel-inner,
 .carousel-item,
 .carousel-item.active {
-    height: 70vh;
+    height: 107vh;
 }
 
 .carousel-item:nth-child(1) {
@@ -36,6 +36,65 @@
 
 .video-filter{
     background-color: rgba(71, 68, 80, 0.4);
+}
+
+.carousel-indicators{
+    padding-bottom: 50px;
+}
+
+
+.titolo-header{
+    font-size: 160px;
+    margin: 0;
+}
+
+.sottotitolo-header{
+    font-size: 40px;
+}
+
+/* Searchbar */
+
+.container-item-carousel{
+    margin: 100px;
+    width: 500px;
+    
+}
+
+.btn-nav{
+    height: 40px;
+    width: 150px;
+    background-color: orange;
+    border-radius: 50px;
+    border: none;
+}
+
+.search-header{
+    border-radius: 100px;
+    border: solid 1px orange;
+}
+
+.btn-nav:hover{
+    background-color: antiquewhite!important;
+    color: black;
+}
+
+/* end Searchbar */
+
+
+.btn-header{
+    height: 40px;
+    width: 100px;
+    background-color: orange;
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    margin: 50px;
+}
+
+.btn-header:hover{
+    background-color: antiquewhite;
+    color: black;
 }
 
 /* Fine Carosello Video */
