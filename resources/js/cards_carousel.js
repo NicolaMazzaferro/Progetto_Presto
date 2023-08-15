@@ -6,6 +6,10 @@ var swiper = new Swiper(".slide-container", {
     centerSlide: "true",
     fade: "true",
     grabCursor: "true",
+    autoplay: {
+        delay: 2000, // Intervallo di tempo tra le slide (in millisecondi)
+        disableOnInteraction: false, // L'autoplay continua anche dopo l'interazione dell'utente
+        },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

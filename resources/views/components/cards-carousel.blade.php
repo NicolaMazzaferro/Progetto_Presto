@@ -109,7 +109,7 @@
                                 <h4 class="job">{{$announcement->category ? $announcement->category->name : ''}}</h4>
                                 <p class="text-tronco">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo velit obcaecati laboriosam omnis quos expedita placeat hic itaque delectus iusto ipsam cupiditate similique repellendus asperiores praesentium dolorum, excepturi in repudiandae!</p>
                                 <p class="lead">€ 100,00</p>
-                                <a class="btn btn-outline-primary">Dettaglio</a>
+                                <a class="btn btn-outline-primary" href="{{route('announcement_show', compact('announcement'))}}">Dettaglio</a>
                             </div>
                         </div>
                     </div>
