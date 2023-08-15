@@ -162,6 +162,7 @@
     color: var(--arancio);
     font-size: 4rem;
     animation: 0.5s mover alternate infinite;
+    cursor: pointer;
   }
   
   @keyframes mover {

@@ -103,6 +103,8 @@
     </header>
 
     {{-- Fine Carousel video --}}
+
+    {{-- Stats --}}
     
     <section class="container dati">
         <div class="row justify-content-around">
@@ -129,6 +131,8 @@
             </div>
         </div>
     </section>
+
+     {{-- END Stats --}}
     
     <!-- About us -->
     
@@ -176,7 +180,7 @@
     
     <!-- END About us -->
     
-    {{-- <x-cards-carousel :announcements="$announcements"></x-cards-carousel> Da finire - Nicola --}}
+    <x-cards-carousel :announcements="$announcements"></x-cards-carousel>
     
     <!-- Our Team -->
     
@@ -188,7 +192,7 @@
         </div>
         <div class="row text-center">
             <div class="col-12 text-nero mt-5 d-flex justify-content-center">
-                <h1 class=" title-our-team">Il nostro Team e Le Nostre Skills</h1>
+                <h1 class=" title-last-product titolo-au fw-bolder">Il nostro Team e Le Nostre Skills</h1>
             </div>
         </div>
     </div>
