@@ -5,8 +5,8 @@
     <section class="container">
         <div class="row my-5 ">
             @foreach ($announcements as $announcement)
-            <div class="col-12 col-md-3 my-3">
-                <x-card :announcement="$announcement"
+            <div class="col-12 col-md-9 my-3">
+                <x-card-index :announcement="$announcement"
                 />
             </div>
             @endforeach
