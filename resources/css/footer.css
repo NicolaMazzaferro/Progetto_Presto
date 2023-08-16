@@ -3,6 +3,17 @@ footer{
     margin-top: 100px;
 }
 
-.btn-brand .fa-brands:hover{
-    color: orange !important;
+.btn-brand{
+    color: var(--bianco);
+}
+
+.btn-brand:hover{
+    color: var(--arancio);
+}
+
+@media screen and (max-width: 576px) {
+    .lista-nomi-footer{
+        display: flex;
+        justify-content: center;
+    }
 }

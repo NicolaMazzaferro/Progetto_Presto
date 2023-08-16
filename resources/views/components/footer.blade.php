@@ -20,14 +20,15 @@
                 <hr class="w-100 clearfix d-md-none" />
                 
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Creato da:</h6>
-                    <p class="text-white">Gabriele</p>
-                    <p class="text-white">Stefano</p>
-                    <p class="text-white">Nicola</p>
-                    <p class="text-white">Ilaria</p>
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Creato da</h6>
+                    <div class="lista-nomi-footer">
+                        <p class="text-white mx-2">Gabriele</p>
+                        <p class="text-white mx-2">Stefano</p>
+                        <p class="text-white mx-2">Nicola</p>
+                        <p class="text-white mx-2">Ilaria</p>
+                    </div>
                 </div>
                 
-                <hr class="w-100 clearfix d-md-none" />
                 
                 <hr class="w-100 clearfix d-md-none" />
                 
@@ -39,20 +40,20 @@
                     <p><i class="fas fa-print mr-3"></i> Lorem ipsum dolor sit.</p>
                 </div>
                 
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
                     
-                    <a class="btn-brand" href="#"><i class="bi bi-facebook fs-3 text-bianco"></i></a>
+                    <a class="btn-brand" href="#"><i class="mx-2 bi bi-facebook fs-3"></i></a>
                     
-                    <a class="btn-brand" href="#"><i class="fa-brands fa-x-twitter fs-3 text-bianco"></i></a>
+                    <a class="btn-brand" href="#"><i class="fa-brands fa-x-twitter fs-3"></i></a>
                     
-                    <a class="btn-brand" href="#"><i class="bi bi-linkedin fs-3 text-bianco"></i></a>
+                    <a class="btn-brand" href="#"><i class="mx-2 bi bi-linkedin fs-3"></i></a>
 
-                    <a class="btn-brand" href="#"><i class="bi bi-instagram fs-3 text-bianco"></i></a>
+                    <a class="btn-brand" href="#"><i class="mx-2 bi bi-instagram fs-3"></i></a>
                     
-                    <a class="btn-brand" href="#"><i class="bi bi-github fs-3 text-bianco"></i></a>
+                    <a class="btn-brand" href="#"><i class="mx-2 bi bi-github fs-3"></i></a>
 
-                    <a class="btn-brand" href="#"><i class="bi bi-google fs-3 text-bianco"></i></a>
+                    <a class="btn-brand" href="#"><i class="mx-2 bi bi-google fs-3"></i></a>
                     
                     
                 </div>

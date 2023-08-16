@@ -1,10 +1,4 @@
-/* Card per ultimi annunci da sistemare */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-family: "Poppins", sans-serif; */
-}
+/* Card per ultimi annunci */
 
 .swiper{
     padding-bottom: 30px !important;
