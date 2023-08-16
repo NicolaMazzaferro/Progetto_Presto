@@ -16,8 +16,10 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('revisor_become')}}">Lavora con noi</a>
+                        <a class="nav-link" href="{{route('workWithUs')}}">Lavora con noi</a>
                     </li>
+
+                    {{-- revisor_become invia mail revisore --}}
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="categoriesDropDown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

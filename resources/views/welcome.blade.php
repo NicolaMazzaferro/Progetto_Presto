@@ -37,12 +37,15 @@
 <body>
     <x-navbar/>
     {{-- Carousel video Nicola--}}
+    
     <x-header-carousel-video />
                 
     {{-- Fine Carousel video --}}
                 
     {{-- Stats Nicola--}}
+
     <x-stats />
+
     {{-- END Stats --}}
                 
     <!-- About us Nicola-->
@@ -64,41 +67,12 @@
     <x-newsletter></x-newsletter>
                 
     {{-- END Newsletter --}}
-    <x-footer></x-footer>
+
     {{-- footer Stefano --}}                     
     
+    <x-footer></x-footer>
+
     {{-- end footer Stefano --}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

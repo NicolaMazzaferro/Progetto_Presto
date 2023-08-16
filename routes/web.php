@@ -45,7 +45,7 @@ Route::patch('/accetta/annucio/{announcement}', [RevisorController::class, 'acce
 Route::patch('/rifiuta/annucio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor_reject_announcement');
 
 // Rotta diventa revisore - Nicola
-Route::get('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('revisor_become');
+Route::post('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('revisor_become');
 
 // Rendi revisore un utente - Nicola
 Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('revisor_make');
@@ -53,3 +53,6 @@ Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])-
 //Gabriele
 //Rotta Ricerca annuncio
 Route::get('/ricerca/annuncio', [FrontController::class, 'searchAnnouncements'])->name('announcement_search');
+
+// Rotta Lavora con noi
+Route::get('/lavora-con-noi', [PublicController::class, 'workWithUs'])->name('workWithUs');
