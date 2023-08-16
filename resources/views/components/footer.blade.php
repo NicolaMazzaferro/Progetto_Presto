@@ -61,8 +61,8 @@
             
         </section>
         
-        <div class="text-center p-3">
-            © 2020 Copyright: The Codevengers
+        <div class="text-bianco text-center p-3">
+            © 2023 Copyright: The Codevengers
             
         </div>
         

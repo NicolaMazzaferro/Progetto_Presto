@@ -27,7 +27,7 @@
 
 :root{
     --arancio: #eaa636;
-    --bianco: #fdf5eb;
+    --bianco: rgb(253, 245, 235);
     --nero: #1e1916;
   }
   
