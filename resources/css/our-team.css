@@ -1,0 +1,44 @@
+/* Our Team */
+
+.container-our-team {
+    margin-top: 200px;
+}
+
+.title-our-team {
+    font-size: 80px;
+    margin-bottom: 150px;
+    width: 700px;
+}
+
+.card-our-team {
+    border-radius: 40px !important;
+    border: none !important;
+    background-color: var(--bianco) !important;
+}
+
+.img-card-our-team {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+@media screen and (max-height: 768px) {
+    .title-our-team {
+        font-size: 40px;
+        margin-bottom: 100px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .title-our-team {
+        font-size: 40px;
+        margin-bottom: 100px;
+        width: 500px;
+    }
+
+    .container-our-team {
+        margin-top: 70px;
+    }
+}
+
+/* END Our Team */
