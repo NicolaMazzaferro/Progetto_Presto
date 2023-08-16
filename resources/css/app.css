@@ -3,11 +3,15 @@
 @import 'bootstrap/dist/css/bootstrap';
 @import "@fortawesome/fontawesome-free/css/all.css";
 @import './style.css';
-@import './carousel_video.css';
+@import './header-carousel-video.css';
 @import './navbar.css';
 @import './details_carousel.css';
 @import './form_login.css';
+@import './stats.css';
 @import './card_carousel.css';
+@import './our-team.css';
+@import './about-us.css';
+@import './newsletter.css';
 @import './footer.css';
 
 

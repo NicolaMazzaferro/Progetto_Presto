@@ -1,0 +1,113 @@
+/* About Us */
+
+.quadrato {
+    height: 70%;
+    width: 90%;
+    background-color: var(--bianco);
+    border-radius: 20px;
+}
+
+.quadrato-orange {
+    position: relative;
+    height: 80%;
+    width: 80%;
+    background-color: var(--arancio);
+}
+
+.img-about-1 {
+    position: absolute;
+    bottom: 100px;
+    left: -150px;
+    height: 120%;
+    width: 80%;
+    background-color: var(--nero);
+    border-radius: 50px;
+    background-image: url("../../public/media/about1.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-about-2 {
+    position: absolute;
+    top: 100px;
+    right: -150px;
+    height: 120%;
+    width: 80%;
+    background-color: var(--nero);
+    border-radius: 50px;
+    background-image: url("../../public/media/about2.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-about-us {
+    margin-top: 400px;
+}
+
+@media screen and (max-width: 990px) {
+    .container-about-us {
+        margin-top: 100px;
+    }
+
+    .wrapper-about-us {
+        width: 100%;
+    }
+}
+
+.titolo-au {
+    font-size: 3em;
+}
+
+.buttons .myButton {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #f87016ec, #fdb924ec);
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.buttons .myButton .overlay {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    /* Rivedere il bottone */
+    display: none;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    animation: blink 0.5s linear infinite;
+}
+
+.buttons .myButton .overlay:hover{
+    display: inline-block;
+}
+
+@keyframes blink {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }
+
+    100% {
+        width: 400;
+        height: 400;
+        opacity: 0;
+    }
+}
+
+/* END About Us */

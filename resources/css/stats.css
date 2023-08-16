@@ -1,0 +1,26 @@
+/* Stats */
+
+.dati {
+    margin-top: 400px;
+}
+
+.dato {
+    background: var(--arancio);
+    margin-inline: 5px;
+    width: 220px;
+    border-radius: 50%;
+    height: 220px;
+    margin-bottom: 30px;
+}
+
+.stats-item {
+    font-size: 50px;
+    color: var(--bianco);
+}
+
+.stats-number {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* END Stats */
