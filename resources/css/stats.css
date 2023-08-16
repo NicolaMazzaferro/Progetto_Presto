@@ -1,7 +1,12 @@
 /* Stats */
 
 .dati {
-    margin-top: 400px;
+    margin-top: 200px;
+}
+
+.titolo_numeri{
+    font-size: 3em;
+    margin-bottom: 70px;
 }
 
 .dato {
