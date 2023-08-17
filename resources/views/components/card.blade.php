@@ -1,6 +1,6 @@
 <div class="card swiper-slide">
     <div class="image-box">
-        <img src="./media/about1.webp" alt="" />
+        <img src="https://picsum.photos/200/300" alt="" />
     </div>
     <div class="profile-details">
         <div class="name-job">
