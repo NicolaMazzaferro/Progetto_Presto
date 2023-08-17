@@ -48,7 +48,7 @@ Route::patch('/rifiuta/annucio/{announcement}', [RevisorController::class, 'reje
 Route::post('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('revisor_become');
 
 // Rendi revisore un utente - Nicola
-Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('revisor_make');
+Route::get('/rendi/revisore/{email}', [RevisorController::class, 'makeRevisor'])->name('revisor_make');
 
 //Gabriele
 //Rotta Ricerca annuncio
