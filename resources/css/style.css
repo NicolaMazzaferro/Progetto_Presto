@@ -9,3 +9,8 @@
 }
 
 /* END Header-general */
+
+.btn-candidatura:hover{
+  background-color: var(--arancio);
+  color: var(--bianco);
+}
