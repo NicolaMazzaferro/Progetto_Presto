@@ -58,10 +58,10 @@
     
     
     
-    
     {{$slot}}
     
     
+    <x-footer></x-footer>
     
     <script src="{{asset('swiper-bundle.min.js')}}"></script>
     
