@@ -32,22 +32,21 @@
 
 
 
-    <div class="card m-2">
+    <div class="card m-2 h-80 bg-bianco">
         <div class="row">
-            <div class="col-sm-5 d-flex align-items-center ps-4">
-                <img src="https://picsum.photos/500" class="card-img-top">
+            <div class="col-sm-4 d-flex">
+                <img src="https://picsum.photos/200" class="card-img-top-index">
             </div>
-            <div class="col-sm-5">
-                <div class="card-body">
-                    <h5 class="card-title">{{$announcement->title}}</h5>
-                <p class="card-text truncate-text">Creato da: {{$announcement->user->name}} il {{$announcement->created_at->format('d/m/Y')}}</p>
-                <p class="fw-semibold">€{{$announcement->price}}</p>
+            <div class="col-sm-8">
+                <div class="card-body ">
+                    <h5 class="card-title text-uppercase text-arancio">{{$announcement->title}}</h5>
+                <p class="card-text truncate-text text-nero">Creato da: {{$announcement->user->name}} il {{$announcement->created_at->format('d/m/Y')}}</p>
+                <p class="fw-semibold text-nero">€{{$announcement->price}}</p>
                     {{-- BUTTON DETAILS - EDIT - DELETE --}}
 
-                    <div class="d-flex justify-content-evenly">
-                        <a href="#" class="btn btn-primary">Dettaglio</a>
-
-                    </div>
+                <div class="div-button">
+                    <a href="#" class="btn btn-primary">Dettaglio</a>
+                </div>
 
                     {{-- END BUTTON DETAILS - EDIT - DELETE --}}
                 </div>
