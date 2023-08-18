@@ -22,7 +22,7 @@
                     <textarea class="form-control" name='body' id="textMessage" rows="10"></textarea>
                 </div>
                 <div class="mb-3 d-flex justify-content-center">
-                    <button type="submit" class="btn bg-arancio btn-candidatura fs-5 mt-5 text-nero">Invia</button>
+                    <button type="submit" class="btn-nicola fs-5 mt-5">Invia</button>
                 </div>
             </form>
         </div>
