@@ -55,7 +55,7 @@
             @enderror
             
             <div class="mb-3 d-flex justify-content-center">
-                <button type="submit" class="btn bg-arancio btn-candidatura fs-5 mt-5 text-nero">Crea</button>
+                <button type="submit" class="btn-nicola fs-5 mt-5 text-nero">Crea</button>
             </div>
         </form>
     </div>

@@ -31,11 +31,15 @@
                     </div>
                 </div>
                 
-                <div class="buttons">
+                {{-- <div class="buttons">
                     <a href="/" class="myButton">About us
                         <span class="overlay"></span>
                     </a>
-                </div>
+                </div> --}}
+
+                <div class="btn-nicola">
+                    DETTAGLI
+                  </div>
             </div>
         </div>
     </section>
