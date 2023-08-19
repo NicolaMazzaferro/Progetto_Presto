@@ -1,4 +1,4 @@
-<section class="container dati">
+<section class="container dati" id="stats">
     <h1 class=" titolo_numeri text-center" >I nostri numeri</h1> 
     <div class="row justify-content-around">
         <div class="col-12 col-md-3 dato pt-3 text-center">
