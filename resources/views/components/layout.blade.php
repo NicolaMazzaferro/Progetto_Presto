@@ -21,7 +21,7 @@
     {{-- Icon Bootstrap --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     
-    <link rel="icon" href="../favicon.svg" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('../favicon.svg')}}" type="image/x-icon" />
     
     <link rel="stylesheet" href="{{asset('swiper-bundle.min.css')}}">
 
