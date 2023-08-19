@@ -10,6 +10,8 @@
     margin: 0 20px;
     background-color: var(--arancio);
     border-radius: 15px;
+    text-decoration: none;
+    color: var(--nero);
   }
 
   .btn-nicola:before {
