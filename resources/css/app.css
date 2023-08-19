@@ -13,7 +13,7 @@
 @import './about-us.css';
 @import './newsletter.css';
 @import './footer.css';
-@import './card-index.css';
+@import './button.css';
 
 
 /* import swiper */
@@ -63,4 +63,7 @@
 }
 .vh-60{
     height: 60vh;
+}
+.h-30{
+  height: 30px;
 }

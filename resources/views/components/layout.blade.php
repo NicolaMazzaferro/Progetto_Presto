@@ -21,7 +21,7 @@
     {{-- Icon Bootstrap --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     
-    <link rel="icon" href="../presto-icon.svg" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('../favicon.svg')}}" type="image/x-icon" />
     
     <link rel="stylesheet" href="{{asset('swiper-bundle.min.css')}}">
 
@@ -39,17 +39,19 @@
 
     
     
-    @if (session('access.denied'))
-    <div class="alert alert-danger">
-        {{ session('access.denied') }}
+    <div class="container my-5">
+        @if (session('access.denied'))
+        <div class="alert alert-danger">
+            {{ session('access.denied') }}
+        </div>
+        @endif
+        
+        @if (session('message'))
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
+        @endif
     </div>
-    @endif
-    
-    @if (session('message'))
-    <div class="alert alert-success">
-        {{ session('message') }}
-    </div>
-    @endif
     
 
     

@@ -22,15 +22,7 @@
                 </div>
             </div>
         </div>
-        
-
     </div>
     
-
-
-
-    <div style="height:2000px">
-
-    </div>
 </x-layout>
 

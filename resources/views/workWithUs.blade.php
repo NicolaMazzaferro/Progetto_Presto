@@ -11,18 +11,18 @@
                 @csrf
                 <div class="mb-3">
                     <label for="username" class="form-label">Nome</label>
-                    <input type="text" name="username" class="form-control" id="username" required>
+                    <input type="text" name="username" class="form-control" id="username" value="{{Auth::user()->name}}" readonly="readonly" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" name="email" class="form-control" id="email" required>
+                    <input type="email" name="email" class="form-control" id="email" value="{{Auth::user()->email}}" readonly="readonly" required>
                 </div>
                 <div class="mb-3">
-                    <label for="textMessage" class="form-label">Inserisci testo</label>
-                    <textarea class="form-control" name='body' id="textMessage" rows="10"></textarea>
+                    <label for="textMessage" class="form-label">Perchè vuoi lavorare con noi :</label>
+                    <textarea class="form-control" name='body' id="textMessage" rows="10" required></textarea>
                 </div>
                 <div class="mb-3 d-flex justify-content-center">
-                    <button type="submit" class="btn bg-arancio btn-candidatura fs-5 mt-5 text-nero">Invia</button>
+                    <button type="submit" class="btn-nicola fs-5 mt-5">Invia</button>
                 </div>
             </form>
         </div>

@@ -1,40 +1,24 @@
-/* Card negli annunci */
-/* .card-index{
-    max-width: 30em;
-    flex-direction: row;
-
+.card-img-top-index{
+    height: 185px;
+    width: 250px;
 }
-
-.card-index img{
-    max-width: 25%;
-    margin: auto;
-    padding: 0.5em;
-    border-radius: 0.7em;
-}
-
-.card-body{
+.div-button{
     display: flex;
-    justify-content: space-between;
-}
-.text-section{
-    max-width: 60%;
-}
-.cta-section{
-    max-width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-.cta-section .btn{
-    padding: 0.3em 0.5em;
-    background-color: var(--arancio);
-    border-color: var(--arancio);
+    justify-content: end;
 }
 
-@media screen and(max-width:475px){
-    .card-index{
-        font-size: 0.9em;
+.card{
+    border: none;
+}
+
+@media screen and (max-width: 576px) {
+    .card-img-top{
+        width: 100%;
+        object-fit: cover;
     }
-} */
-/* end card negli annunci */
+    .div-button{
+        
+        justify-content: start;
+        /* background-color: brown; */
+    }
+}
