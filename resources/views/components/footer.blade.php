@@ -48,11 +48,11 @@
                     <a class="btn-brand" href="#"><i class="fa-brands fa-x-twitter fs-3"></i></a>
                     
                     <a class="btn-brand" href="#"><i class="mx-2 bi bi-linkedin fs-3"></i></a>
-
+                    
                     <a class="btn-brand" href="#"><i class="mx-2 bi bi-instagram fs-3"></i></a>
                     
                     <a class="btn-brand" href="#"><i class="mx-2 bi bi-github fs-3"></i></a>
-
+                    
                     <a class="btn-brand" href="#"><i class="mx-2 bi bi-google fs-3"></i></a>
                     
                     
