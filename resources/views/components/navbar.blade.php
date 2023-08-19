@@ -1,31 +1,31 @@
 <!-- Navbar -->
+    
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">LOGO</a>
+            <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars menu-burger"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('announcement_index')}}">Annunci</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('workWithUs')}}">Lavora con noi</a>
+                    </li>
 
-<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">LOGO</a>
-        <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars menu-burger"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('announcement_index')}}">Annunci</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('workWithUs')}}">Lavora con noi</a>
-                </li>
-                
-                {{-- revisor_become invia mail revisore --}}
-                
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="categoriesDropDown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Categorie
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="categoriesDropDown">
+                    {{-- revisor_become invia mail revisore --}}
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="categoriesDropDown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorie
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriesDropDown">
                         @foreach ($categories as $category)
                         <li><a href="{{ route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->name}}</a></li>  
                         <li>
