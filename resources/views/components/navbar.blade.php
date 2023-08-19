@@ -65,7 +65,7 @@
                         Benvenuto utente
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{route('login')}}">Registrati/Accedi</a></li>
+                        <li><a class="dropdown-item" href="{{route('register')}}">Registrati/Accedi</a></li>
                     </ul>
                 </li>
                 @endauth

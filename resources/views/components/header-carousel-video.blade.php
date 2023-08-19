@@ -1,6 +1,14 @@
 <header>
         <div class="d-flex justify-content-center text-center">
+           
             <div class="container-titolo">
+                <div class="container">
+                    @if (session('message_logout'))
+                    <div class="alert alert-success">
+                        {{ session('message_logout') }}
+                    </div>
+                    @endif
+                </div>
                 <h1 class="mb-3 titolo-header">Presto</h1>
                 <h5 class="mb-4 sottotitolo-header">
                     Vendilo Presto con noi.

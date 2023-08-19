@@ -14,3 +14,7 @@
   background-color: var(--arancio);
   color: var(--bianco);
 }
+
+.alert{
+  z-index: 10!important;
+}

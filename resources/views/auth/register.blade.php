@@ -40,12 +40,13 @@
                 <input class="input_login" type="checkbox" id="chk" aria-hidden="true">
                 
                 <div class="signup">
-                    <form method="POST" action="{{route('login')}}">
+                    <form method="POST" action="{{route('register')}}">
                         @csrf
                         <label class="label_login" for="chk" aria-hidden="true">Registrati</label>
-                        <input class="input_login" type="text" name="name" placeholder="User name" required="">
+                        <input class="input_login" type="text" name="name" placeholder="Nome" required="">
                         <input class="input_login" type="email" name="email" placeholder="Email" required="">
                         <input class="input_login" type="password" name="password" placeholder="Password" required="">
+                        <input class="input_login" type="password" name="password_confirmation" placeholder="Conferma Password" required="">
                         <button class="button_login" type="submit">Registrati</button>
                     </form>
                 </div>
