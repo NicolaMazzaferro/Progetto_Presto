@@ -55,4 +55,4 @@ Route::get('/rendi/revisore/{email}', [RevisorController::class, 'makeRevisor'])
 Route::get('/ricerca/annuncio', [FrontController::class, 'searchAnnouncements'])->name('announcement_search');
 
 // Rotta Lavora con noi
-Route::get('/lavora-con-noi', [PublicController::class, 'workWithUs'])->name('workWithUs');
+Route::get('/lavora-con-noi', [PublicController::class, 'workWithUs'])->middleware('auth')->name('workWithUs');
