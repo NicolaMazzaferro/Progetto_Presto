@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\AnnouncementController;
-use App\Http\Controllers\FrontController;
+use App\Models\Announcement;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\RevisorController;
-use App\Models\Announcement;
+use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\AnnouncementController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,14 +25,14 @@ Route::get('/', [FrontController::class, 'home'])->name('home');
 Route::get('/annunci',[AnnouncementController::class, 'index'])->name('announcement_index');
 
 
-// Gabriele nuove rotte per gli annunci e categorie
+//Gabriele nuove rotte per gli annunci e categorie
 //Rotta per create
 Route::get('/annunci/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcement_create');
 
 //Rotta categoria
 Route::get('/categoria/{category}', [FrontController::class, 'categoryShow'])->name('categoryShow');
 
-//Ilaria nuova rotta dettaglio(non è vero)
+//Gabriele nuova rotta dettaglio
 Route::get('/dettaglio/annunci/{announcement}', [AnnouncementController::class, 'showAnnouncement'])->name('announcement_show');
 
 //Gabriele Nicola - Nuove Rotte revisore, accetta annuncio, rifiuta annuncio

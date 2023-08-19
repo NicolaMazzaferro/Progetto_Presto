@@ -1,4 +1,4 @@
-<x-layout>
+{{-- <x-layout>
     <h1>Registrati</h1>
     <section class="container">
         <div class="row justify-content-center">
@@ -27,4 +27,42 @@
             </div>
         </div>
     </section>
-</x-layout>
+</x-layout> --}}
+
+<x-layout>
+
+
+    {{-- nuovo form --}}
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="main">  	
+                <input class="input_login" type="checkbox" id="chk" aria-hidden="true">
+                
+                <div class="signup">
+                    <form method="POST" action="{{route('login')}}">
+                        @csrf
+                        <label class="label_login" for="chk" aria-hidden="true">Registrati</label>
+                        <input class="input_login" type="text" name="name" placeholder="User name" required="">
+                        <input class="input_login" type="email" name="email" placeholder="Email" required="">
+                        <input class="input_login" type="password" name="password" placeholder="Password" required="">
+                        <button class="button_login" type="submit">Registrati</button>
+                    </form>
+                </div>
+                
+                <div class="login">
+                    <form method="POST" action="{{route('login')}}">
+                        @csrf
+                        <label class="label_login" for="chk" aria-hidden="true">Accedi</label>
+                        <input class="input_login" type="email" name="email" placeholder="Email" required="">
+                        <input class="input_login" type="password" name="password" placeholder="Password" required="">
+                        <button class="button_login" type="submit">Accedi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {{-- fine nuovo form --}}
+    
+    </x-layout>

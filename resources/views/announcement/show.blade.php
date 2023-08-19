@@ -7,15 +7,15 @@
                 <!-- Swiper -->
                 <div class="swiper mySwiper swiper_details">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="https://picsum.photos/200/300" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/200/301" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/200/302" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/200/303" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/200/304" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/200/305" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/200/306" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/200/307" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/200/308" alt="logo"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/400/300" alt="logo"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1000/401" alt="logo"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1000/402" alt="logo"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1000/403" alt="logo"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1000/404" alt="logo"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1000/405" alt="logo"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1000/406" alt="logo"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1000/407" alt="logo"></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/1000/408" alt="logo"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>

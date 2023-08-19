@@ -45,7 +45,7 @@
                     {{-- BUTTON DETAILS - EDIT - DELETE --}}
 
                 <div class="div-button">
-                    <a href="#" class="btn btn-primary">Dettaglio</a>
+                    <a href="{{route('announcement_show', compact('announcement'))}}" class="btn btn-outline-primary">Dettaglio</a>
                 </div>
 
                     {{-- END BUTTON DETAILS - EDIT - DELETE --}}
