@@ -10,9 +10,10 @@
                 <p class="lead">Dai un'occhiata alle inserzioni accuratamente categorizzate per {{$category->name}} e scopri tutto ciò che desideri. Semplifica la tua ricerca e trova l'affare perfetto nella categoria che ami. Inizia subito a esplorare e a trovare ciò che ti appassiona!</p>
             </div>
             @forelse ($category->announcements as $announcement)
-                <div class="col-12 col-md-3">
-                    <x-card :announcement='$announcement'></x-card>
-                </div>
+            <div class="col-12 col-md-9 my-3">
+                <x-card-index :announcement="$announcement"
+                />
+            </div>
             @empty
                 <div class="col-12">
                     <p class="h1">Non sono presenti annunci per questa categoria!!</p>
