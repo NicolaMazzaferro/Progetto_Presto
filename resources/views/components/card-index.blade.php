@@ -32,23 +32,22 @@
 
 
 
-    <div class="card m-2 h-80 bg-bianco">
+    <div class="card-index m-2 h-80 ">
         <div class="row">
             <div class="col-sm-4 d-flex">
                 <img src="https://picsum.photos/200" class="card-img-top-index">
             </div>
             <div class="col-sm-8">
                 <div class="card-body ">
-                    <h5 class="card-title text-uppercase text-arancio">{{$announcement->title}}</h5>
-                <p class="card-text truncate-text text-nero">Creato da: {{$announcement->user->name}} il {{$announcement->created_at->format('d/m/Y')}}</p>
-                <p class="fw-semibold text-nero">€{{$announcement->price}}</p>
-                    {{-- BUTTON DETAILS - EDIT - DELETE --}}
+                    <h5 class="card-title text-uppercase text-arancio pt-3">{{$announcement->title}}</h5>
+                    <p class="lead pt-3 text-nero">{{$announcement->description}}</p>
+                    <p class="fw-semibold text-nero">€{{$announcement->price}}</p>
+                    
+                    <div class="div-button">
+                        <a href="{{route('announcement_show', compact('announcement'))}}" class="btn btn-outline-primary">Dettaglio</a>
+                    </div>
+                    <p class="card-text text-nero blockquote-footer pt-3">Creato da: {{$announcement->user->name}} il {{$announcement->created_at->format('d/m/Y')}}</p>
 
-                <div class="div-button">
-                    <a href="{{route('announcement_show', compact('announcement'))}}" class="btn btn-outline-primary">Dettaglio</a>
-                </div>
-
-                    {{-- END BUTTON DETAILS - EDIT - DELETE --}}
                 </div>
             </div>
         </div>

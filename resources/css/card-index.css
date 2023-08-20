@@ -7,18 +7,20 @@
     justify-content: end;
 }
 
-.card{
-    border: none;
+.card-index{
+    border: solid 2px var(--arancio);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: white;
 }
 
 @media screen and (max-width: 576px) {
-    .card-img-top{
+    .card-img-top-index{
         width: 100%;
         object-fit: cover;
     }
-    .div-button{
-        
+
+    .div-button{ 
         justify-content: start;
-        /* background-color: brown; */
     }
 }
