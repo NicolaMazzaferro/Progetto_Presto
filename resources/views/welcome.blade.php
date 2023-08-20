@@ -25,10 +25,6 @@
     {{-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> --}}
     
     <link rel="stylesheet" href="{{asset('swiper-bundle.min.css')}}">
-
-    {{-- nuovo form --}}
-    <link rel="stylesheet" type="text/css" href="slide navbar style.css">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
     
     
     @livewireStyles

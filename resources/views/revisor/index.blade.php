@@ -1,11 +1,10 @@
 <x-layout>
 
 
-    <h1 class="my-5 text-center">{{$announcement_to_check ? "Ecco l'annuncio da revisionare" : "Non ci sono annunci da revisionare"}}</h1>
-
+    <div class="container bg-bianco p-5">
+    <h1 class="pb-5 text-center">{{$announcement_to_check ? "Ecco l'annuncio da revisionare" : "Non ci sono annunci da revisionare"}}</h1>
     @if ($announcement_to_check)
-
-        <div class="container p-5">
+    
             <div class="row">
                 <div class="col-12 d-flex justify-content-center align-items-center text-center">
 
@@ -35,7 +34,7 @@
                     </div>
                 </div>
             </div>
+            @endif
         </div>
         
-    @endif
 </x-layout>

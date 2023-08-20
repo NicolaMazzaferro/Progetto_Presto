@@ -1,28 +1,54 @@
 <x-layout> 
-    <div class="container-fluid p-5">
+    <div class="container bg-bianco p-5">
+        <h1 class="text-center mb-5">DETTAGLI PRODOTTO</h1>
         <div class="row">
-            <div class="col-12">
-                <h1 class="text-center my-5">Dettaglio Annuncio</h1>
-
-                <!-- Swiper -->
-                <div class="swiper mySwiper swiper_details">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="https://picsum.photos/400/300" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/1000/401" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/1000/402" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/1000/403" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/1000/404" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/1000/405" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/1000/406" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/1000/407" alt="logo"></div>
-                        <div class="swiper-slide"><img src="https://picsum.photos/1000/408" alt="logo"></div>
+            <div class="col-12 col-md-6">
+                <div class = "card-wrapper">
+                    <div class = "card-show">
+                        <div class = "product-imgs">
+                            <div class = "img-display">
+                                <div class = "img-showcase">
+                                    <img class="img-show" src = "https://picsum.photos/200/300" alt = "shoe image">
+                                    <img class="img-show" src = "https://picsum.photos/200/301" alt = "shoe image">
+                                    <img class="img-show" src = "https://picsum.photos/200/302" alt = "shoe image">
+                                    <img class="img-show" src = "https://picsum.photos/200/303" alt = "shoe image">
+                                </div>
+                            </div>
+                            <div class = "img-select">
+                                <div class = "img-item">
+                                    <a href = "#" data-id = "1">
+                                        <img class="img-show" src = "https://picsum.photos/200/300" alt = "shoe image">
+                                    </a>
+                                </div>
+                                <div class = "img-item">
+                                    <a href = "#" data-id = "2">
+                                        <img class="img-show" src = "https://picsum.photos/200/301" alt = "shoe image">
+                                    </a>
+                                </div>
+                                <div class = "img-item">
+                                    <a href = "#" data-id = "3">
+                                        <img class="img-show" src = "https://picsum.photos/200/302" alt = "shoe image">
+                                    </a>
+                                </div>
+                                <div class = "img-item">
+                                    <a href = "#" data-id = "4">
+                                        <img class="img-show" src = "https://picsum.photos/200/303" alt = "shoe image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h5 class="card-title text-uppercase text-arancio pt-3">{{$announcement->title}}</h5>
+                <p class="lead pt-3 text-nero">{{$announcement->description}}</p>
+                <p class="fw-semibold text-nero">€{{$announcement->price}}</p>
             </div>
         </div>
     </div>
+    
+    
     
 </x-layout>
 
