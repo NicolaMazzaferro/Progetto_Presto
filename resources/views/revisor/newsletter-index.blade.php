@@ -11,7 +11,7 @@
                     @method('POST')
                     @csrf
 
-                    <textarea class="form-control mb-5" name="newsletter_body" id="newsletter_body" cols="80" rows="10"></textarea>
+                    <textarea class="form-control mb-5" name="newsletter_body" id="newsletter_body" cols="80" rows="10" required></textarea>
                     
                     <button class="btn-nicola" type="submit">Invia a tutti</button>
                 </form>
