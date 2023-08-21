@@ -158,7 +158,7 @@
   
   .container-triangle{
     position: absolute;
-    bottom: 0;
+    bottom: -18px;
     z-index: 2;
   }
   

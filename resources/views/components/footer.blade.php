@@ -59,8 +59,6 @@
             </div>
         </div>
         
-        
-        
         <div class="text-bianco text-center p-3">
             © 2023 Copyright: The Codevengers
             

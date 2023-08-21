@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-3 mb-5">
-                <div class="card card-our-team">
+                <div data-aos="flip-left" class="card card-our-team">
                     <img src="./media/im1.jpeg" class="card-img-top img-card-our-team" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Nicola Mazzaferro</h5>
@@ -22,9 +22,10 @@
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
+                
             </div>
             <div class="col-12 col-md-3 mb-5">
-                <div class="card card-our-team">
+                <div data-aos="flip-left" class="card card-our-team">
                     <img src="./media/im2.jpeg" class="card-img-top img-card-our-team" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Ilaria Amorotti</h5>
@@ -34,7 +35,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-3 mb-5">
-                <div class="card card-our-team">
+                <div data-aos="flip-left" class="card card-our-team">
                     <img src="./media/im4.jpeg" class="card-img-top img-card-our-team" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Stefano Grandi</h5>
@@ -44,7 +45,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-3 mb-5">
-                <div class="card card-our-team">
+                <div data-aos="flip-left" class="card card-our-team">
                     <img src="./media/im3.jpeg" class="card-img-top img-card-our-team" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Gabriele Quiroz</h5>
