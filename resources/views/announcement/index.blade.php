@@ -18,6 +18,16 @@
             </div>
             @endforeach
         </div>
+
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-center text-center">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        {{ $announcements->links() }}
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </section>
     
 </x-layout>

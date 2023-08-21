@@ -48,4 +48,8 @@ class Announcement extends Model
     public static function toBeRevisionedCount(){
         return Announcement::where('is_accepted', null)->count();
     }
+
+    public static function toBeRejectCount(){
+        return Announcement::where('is_accepted', false)->count();
+    }
 }

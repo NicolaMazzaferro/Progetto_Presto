@@ -22,7 +22,7 @@ use App\Http\Controllers\AnnouncementController;
 Route::get('/', [FrontController::class, 'home'])->name('home');
 // rotta per index
 
-Route::get('/annunci',[AnnouncementController::class, 'index'])->name('announcement_index');
+Route::get('/annunci',[AnnouncementController::class, 'indexAnnouncement'])->name('announcement_index');
 
 
 //Gabriele nuove rotte per gli annunci e categorie
@@ -44,6 +44,9 @@ Route::patch('/accetta/annucio/{announcement}', [RevisorController::class, 'acce
 
 // Rotta rifiuta annuncio
 Route::patch('/rifiuta/annucio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor_reject_announcement');
+
+// Rotta Vista annunci rifiutati
+Route::get('/revisor/annunci/rifiutati', [RevisorController::class, 'reject'])->middleware('isRevisor')->name('revisor_reject');
 
 // Rotta diventa revisore - Nicola
 Route::post('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('revisor_become');

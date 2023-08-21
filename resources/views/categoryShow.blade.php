@@ -20,7 +20,7 @@
                     <p class="h2">Pubblicane uno: <a href="{{route('announcement_create')}}" class="btn btn-warning">Nuovo annuncio</a></p>
                 </div>
             @endforelse
-
         </div>
+        
     </div>
 </x-layout>

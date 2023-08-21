@@ -49,6 +49,9 @@
                         <li class="nav-item"> 
                             <a class="dropdown-item position-relative" href="{{route('revisor_index')}}">Area revisore <span class="position-absolute top-0 badge rounded-pill bg-arancio">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span></span></a>
                         </li>
+                        <li class="nav-item"> 
+                            <a class="dropdown-item position-relative" href="{{route('revisor_reject')}}">Annunci Rifiutati<span class="position-absolute top-0 badge rounded-pill bg-arancio">{{App\Models\Announcement::toBeRejectCount()}}<span class="visually-hidden">unread messages</span></span></a>
+                        </li>
                         @endif
                         <li class="nav-item">
                             <form action="{{route('logout')}}" method="POST">

@@ -23,7 +23,7 @@
                                     <button type="submit" class="btn btn-success">Accetta</button>
                                 </form>
                             </div>
-                            <div class="col-12 col-md-6 text-end">
+                            <div class="col-12 col-md-6">
                                 <form action="{{route('revisor_reject_announcement', ['announcement' => $announcement_to_check])}}" method="POST">
                                     @csrf
                                     @method('PATCH')

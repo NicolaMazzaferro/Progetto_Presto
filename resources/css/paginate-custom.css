@@ -1,0 +1,21 @@
+.pagination a{
+    text-align: center;
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid var(--bianco);
+    cursor: pointer;
+    letter-spacing: 2px;
+    position:relative;
+    overflow:hidden;
+    margin: 0 20px;
+    background-color: var(--arancio);
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--nero);
+    background-color: var(--arancio)!important;
+    
+}
+
+.pagination svg, .pagination span, .pagination p{
+    display: none;
+}
