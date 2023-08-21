@@ -39,43 +39,48 @@
     {{-- Carousel video Nicola--}}
     
     <x-header-carousel-video />
-                
+    
     {{-- Fine Carousel video --}}
-                
+    
+    {{-- Start scroll to navbar --}}
+    <button id="scrollToTopButton" class="scroll-to-top-button">
+        <i class=" button_scroll fa-solid fa-circle-arrow-up" style="color: #ea5a0d;">
+        </i></button>
+    {{-- End scroll to navbar --}}
+    
     {{-- Stats Nicola--}}
-
     <x-stats />
-
+    
     {{-- END Stats --}}
-                
+    
     <!-- About us Nicola-->
-                
+    
     <x-about-us></x-about-us>
-                
+    
     <!-- END About us -->
-                
+    
     <x-cards-carousel :announcements="$announcements"></x-cards-carousel>
-                
+    
     <!-- Our Team Nicola-->
-                
+    
     <x-our-team></x-our-team>
-                
+    
     <!-- END Our Team -->
-                
+    
     {{-- Newsletter Nicola--}}
-                
+    
     <x-newsletter></x-newsletter>
-                
+    
     {{-- END Newsletter --}}
-
+    
     {{-- footer Stefano --}}                     
     
     <x-footer></x-footer>
-
+    
     {{-- end footer Stefano --}}
-
-
-
+    
+    
+    
     <script src="{{asset('swiper-bundle.min.js')}}"></script>
     
     
