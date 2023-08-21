@@ -43,17 +43,17 @@
             <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
                 
-                <a class="btn-brand" href="#"><i class="mx-2 bi bi-facebook fs-3"></i></a>
+                <a class="btn-brand" href="https://www.facebook.com/"><i class="mx-2 bi bi-facebook fs-3"></i></a>
                 
-                <a class="btn-brand" href="#"><i class="fa-brands fa-x-twitter fs-3"></i></a>
+                <a class="btn-brand" href="https://twitter.com/"><i class="fa-brands fa-x-twitter fs-3"></i></a>
                 
-                <a class="btn-brand" href="#"><i class="mx-2 bi bi-linkedin fs-3"></i></a>
+                <a class="btn-brand" href="https://www.linkedin.com/"><i class="mx-2 bi bi-linkedin fs-3"></i></a>
                 
-                <a class="btn-brand" href="#"><i class="mx-2 bi bi-instagram fs-3"></i></a>
+                <a class="btn-brand" href="https://www.instagram.com/"><i class="mx-2 bi bi-instagram fs-3"></i></a>
                 
-                <a class="btn-brand" href="#"><i class="mx-2 bi bi-github fs-3"></i></a>
+                <a class="btn-brand" href="https://github.com/"><i class="mx-2 bi bi-github fs-3"></i></a>
                 
-                <a class="btn-brand" href="#"><i class="mx-2 bi bi-google fs-3"></i></a>
+                <a class="btn-brand" href="https://www.google.it/"><i class="mx-2 bi bi-google fs-3"></i></a>
                 
                 
             </div>

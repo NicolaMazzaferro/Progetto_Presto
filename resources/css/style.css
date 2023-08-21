@@ -2,7 +2,7 @@
 
 .header-general{
   height: 50vh;
-  background-image: linear-gradient(rgba(30, 25, 22, 0.9), rgba(67, 59, 54, 0.4)), url(../../public/media/header.jpeg);
+  background-image: linear-gradient(rgba(30, 25, 22, 0.9), rgba(67, 59, 54, 0.4)), url(../../public/media/sfondo.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

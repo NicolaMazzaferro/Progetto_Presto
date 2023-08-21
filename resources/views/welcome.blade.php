@@ -45,9 +45,8 @@
     
     {{-- Start scroll to navbar --}}
     <div>
-        <a class="returnHome" href="#"><i class="fa-solid fa-circle-up buttonHome"></i></a>
+        <a class="returnHome" href="#"><i class="fa-solid fa-circle-arrow-up buttonHome"></i></a>
     </div>
-    
     {{-- End scroll to navbar --}}
 
     {{-- Stats Nicola--}}
