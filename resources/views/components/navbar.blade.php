@@ -1,8 +1,8 @@
 <!-- Navbar -->
     
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top fs-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">LOGO</a>
+            <a class="navbar-brand" href="/"><img src="{{asset('/media/logo.svg')}}" alt=""></a>
             <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars menu-burger"></i>
             </button>
