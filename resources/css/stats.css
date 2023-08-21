@@ -12,15 +12,15 @@
 .dato {
     background: var(--arancio);
     margin-inline: 5px;
-    width: 210px;
+    width: 270px;
     border-radius: 50%;
-    height: 210px;
+    height: 270px;
     margin-bottom: 30px;
 }
 
 
 .stats-item {
-    font-size: 50px;
+    font-size: 5em;
     color: var(--bianco);
 }
 

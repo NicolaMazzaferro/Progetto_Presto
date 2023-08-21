@@ -45,9 +45,10 @@
     {{-- Fine Carousel video --}}
     
     {{-- Start scroll to navbar --}}
-    <button id="scrollToTopButton" class="scroll-to-top-button">
-        <i class=" button_scroll fa-solid fa-circle-arrow-up" style="color: #ea5a0d;">
-        </i></button>
+    <div>
+        <a class="returnHome" href="#"><i class="fa-solid fa-circle-up buttonHome"></i></a>
+    </div>
+    
     {{-- End scroll to navbar --}}
     
     {{-- Stats Nicola--}}
@@ -80,7 +81,8 @@
     <x-footer></x-footer>
     
     {{-- end footer Stefano --}}
-    
+
+
     
     
     <script src="{{asset('swiper-bundle.min.js')}}"></script>

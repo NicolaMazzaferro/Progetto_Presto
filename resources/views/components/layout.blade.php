@@ -39,8 +39,11 @@
     <x-navbar></x-navbar>
     <x-header />
 
+    <div>
+        <a class="returnHome" href="#"><i class="fa-solid fa-circle-up buttonHome"></i></a>
+    </div>
     
-    
+        
     <div class="container my-5">
         @if (session('access.denied'))
         <div class="alert alert-danger">

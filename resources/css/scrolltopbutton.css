@@ -1,24 +1,12 @@
-
-.scroll-to-top-button {
-
-    display: none;
+.returnHome{
     position: fixed;
     bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    border: none; 
-    border-radius: 4px;
-    cursor: pointer;
-    background-color:transparent;
-    z-index: 10;
-} 
-
-.button_scroll{
-    width: 70px;
-    height: 70px;
-    z-index: 10;
+    right: 40px;
+    z-index: 11;
 }
 
-/* .scroll-to-top-button:hover {
-    background-color: var(--bianco);
-}  */
+.buttonHome{
+    color: #ea5a0d;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
