@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     
-    
+
     <!-- Font Awesome -->
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -47,7 +47,7 @@
         <i class=" button_scroll fa-solid fa-circle-arrow-up" style="color: #ea5a0d;">
         </i></button>
     {{-- End scroll to navbar --}}
-    
+
     {{-- Stats Nicola--}}
     <x-stats />
     
