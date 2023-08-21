@@ -31,8 +31,8 @@ window.addEventListener("scroll", function() {
     lastScrollTop = scrollTop;
 });
 
-
-
+// animazione home
+AOS.init();
 
 
 

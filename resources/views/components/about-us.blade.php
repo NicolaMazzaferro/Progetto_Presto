@@ -1,6 +1,6 @@
 <section class="container container-about-us">
         <div class="row">
-            <div class="col-12 col-lg-5 d-flex align-items-center justify-content-center">
+            <div class="col-12 col-lg-5 d-flex align-items-center justify-content-end">
                 <div class="quadrato d-flex align-items-center justify-content-center">
                     <div class="quadrato-orange">
                         <div class="img-about-1">

@@ -113,8 +113,9 @@
 
 .title-last-product{
     font-size: 4em;
-    width: 50%;
     padding-bottom: 100px;
+    /* width: 50%; */
+    margin: 0;
 }
 
 @media screen and (max-width: 576px) {

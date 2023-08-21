@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    
+    {{-- Aos Animate --}}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     
     <!-- Font Awesome -->
     <link
@@ -58,6 +60,8 @@
     
     <script src="{{asset('swiper-bundle.min.js')}}"></script>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     
     @livewireScripts
     @vite('resources/js/app.js')

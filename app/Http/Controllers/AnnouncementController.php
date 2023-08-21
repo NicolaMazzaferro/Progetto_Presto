@@ -41,8 +41,30 @@ class AnnouncementController extends Controller
     // Index Announcement
 
     public function indexAnnouncement() {
-        $announcements = Announcement::where('is_accepted', true)->paginate(6);
+        $announcements = Announcement::where('is_accepted', true)->orderBy('created_at', 'desc')->paginate(6);
         return view('announcement.index', compact('announcements'));
+    }
+
+    public function edit(Announcement $announcement)
+    {
+        return view('announcement.edit', compact('announcement'));
+    }
+
+    public function update(Request $request, Announcement $announcement)
+    {
+        $announcement->update([
+            $announcement->title = $request->title,
+            $announcement->description = $request->description,
+            $announcement->price = $request->price,
+        ]);
+
+        return redirect(route('announcement_index'))->with('message', 'Annuncio modificato correttamente!');
+    }
+
+    public function destroy(Announcement $announcement)
+    {
+        $announcement->delete();
+        return redirect(route('announcement_index'))->with('message', 'Annuncio correttamente cancellato!');
     }
     
 }

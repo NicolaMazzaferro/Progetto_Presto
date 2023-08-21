@@ -157,8 +157,8 @@
   /* Triangolo con freccia */
   
   .container-triangle{
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: 0px;
     z-index: 2;
   }
   
@@ -166,12 +166,18 @@
     border-left: 120px solid transparent;
     border-right: 120px solid transparent;
     border-bottom: 120px solid white;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    transform: translateX(-50%);
+    left: 50%;
+    
   }
   
   .container-arrow{
     position: absolute;
     bottom: 0;
-    z-index: 2;
+    z-index: 3;
   }
   
   .arrow{

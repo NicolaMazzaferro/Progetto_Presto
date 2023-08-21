@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     
-
+    
     <!-- Font Awesome -->
     <link
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -83,6 +83,8 @@
     
     <script src="{{asset('swiper-bundle.min.js')}}"></script>
     
+    {{-- aos js --}}
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     @livewireScripts
     @vite('resources/js/app.js')

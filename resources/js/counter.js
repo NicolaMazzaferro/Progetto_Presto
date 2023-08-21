@@ -47,7 +47,3 @@ if(document.querySelector('#firstNumber') && document.querySelector('#secondNumb
 
 }
 
-
-
-
-
