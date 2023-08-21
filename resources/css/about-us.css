@@ -23,7 +23,7 @@
     width: 80%;
     background-color: var(--nero);
     border-radius: 50px;
-    background-image: url("../../public/media/about1.webp");
+    background-image: url("../../public/media/Presentazione.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@
     width: 80%;
     background-color: var(--nero);
     border-radius: 50px;
-    background-image: url("../../public/media/about2.webp");
+    background-image: url("../../public/media/TEAM.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
