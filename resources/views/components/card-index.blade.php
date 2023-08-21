@@ -45,7 +45,7 @@
                     <p class="card-text text-nero blockquote-footer pt-3">Creato da: {{$announcement->user->name}} il {{$announcement->created_at->format('d/m/Y')}}</p>
                     
                 </div>
-                <div class="col-sm-4 d-flex justify-content-between align-items-center">
+                <div class="col-12 col-sm-4 d-flex justify-content-between align-items-center button-crud">
 
                     <div class="div-button m-3">
                         <a href="{{route('announcement_show', compact('announcement'))}}" class="btn btn-outline-primary">Dettaglio</a>
