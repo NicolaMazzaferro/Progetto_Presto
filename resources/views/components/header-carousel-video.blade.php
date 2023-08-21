@@ -1,4 +1,4 @@
-<header>
+<header class="position-relative">
     <div class="d-flex justify-content-center text-center">
         
         <div class="container-titolo">
@@ -64,11 +64,12 @@
                 </div>
                 
                 
-                <div class="d-flex justify-content-center">
+                {{-- <div class="d-flex justify-content-center">
                     <div class="container-triangle">
                         <div class="triangle"></div>
                     </div>
-                </div>
+                </div> --}}
+                
                 <div class="d-flex justify-content-center">
                     <div class="container-arrow" id="arrow_header">
                         <a href="#stats"><i class="fa-solid fa-angle-down arrow"></i></a>
@@ -77,4 +78,5 @@
             </div>
         </div>
     </div>
+    <div class="triangle"></div>
 </header>

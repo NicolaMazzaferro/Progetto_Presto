@@ -12,11 +12,12 @@
 .dato {
     background: var(--arancio);
     margin-inline: 5px;
-    width: 220px;
+    width: 210px;
     border-radius: 50%;
-    height: 220px;
+    height: 210px;
     margin-bottom: 30px;
 }
+
 
 .stats-item {
     font-size: 50px;
