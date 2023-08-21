@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
+    {{-- Google Font --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    
     {{-- Aos Animate --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
@@ -48,7 +53,7 @@
         <a class="returnHome" href="#"><i class="fa-solid fa-circle-arrow-up buttonHome"></i></a>
     </div>
     {{-- End scroll to navbar --}}
-
+    
     {{-- Stats Nicola--}}
     <x-stats />
     
@@ -79,8 +84,8 @@
     <x-footer></x-footer>
     
     {{-- end footer Stefano --}}
-
-
+    
+    
     
     
     <script src="{{asset('swiper-bundle.min.js')}}"></script>

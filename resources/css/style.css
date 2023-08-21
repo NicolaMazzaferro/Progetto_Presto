@@ -1,5 +1,14 @@
 /* Header General */
 
+/* h1,h2{
+  font-family: 'Barriecito', cursive;
+}  */
+
+h3,h4,h5 {
+  font-family: 'Barlow', sans-serif;
+}
+
+
 .header-general{
   height: 50vh;
   background-image: linear-gradient(rgba(30, 25, 22, 0.9), rgba(67, 59, 54, 0.4)), url(../../public/media/sfondo.jpeg);
@@ -21,4 +30,38 @@
 
 textarea {
   resize: none;
+}
+
+/* Form style con shadow */
+
+.formUnisciti{
+  border: solid 2px var(--arancio);
+  padding: 20px;
+  border-radius: 25px;
+  background-color: var(--bianco);
+  box-shadow: 3px 3px 6px lightslategray;
+}
+
+.formAnnuncio{
+    border: solid 2px var(--arancio);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--bianco);
+    box-shadow: 3px 3px 6px lightslategray;
+}
+
+.annunci {
+    border: solid 2px var(--arancio);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--bianco);
+    box-shadow: 3px 3px 6px lightslategray;
+}
+
+.category{
+  border: solid 2px var(--arancio);
+  padding: 20px;
+  border-radius: 25px;
+  background-color: var(--bianco);
+  box-shadow: 3px 3px 6px lightslategray;
 }

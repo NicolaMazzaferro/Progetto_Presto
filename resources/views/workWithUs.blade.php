@@ -1,7 +1,7 @@
 <x-layout>
 
-    <div class="container my-5">
-        <div class="row bg-bianco p-5">
+    <div class=" formUnisciti container my-5">
+        <div class="row p-5">
             <div class="mb-3">
                 <h5 class="fs-6 text-center text-arancio mt-5">// LAVORA CON NOI</h5>
                 <h1 class="text-center mb-5">Invia la tua candidatura</h1>

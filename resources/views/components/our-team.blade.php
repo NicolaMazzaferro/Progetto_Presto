@@ -5,7 +5,7 @@
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-12 text-nero mt-5 d-flex justify-content-center">
+            <div class="col-12 text-nero mt-3 d-flex justify-content-center">
                 <h1 class=" title-last-product titolo-au fw-bolder">Il nostro Team e Le Nostre Skills</h1>
             </div>
         </div>

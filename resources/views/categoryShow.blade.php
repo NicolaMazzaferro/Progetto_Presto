@@ -2,7 +2,7 @@
     {{-- Gabriele: Pagina per le categorie, dove è possibile vedere gli annunci presenti  --}}
     {{-- Nicola: Aggiunto frontend --}}
 
-    <div class="container my-5">
+    <div class="category container my-5">
         <div class="row justify-content-center bg-bianco p-5">
             <div class="mb-3">
                 <h5 class="fs-6 text-center text-arancio mt-5">// CATEGORIA</h5>

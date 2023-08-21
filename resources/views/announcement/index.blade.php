@@ -1,7 +1,7 @@
 <x-layout>
     
     {{-- Gabriele-Nicola: Risolto problema della visualizzazione del guest per gli annunci --}}
-    <section class="container bg-bianco">
+    <section class="annunci container bg-bianco">
         <div class="row justify-content-center p-5">
 
             <div class="mb-3">
