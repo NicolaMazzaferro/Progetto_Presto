@@ -21,14 +21,16 @@ use App\Http\Controllers\AnnouncementController;
 */
 
 Route::get('/', [FrontController::class, 'home'])->name('home');
-// rotta per index
-
-Route::get('/annunci',[AnnouncementController::class, 'indexAnnouncement'])->name('announcement_index');
 
 
 //Gabriele nuove rotte per gli annunci e categorie
-//Rotta per create
+// Rotte CRUD - Nicola
+
 Route::get('/annunci/create', [AnnouncementController::class, 'create'])->middleware('auth')->name('announcement_create');
+Route::get('/annunci',[AnnouncementController::class, 'indexAnnouncement'])->name('announcement_index');
+Route::get('/annunci/edit/{announcement}', [AnnouncementController::class, 'edit'])->middleware('auth')->name('announcement_edit');
+Route::put('/annuncio/modificato/{announcement}', [AnnouncementController::class, 'update'])->middleware('auth')->name('announcement_update');
+Route::delete('/annuncio/eliminato/{announcement}', [AnnouncementController::class, 'destroy'])->middleware('auth')->name('announcement_delete');
 
 //Rotta categoria
 Route::get('/categoria/{category}', [FrontController::class, 'categoryShow'])->name('categoryShow');
@@ -46,7 +48,7 @@ Route::patch('/accetta/annucio/{announcement}', [RevisorController::class, 'acce
 // Rotta rifiuta annuncio
 Route::patch('/rifiuta/annucio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->middleware('isRevisor')->name('revisor_reject_announcement');
 
-// Rotta Vista annunci rifiutati
+// Rotta Vista annunci rifiutati - Nicola
 Route::get('/revisor/annunci/rifiutati', [RevisorController::class, 'reject'])->middleware('isRevisor')->name('revisor_reject');
 
 // Rotta diventa revisore - Nicola
@@ -59,14 +61,14 @@ Route::get('/rendi/revisore/{email}', [RevisorController::class, 'makeRevisor'])
 //Rotta Ricerca annuncio
 Route::get('/ricerca/annuncio', [FrontController::class, 'searchAnnouncements'])->name('announcement_search');
 
-// Rotta Lavora con noi
+// Rotta Lavora con noi - Nicola
 Route::get('/lavora-con-noi', [PublicController::class, 'workWithUs'])->middleware('auth')->name('workWithUs');
 
-// Rotta Newsletter Conferma
+// Rotta Newsletter Conferma - Nicola
 Route::post('/newsletter/confirmation', [NewsletterController::class, 'subscribe'])->name('newsletter_subscribe');
 
-// Rotta Newsletter
+// Rotta Newsletter - Nicola
 Route::post('/newsletter', [NewsletterController::class, 'newsletter'])->name('newsletter');
 
-// Rotta vista newsletter
+// Rotta vista newsletter - Nicola
 Route::get('/newsletter/index', [NewsletterController::class, 'newsletterIndex'])->middleware('auth')->name('newsletter_index');
