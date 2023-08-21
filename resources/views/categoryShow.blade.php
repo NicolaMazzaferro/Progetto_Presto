@@ -9,7 +9,7 @@
                 <h1 class="text-center mb-5">{{$category->name}}</h1>
                 <p class="lead">Dai un'occhiata alle inserzioni accuratamente categorizzate per {{$category->name}} e scopri tutto ciò che desideri. Semplifica la tua ricerca e trova l'affare perfetto nella categoria che ami. Inizia subito a esplorare e a trovare ciò che ti appassiona!</p>
             </div>
-            @forelse ($category->announcements as $announcement)
+            @forelse ($announcements as $announcement)
             <div class="col-12 col-md-9 my-3">
                 <x-card-index :announcement="$announcement"
                 />
