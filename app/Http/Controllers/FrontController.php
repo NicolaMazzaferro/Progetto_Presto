@@ -18,8 +18,9 @@ class FrontController extends Controller
     // Gabriele: Funzione categoria
     public function categoryShow(Category $category)
     {
-        $announcements = $category->announcements()->where('is_accepted', true);
-    
+        
+        $announcements = $category->announcements()->where('is_accepted', true)->orderBy('created_at', 'desc')->get();
+        // dd($announcements);
         return view('categoryShow', compact('category', 'announcements'));
     }
 

@@ -6,3 +6,4 @@ import './cards_carousel';
 import './my_button';
 import './counter';
 import './show';
+import './scrolltopbutton';

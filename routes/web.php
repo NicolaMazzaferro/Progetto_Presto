@@ -6,6 +6,7 @@ use App\Http\Controllers\FrontController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\RevisorController;
 use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\AnnouncementController;
 
 /*
@@ -60,3 +61,12 @@ Route::get('/ricerca/annuncio', [FrontController::class, 'searchAnnouncements'])
 
 // Rotta Lavora con noi
 Route::get('/lavora-con-noi', [PublicController::class, 'workWithUs'])->middleware('auth')->name('workWithUs');
+
+// Rotta Newsletter Conferma
+Route::post('/newsletter/confirmation', [NewsletterController::class, 'subscribe'])->name('newsletter_subscribe');
+
+// Rotta Newsletter
+Route::post('/newsletter', [NewsletterController::class, 'newsletter'])->name('newsletter');
+
+// Rotta vista newsletter
+Route::get('/newsletter/index', [NewsletterController::class, 'newsletterIndex'])->middleware('auth')->name('newsletter_index');
