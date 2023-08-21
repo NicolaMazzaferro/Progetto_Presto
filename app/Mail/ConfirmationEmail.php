@@ -14,12 +14,10 @@ class ConfirmationEmail extends Mailable
     use Queueable, SerializesModels;
 
     public $email;
-    public $confirmationLink;
 
-    public function __construct($email, $confirmationLink)
+    public function __construct($email)
     {
         $this->email = $email;
-        $this->confirmationLink = $confirmationLink;
     }
 
     public function build()

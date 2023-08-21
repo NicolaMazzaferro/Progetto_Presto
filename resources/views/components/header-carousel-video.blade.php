@@ -8,6 +8,11 @@
                     {{ session('message_logout') }}
                 </div>
                 @endif
+                @if (session('message_newsletter'))
+                <div class="alert alert-success">
+                    {{ session('message_newsletter') }}
+                </div>
+                @endif
             </div>
             <h1 class="mb-3 titolo-header">Presto</h1>
             <h5 class="mb-4 sottotitolo-header">

@@ -6,6 +6,12 @@
         <div class="row justify-content-center text-center">
             <div class="col-12 col-md-6">
                 <h1 class="mb-5">Scrivi Newsletter</h1>
+
+                @if (session('message_newsletter'))
+                <div class="alert alert-success">
+                    {{ session('message_newsletter') }}
+                </div>
+                @endif
                 
                 <form action="{{route('newsletter')}}" method="POST">
                     @method('POST')

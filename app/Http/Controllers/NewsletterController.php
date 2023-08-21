@@ -16,23 +16,11 @@ class NewsletterController extends Controller
         'email' => $request->input('email'),
     ]);
 
-    $confirmationLink = url('/confirm/newsletter-presto' . $subscriber->id);
 
-    Mail::to($subscriber->email)->send(new ConfirmationEmail($subscriber->email, $confirmationLink));
+    Mail::to($subscriber->email)->send(new ConfirmationEmail($subscriber->email));
 
-    return redirect()->back()->with('success', 'Iscrizione completata con successo! Controlla la tua email per confermare.');
+    return redirect()->back()->with('message_newsletter', 'Iscrizione completata con successo! Controlla la tua email per confermare.');
 }
-
-// public function newsletter(){
-//     $subscribers = Subscriber::all();
-
-//     foreach ($subscribers as $subscriber) {
-//         Mail::to($subscriber->email)->send(new NewsletterMail($subscriber->email));
-//     }
-    
-//     return redirect()->back()->with('success', 'Newsletter inviata con successo!');
-// }
-
 
 public function newsletter(Request $request){
     
@@ -44,7 +32,7 @@ public function newsletter(Request $request){
         Mail::to($subscriber->email)->send(new NewsletterMail($newsletter_body));
     }
     
-    return redirect()->back()->with('success', 'Newsletter inviata con successo!');
+    return redirect()->back()->with('message_newsletter', 'Newsletter inviata con successo!');
 }
 
 
