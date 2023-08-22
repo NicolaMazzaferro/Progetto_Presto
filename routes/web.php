@@ -72,3 +72,6 @@ Route::post('/newsletter', [NewsletterController::class, 'newsletter'])->name('n
 
 // Rotta vista newsletter - Nicola
 Route::get('/newsletter/index', [NewsletterController::class, 'newsletterIndex'])->middleware('auth')->name('newsletter_index');
+
+// Rotta Lingue - Nicola
+Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'])->name('set_language_locale');

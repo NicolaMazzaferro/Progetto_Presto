@@ -16,7 +16,7 @@
             </div>
             <h1 class="mb-3 titolo-header">Presto</h1>
             <h5 class="mb-4 sottotitolo-header">
-                Vendilo Presto con noi.
+                {{__('ui.slogan')}}
             </h5>
         </div>
     </div>

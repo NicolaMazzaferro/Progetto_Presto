@@ -74,9 +74,21 @@
                         <li><a class="dropdown-item" href="{{route('register')}}">Registrati/Accedi</a></li>
                     </ul>
                 </li>
-                @endauth
-                
+                @endauth                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Lingua
+                    </a>
+                    <ul class="dropdown-menu">
+    
+                        <li> <x-_locale class="dropdown-item" lang="it" /> </li>
+                        <li> <x-_locale class="dropdown-item" lang="en" /> </li>
+                        <li> <x-_locale class="dropdown-item" lang="es" /> </li>
+    
+                    </ul>
+                </li>
             </ul>
+
         </div>
     </div>
 </nav>
