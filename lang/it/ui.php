@@ -33,7 +33,7 @@ return [
     'team4' => 'ELIO DE MARCHI',
     'profile4' => "Colonna portante del team, preciso e rispettoso di team e scadenze.",
     'newsletter' => 'Iscriviti alla nostra newsletter',
-    'invia.n' => 'INVIA',
+    'invia-n' => 'INVIA',
     'email-grigio' => 'Inserisci email',
     'presto' => 'Presto.it',
     'azienda' => 'Da sempre il nostro obiettivo è offrire il servizio online di compravendita più semplice, veloce e sicuro d’Italia. Per questo, persone e utenti professionali scelgono ogni giorno Presto per fare ottimi affari.',
