@@ -8,8 +8,8 @@
         <div class="row">
             <div class="col-12 d-flex justify-content-center align-items-center text-center">
                 
-                <div class="card w-50">
-                    <img src="../media/logo.svg" class="card-img-top" alt="...">
+                <div class="card w-45">
+                    <img src="https://picsum.photos/70/70" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Titolo: {{$announcement_reject->title}}</h5>
                         <p class="card-text">Descrizione: {{$announcement_reject->description}}</p>

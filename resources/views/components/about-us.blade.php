@@ -40,7 +40,7 @@
                 </div> --}}
                 
                 <a href="{{route("workWithUs")}}" class="btn-nicola mt-3">
-                    DETTAGLI
+                    UNISCITI
                 </a>
             </div>
         </div>
