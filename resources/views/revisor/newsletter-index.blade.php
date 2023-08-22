@@ -1,8 +1,7 @@
 <x-layout>
     
-    
-    
-    <div class="container bg-bianco p-5">
+
+    <div class=" email_r container p-5">
         <div class="row justify-content-center text-center">
             <div class="col-12 col-md-6">
                 <h1 class="mb-5">Scrivi Newsletter</h1>

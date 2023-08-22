@@ -1,7 +1,7 @@
 <x-layout>
 
 
-    <div class="container bg-bianco p-5">
+    <div class=" revisor container p-5">
     <h1 class="pb-5 text-center">{{$announcement_to_check ? "Ecco l'annuncio da revisionare" : "Non ci sono annunci da revisionare"}}</h1>
     @if ($announcement_to_check)
     

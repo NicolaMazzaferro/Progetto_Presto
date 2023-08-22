@@ -1,6 +1,6 @@
 <x-layout>
     
-    <div class="container bg-bianco p-5">
+    <div class=" rejected-ads container p-5">
         <h1 class="pb-5 text-center">{{$announcement_reject ? "Ecco l'ultimo annuncio rifiutato" : "Non ci sono annunci rifiutati"}}</h1>
         
         @if ($announcement_reject)

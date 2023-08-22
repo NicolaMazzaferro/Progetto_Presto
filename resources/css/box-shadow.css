@@ -1,0 +1,61 @@
+/* Form style con shadow */
+
+.formUnisciti{
+    border: solid 2px var(--arancio);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--bianco);
+    box-shadow: 3px 3px 6px lightslategray;
+}
+
+.formAnnuncio{
+    border: solid 2px var(--arancio);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--bianco);
+    box-shadow: 3px 3px 6px lightslategray;
+}
+
+.annunci {
+    border: solid 2px var(--arancio);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--bianco);
+    box-shadow: 3px 3px 6px lightslategray;
+}
+
+.category{
+    border: solid 2px var(--arancio);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--bianco);
+    box-shadow: 3px 3px 6px lightslategray;
+}
+
+.revisor {
+    border: solid 2px var(--arancio);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--bianco);
+    box-shadow: 3px 3px 6px lightslategray;
+}
+
+.email_r {
+    border: solid 2px var(--arancio);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--bianco);
+    box-shadow: 3px 3px 6px lightslategray;
+}
+
+.form-control{
+    box-shadow: 3px 3px 6px lightslategray;
+}
+
+.rejected-ads {
+    border: solid 2px var(--arancio);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--bianco);
+    box-shadow: 3px 3px 6px lightslategray;
+}
