@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Image;
 use App\Models\User;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
@@ -51,5 +52,9 @@ class Announcement extends Model
 
     public static function toBeRejectCount(){
         return Announcement::where('is_accepted', false)->count();
+    }
+
+    public function images(){
+        return $this->hasMany(Image::class);
     }
 }
