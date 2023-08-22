@@ -10,10 +10,10 @@
             
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">
-                    The Codevengers
+                    {{__('ui.presto')}}
                 </h6>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus iusto deserunt obcaecati ab numquam rerum?
+                    {{__('ui.azienda')}}
                 </p>
             </div>
             
@@ -34,14 +34,14 @@
             
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Contatti</h6>
-                <p><i class="fas fa-home mr-3"></i> Lorem ipsum dolor sit.</p>
-                <p><i class="fas fa-envelope mr-3"></i> Lorem ipsum dolor sit.</p>
-                <p><i class="fas fa-phone mr-3"></i> Lorem ipsum dolor sit.</p>
-                <p><i class="fas fa-print mr-3"></i> Lorem ipsum dolor sit.</p>
+                <p><i class="fas fa-home mr-3"></i> Strada S. Giorgio Martire, 2D, 70124 Bari BA </p>
+                <p><i class="fas fa-envelope mr-3"></i> presto@ecommerce.it </p>
+                <p><i class="fas fa-phone mr-3"></i> 3452345678 </p>
+                <p><i class="fas fa-print mr-3"></i> 0883452345 </p>
             </div>
             
             <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+                <h6 class="text-uppercase mb-4 font-weight-bold">{{__('ui.follow')}}</h6>
                 
                 <a class="btn-brand" href="https://www.facebook.com/"><i class="mx-2 bi bi-facebook fs-3"></i></a>
                 
