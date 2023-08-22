@@ -3,10 +3,10 @@
         <div class="col-12 col-lg-5 d-flex align-items-center justify-content-end">
             <div class="quadrato d-flex align-items-center justify-content-center">
                 <div class="quadrato-orange">
-                    <div class="img-about-1">
+                    <div class="img-about-1" data-aos="zoom-in">
                         
                     </div>
-                    <div class="img-about-2">
+                    <div class="img-about-2" data-aos="zoom-in-up">
                         
                     </div>
                 </div>
