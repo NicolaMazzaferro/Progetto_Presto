@@ -20,7 +20,7 @@
             <hr class="w-100 clearfix d-md-none" />
             
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Creato da</h6>
+                <h6 class="text-uppercase mb-4 font-weight-bold">{{__('ui.CE')}}</h6>
                 <div class="lista-nomi-footer">
                     <p class="text-white mx-2">Gabriele</p>
                     <p class="text-white mx-2">Stefano</p>
@@ -33,7 +33,7 @@
             <hr class="w-100 clearfix d-md-none" />
             
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contatti</h6>
+                <h6 class="text-uppercase mb-4 font-weight-bold">{{__('ui.CO')}}</h6>
                 <p><i class="fas fa-home mr-3"></i> Cr.so Cavour, 2, 70124 Bari BA </p>
                 <p><i class="fas fa-envelope mr-3"></i> presto@ecommerce.it </p>
                 <p><i class="fas fa-phone mr-3"></i> 3452345678 </p>
