@@ -56,7 +56,7 @@
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header bg-arancio">
-      <h5 class="offcanvas-title fw-bold text-nero" id="offcanvasRightLabel">Benvenuto {{Auth::user()->name}}</h5>
+      <h5 class="offcanvas-title fw-bold text-nero" id="offcanvasRightLabel">Presto</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body text-arancio bg-nero">
@@ -68,7 +68,7 @@
             @auth
 
                 <li class="nav-item">
-                    <p class="fw-bold"></p>
+                    <p class="fw-bold">Benvenuto {{Auth::user()->name}}</p>
                 </li>
 
                 <li class="nav-item">
