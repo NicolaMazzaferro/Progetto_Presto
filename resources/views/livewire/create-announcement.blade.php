@@ -78,7 +78,7 @@
                 </div>
             @endif
             <div class="mb-3 d-flex justify-content-center">
-                <button type="submit" class="btn-nicola fs-5 mt-5 text-nero">{{__('ui.CE')}}</button>
+                <button type="submit" class="btn-nicola fs-5 mt-5 text-nero">{{__('ui.CARI')}}</button>
             </div>
         </form>
     </div>

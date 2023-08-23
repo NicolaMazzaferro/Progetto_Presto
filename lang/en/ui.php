@@ -60,11 +60,11 @@ return [
     'DE' => 'Detail',
     'MO' => 'Edit',
     'CA' => 'Delete',
-    'il' => 'the',
+    'il' => '// OUR TEAM',
     'CO' => 'Contacts',
     'cre-a' => '// CREATE ADVERTISEMENT',
     'crea-n' => 'Create your Advertisement',
     'rea-n' => 'Craft your extraordinary advertisement with us! Harness the power of creativity and visibility offered by our platform. Fill out the form and bring your ad to life, reaching a wide audience of potential interested parties. Highlight what makes what you offer unique. Start today to create lasting connections through your ad!',
     'nam' => 'Ad Name',
-    
+
 ];
