@@ -1,8 +1,11 @@
 <x-layout>
     
     <div class=" rejected-ads container p-5">
-        <h1 class="pb-5 text-center">{{$announcement_reject ? "Ecco l'ultimo annuncio rifiutato" : "Non ci sono annunci rifiutati"}}</h1>
-        
+        @if (count($announcement_reject))
+            <h1 class="pb-5 text-center">Ecco l'ultimo annuncio rifiutato</h1>
+        @else
+            <h1 class="pb-5 text-center">Non ci sono annunci rifiutati</h1>
+        @endif
         @if ($announcement_reject)
         
         <div class="row">
@@ -12,7 +15,7 @@
                 <div class="card my-5">
                     {{-- carousel --}}
                     <div id="{{$item->id}}" class="carousel slide">
-                        @if($item->images)
+                        @if(count($item->images))
                             <div class="carousel-inner h-25">
                                 @foreach ($item->images as $image)
                                 <div class="carousel-item @if ($loop->first)active @endif">
