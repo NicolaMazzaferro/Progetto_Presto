@@ -15,7 +15,7 @@
         </div>
     </div>
     
-    
+    <x-offcanva></x-offcanva>
     
 </x-layout>
 

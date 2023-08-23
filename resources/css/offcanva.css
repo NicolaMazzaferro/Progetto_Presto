@@ -13,3 +13,17 @@
     border: 4px solid rgb(247, 155, 8);
 }
  */
+
+ .user-icon-toggle{
+    display: none;
+ }
+
+@media screen and (max-width:992px) {
+    .user-icon{
+        display: none;
+    }
+
+    .user-icon-toggle{
+        display: block;
+     }
+}

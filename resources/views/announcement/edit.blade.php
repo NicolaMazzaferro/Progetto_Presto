@@ -1,4 +1,6 @@
 <x-layout>
+
+    <x-offcanva></x-offcanva>
     
     <h1 class="text-center mt-5">Prodotti</h1>
     

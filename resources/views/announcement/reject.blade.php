@@ -1,5 +1,5 @@
 <x-layout>
-    
+    <x-offcanva></x-offcanva>
     <div class=" rejected-ads container p-5">
         <h1 class="pb-5 text-center">{{$announcement_reject ? "Ecco l'ultimo annuncio rifiutato" : "Non ci sono annunci rifiutati"}}</h1>
         
@@ -58,3 +58,5 @@
     
     
 </x-layout>
+
+<x-offcanva></x-offcanva>
