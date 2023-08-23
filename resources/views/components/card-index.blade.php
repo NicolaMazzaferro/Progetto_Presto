@@ -35,7 +35,7 @@
 <div class="card-index m-2 h-80 ">
     <div class="row">
         <div class="col-sm-4 d-flex">
-            <img src="https://picsum.photos/200" class="card-img-top-index">
+            <img src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "\storage\default.jpg"}}" class="card-img-top-index">
         </div>
         <div class="col-sm-8">
             <div class="card-body ">

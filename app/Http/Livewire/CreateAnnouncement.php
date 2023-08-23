@@ -11,12 +11,15 @@ use Livewire\WithFileUploads;
 class CreateAnnouncement extends Component
 {
     use WithFileUploads;
+
     public $title;
     public $description;
     public $price;
 
     // Categoria - Nicola
     public $category;
+
+    // Carica immagini
     public $images = [];
     public $temporary_images;
 
@@ -35,9 +38,9 @@ class CreateAnnouncement extends Component
         'required' => "Il campo è richiesto",
         'min' => 'Il campo è troppo corto',
         'numeric' => 'Il campo deve contene solo numeri',
-        '$temporary_images.required' => "L'immagine è richiesta",
-        '$temporary_images.*.image' => "I file devono essere immagini",
-        '$temporary_images.*.max' => "L'immagine dev'essere massimo di 1mb",
+        'temporary_images.required' => "L'immagine è richiesta",
+        'temporary_images.*.image' => "I file devono essere immagini",
+        'temporary_images.*.max' => "L'immagine dev'essere massimo di 1mb",
         'images.image' => "L'immagine dev'essere un'immagine",
         'images.max' => "L'immagine dev'essere massimo di 1mb",
     ];
@@ -51,11 +54,15 @@ class CreateAnnouncement extends Component
             }
         }
     }
-    public function removeImages($key)
+    public function removeImage($key)
     {
         if (in_array($key, array_keys($this->images))){
             unset($this->images[$key]);
         }
+    }
+
+    public function updated($propertyName){
+        $this->validateOnly($propertyName);
     }
 
 
@@ -65,19 +72,32 @@ class CreateAnnouncement extends Component
         $this->validate();
         
         // Store category - Nicola
-        // $category = Category::find($this->category); 
-        $this->announcement = Category::find($this->category)->announcements()->create($this->validate());
+        $category = Category::find($this->category); 
+
+        // $this->announcement = Category::find($this->category)->announcements()->create($this->validate());
+        // if(count($this->images)){
+        //     foreach($this->images as $image){
+        //         $this->announcement->images()->create(['path'=>$image->store('images', 'public')]);
+        //     }
+        // }
+
+        // Relazione creazione annuncio con categoria relazionata
+        $announcement = $category->announcements()->create([
+            'title'=>$this->title,
+            'description'=>$this->description,
+            'price'=>$this->price,
+        ]);
+
+        
         if(count($this->images)){
             foreach($this->images as $image){
-                $this->announcement->images()->create(['path'=>$image->store('images', 'public')]);
+                $announcement->images()->create(['path'=>$image->store('images', 'public')]);
             }
         }
-        // Relazione creazione annuncio con categoria relazionata
-        // $announcement = $category->announcements()->create([
-        //     'title'=>$this->title,
-        //     'description'=>$this->description,
-        //     'price'=>$this->price,
-        // ]);
+        
+        $announcement->save();
+        
+        
 
         // Relazione Announcement - utente loggato - Nicola
         Auth::user()->announcements()->save($announcement);
@@ -91,8 +111,14 @@ class CreateAnnouncement extends Component
         // ]);
         
         // messagio conferma e pulizia form - Nicola
-        session()->flash('message_announcement', 'Annuncio caricato!');
+        session()->flash('message_announcement', 'Annuncio caricato! Sarà pubblicato dopo la revisione.');
         $this->reset();
+        $this->cleanFormImage();
+    }
+
+    public function cleanFormImage(){
+        $this->images = [];
+        $this->temporary_images = [];
     }
 
     public function render()

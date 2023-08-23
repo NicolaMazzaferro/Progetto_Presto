@@ -1,6 +1,6 @@
 <div class="card swiper-slide">
     <div class="image-box">
-        <img src="https://picsum.photos/200/300" alt="" />
+        <img src="{{!$announcement->images()->get()->isEmpty() ? Storage::url($announcement->images()->first()->path) : "\storage\default.jpg"}}" alt="" />
     </div>
     <div class="profile-details">
         <div class="name-job">

@@ -56,6 +56,7 @@
                 @enderror
             </div>
             <div class="mb-3">
+                <label class="form-label" for='category'>Inserisci Immagine</label>
                 <input type="file" wire:model="temporary_images" name="images" multiple class="form-control @error('temporary_images.*') is-invalid @enderror" placeholder="Img" />
                 @error('temporary_images.*')
                     <p class="text-danger mt-2">{{$message}}</p>

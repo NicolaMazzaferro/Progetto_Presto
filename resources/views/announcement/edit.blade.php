@@ -15,7 +15,7 @@
                 @method('PUT')
                 <div class="mb-3">
                     <label for="title" class="form-label">Titolo</label>
-                    <input type="text" name="title" class="form-control" id="title" value={{$announcement->title}}>
+                    <input type="text" name="title" class="form-control" id="title" value="{{$announcement->title}}">
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label">Descrizione</label>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="price" class="form-label">Prezzo</label>
-                    <input type="number" name="price" class="form-control" id="price" value={{$announcement->price}}>
+                    <input type="number" name="price" class="form-control" id="price" value="{{$announcement->price}}">
                 </div>
                 
                 <div class="text-center">
