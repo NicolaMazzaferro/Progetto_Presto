@@ -29,5 +29,7 @@
             </div>
         </div>
     </section>
+
+    <x-offcanva></x-offcanva>
     
 </x-layout>

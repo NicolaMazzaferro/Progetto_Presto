@@ -32,62 +32,32 @@
                             <hr class="dropdown-divider">
                         </li>
                         @endforeach
-                    </ul>
-                </li>
-                @auth 
+                    </li>
+                </ul>
+                
+
+
                 <li class="nav-item"> 
                     <a class="nav-link" href="{{route('announcement_create')}}">Crea Annuncio</a>
                 </li>
                 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Benvenuto {{Auth::user()->name}}
-                    </a>
-                    <ul class="dropdown-menu">
-                        
-                        @if (Auth::user()->is_revisor)  
-                        <li class="nav-item"> 
-                            <a class="dropdown-item position-relative" href="{{route('revisor_index')}}">Area revisore <span class="position-absolute top-0 badge rounded-pill bg-arancio">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span></span></a>
-                        </li>
-                        <li class="nav-item"> 
-                            <a class="dropdown-item position-relative" href="{{route('revisor_reject')}}">Annunci Rifiutati<span class="position-absolute top-0 badge rounded-pill bg-arancio">{{App\Models\Announcement::toBeRejectCount()}}<span class="visually-hidden">unread messages</span></span></a>
-                        </li>
-                        <li class="nav-item"> 
-                            <a class="dropdown-item position-relative" href="{{route('newsletter_index')}}">Newsletter</a>
-                        </li>
-                        @endif
-                        <li class="nav-item">
-                            <form action="{{route('logout')}}" method="POST">
-                                
-                                <li><button class="dropdown-item">Logout</button></li>
-                                @csrf
-                            </form>
-                        </li>
-                    </ul>
+                <li class="nav-item">
+                    
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-2x fa-user" style="color: #d19c0a;"></i></button>
                 </li>
-                @else
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Benvenuto utente
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{route('register')}}">Registrati/Accedi</a></li>
-                    </ul>
-                </li>
-                @endauth                
-                <li class="nav-item dropdown">
+
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <x-_locale  lang="{{ session('locale') }}"  /> 
                     </a>
                     <ul class="dropdown-menu">
-    
                         <li> <x-_locale class="dropdown-item" lang="it" /> </li>
                         <li> <x-_locale class="dropdown-item" lang="en" /> </li>
                         <li> <x-_locale class="dropdown-item" lang="es" /> </li>
-    
                     </ul>
-                </li>
-            </ul>
+                </li> --}}
+                
+            </div>
 
         </div>
     </div>
