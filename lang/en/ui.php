@@ -60,7 +60,7 @@ return [
     'DE' => 'Detail',
     'MO' => 'Edit',
     'CA' => 'Delete',
-    'il' => '// OUR TEAM',
+    'il' => 'the: ',
     'CO' => 'Contacts',
     'cre-a' => '// CREATE ADVERTISEMENT',
     'crea-n' => 'Create your Advertisement',

@@ -61,7 +61,7 @@ return [
     'DE' => 'Detalle',
     'MO' => 'Editar',
     'CA' => 'Borrar',
-    'il' => '// NUESTRO EQUIPO',
+    'il' => 'el: ',
     'CO' => 'Contactos',
     'cre-a' => '// CREAR ANUNCIO',
     'crea-n' => 'Crea tu Anuncio',
