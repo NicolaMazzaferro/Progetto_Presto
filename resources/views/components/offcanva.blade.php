@@ -1,12 +1,19 @@
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header">
-        <div class="profile-pic rounded-circle">
-            <img src="" alt="immagine profilo">
-        </div>
-        <h5 class="offcanvas-title text-bianco
-        " id="offcanvasRightLabel">Benvenuto {{Auth::user()->name}}<hr></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas-header container">
+        
+        <div class="row">
+            <div class="col-md-6 ms-3 profile-pic rounded-circle">
+                <img src="" alt="immagine profilo">
+            </div>
+            <div class="col-md-6 my-4 ms-4">
+                <h5 class="offcanvas-title text-bianco" id="offcanvasRightLabel">Benvenuto {{Auth::user()->name}}<hr></h5>
+                
+            </div>
+            
+        </div>
+        
     </div>
     <div class="offcanvas-body">
         @auth 

@@ -43,10 +43,10 @@
                 
                 <li class="nav-item">
                     
-                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-user" style="color: #d19c0a;"></i></button>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-2x fa-user" style="color: #d19c0a;"></i></button>
                 </li>
 
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <x-_locale  lang="{{ session('locale') }}"  /> 
                     </a>
@@ -55,7 +55,7 @@
                         <li> <x-_locale class="dropdown-item" lang="en" /> </li>
                         <li> <x-_locale class="dropdown-item" lang="es" /> </li>
                     </ul>
-                </li>
+                </li> --}}
                 
             </div>
 
