@@ -7,7 +7,7 @@
                 <form action="{{route('newsletter_subscribe')}}" method="POST" class="wrapper-newsletter align-items-center">
                     @method('POST')
                     @csrf
-                    <input class="mail-newsletter" name="email" type="email" placeholder={{__('ui.email-grigio')}}>
+                    <input class="mail-newsletter" name="email" type="email" placeholder="{{__('ui.email-grigio')}}">
                     <button class="btn-newsletter" type="submit">{{__('ui.invia-n')}}</button>
                 </form>
             </div>
