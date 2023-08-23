@@ -9,7 +9,7 @@
         @if ($announcement_reject)
         
         <div class="row">
-        @foreach($announcement_reject as $item)
+            @foreach($announcement_reject as $item)
             <div class="col-12 col-md-4 d-flex justify-content-center align-items-center text-center">
                 
                 <div class="card my-5">
@@ -39,14 +39,14 @@
                     <div class="card-body">
                         <h5 class="card-title">{{$item->title}}</h5>
                         <p class="card-text">{{$item->description}}</p>
-                        <p class="card-title">Publicato il: {{$item->created_at->format('d/m/Y')}}</p>
+                        <p class="card-title">{{__('ui.pubblicato')}} {{$item->created_at->format('d/m/Y')}}</p>
                     </div>
                     <div class="row p-4">
                         <div class="col-12">
                             <form action="{{route('revisor_accept_announcement', ['announcement' => $item])}}" method="POST">
                                 @csrf
                                 @method('PATCH')
-                                <button type="submit" class="btn btn-success">Accetta</button>
+                                <button type="submit" class="btn btn-success">{{__('ui.accetta')}}</button>
                             </form>
                         </div>
                     </div>
