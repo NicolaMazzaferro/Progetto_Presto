@@ -60,7 +60,7 @@
                     @csrf
                     @method('delete')
                     <div class="div-button m-3">
-                        <button class="btn btn-danger">{{'ui.CA'}}</button>
+                        <button class="btn btn-danger">{{__('ui.CA')}}</button>
                     </div>
                 </form>
                 @endif

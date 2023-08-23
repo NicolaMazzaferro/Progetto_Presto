@@ -65,5 +65,5 @@
     </div>
     
     {{-- fine nuovo form --}}
-    
+    <x-offcanva></x-offcanva>
     </x-layout>

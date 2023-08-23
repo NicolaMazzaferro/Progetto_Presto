@@ -28,3 +28,5 @@
     
     
 </x-layout>
+
+<x-offcanva></x-offcanva>
