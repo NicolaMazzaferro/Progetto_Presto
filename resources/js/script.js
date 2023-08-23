@@ -18,10 +18,10 @@ window.addEventListener("scroll", function() {
     let scrollTop = window.scrollY;
 
     if (scrollTop > lastScrollTop) { 
-        navbar.classList.remove("scrolling-up");
-        navbar.classList.add("scrolling-down");
+        navbar.classList.add("scrolling-up");
+        // navbar.classList.add("scrolling-down");
     } else if (scrollTop <= 20) {  // Se sei vicino all'inizio della pagina
-        navbar.classList.remove("scrolling-down");
+        // navbar.classList.remove("scrolling-down");
         navbar.classList.remove("scrolling-up");
     } else {
         navbar.classList.remove("scrolling-down");
