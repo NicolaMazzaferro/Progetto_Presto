@@ -2,7 +2,12 @@
 
 
     <div class=" revisor container p-5">
-    <h1 class="pb-5 text-center">{{$announcement_to_check ? "Ecco l'annuncio da revisionare" : "Non ci sono annunci da revisionare"}}</h1>
+    @if (count($announcement_to_check))
+        <h1 class="pb-5 text-center">Ecco l'annuncio da revisionare</h1>
+    @else
+        <h1 class="pb-5 text-center">Non ci sono annunci da revisionare</h1>
+    @endif
+    {{-- <h1 class="pb-5 text-center">{{$announcement_to_check ? "Non ci sono annunci da revisionare":"Ecco l'annuncio da revisionare"}}</h1> --}}
     @if ($announcement_to_check)
     
             <div class="row justify-content-center align-items-center text-center">
@@ -11,7 +16,7 @@
                     <div class="card my-5">
                         {{-- carousel --}}
                         <div id="{{$check->id}}" class="carousel slide">
-                        @if($check->images)
+                        @if(count($check->images))
                             <div class="carousel-inner h-25">
                                 @foreach ($check->images as $image)
                                 <div class="carousel-item @if ($loop->first)active @endif">
@@ -23,15 +28,15 @@
                             <img src="\storage\default.jpg" class="card-img-top" height="350px" alt="...">
                             @endif
                             <button class="carousel-control-prev" type="button" data-bs-target="#{{$check->id}}" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#{{$check->id}}" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                             </button>
-                          </div>
-                          {{-- end carousel --}}
+                        </div>
+                        {{-- end carousel --}}
                         <div class="card-body">
                         <h5 class="card-title">{{$check->title}}</h5>
                         <p class="card-text">{{$check->description}}</p>
@@ -61,3 +66,5 @@
         </div>
         
 </x-layout>
+
+<x-offcanva></x-offcanva>

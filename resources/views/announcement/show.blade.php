@@ -75,11 +75,10 @@
 
             </div>
             
-            <div class="col-12 col-md-6 dettaglio">
-                <h5 class="card-title text-uppercase  text-arancio pt-3">{{$announcement->title}}</h5>
-                <p class="lead pt-3 text-nero ">{{$announcement->description}}</p>
-                <p class="fw-semibold text-nero ">€{{$announcement->price}}</p>
-                
+            <div class="col-12 col-md-6">
+                <h5 class="card-title text-uppercase text-arancio pt-3">{{$announcement->title}}</h5>
+                <p class="lead pt-3 text-nero">{{$announcement->description}}</p>
+                <p class="fw-semibold text-nero">€{{$announcement->price}}</p>
             </div>
         </div>
     </div>

@@ -65,22 +65,22 @@
             <div class="signup">
                 <form method="POST" action="{{route('register')}}">
                     @csrf
-                    <label class="label_login" for="chk" aria-hidden="true">Registrati</label>
+                    <label class="label_login" for="chk" aria-hidden="true">{{__('ui.REG')}}</label>
                     <input class="input_login" type="text" name="name" placeholder="User name" required="">
                     <input class="input_login" type="email" name="email" placeholder="Email" required="">
                     <input class="input_login" type="password" name="password" placeholder="Password" required="">
                     <input class="input_login" type="password_confirmation" name="password_confirmation" placeholder="Conferma Password" required="">
-                    <button class="button_login" type="submit">Registrati</button>
+                    <button class="button_login" type="submit">{{__('ui.REG')}}</button>
                 </form>
             </div>
             
             <div class="login">
                 <form method="POST" action="{{route('login')}}">
                     @csrf
-                    <label class="label_login" for="chk" aria-hidden="true">Accedi</label>
+                    <label class="label_login" for="chk" aria-hidden="true">{{__('ui.ACC')}}</label>
                     <input class="input_login" type="email" name="email" placeholder="Email" required="">
                     <input class="input_login" type="password" name="password" placeholder="Password" required="">
-                    <button class="button_login" type="submit">Accedi</button>
+                    <button class="button_login" type="submit">{{__('ui.ACC')}}</button>
                 </form>
             </div>
         </div>
@@ -89,6 +89,6 @@
 
 {{-- fine nuovo form --}}
         
-        
+<x-offcanva></x-offcanva>
         
     </x-layout>

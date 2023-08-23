@@ -86,7 +86,7 @@
     <x-footer></x-footer>
     
     {{-- end footer Stefano --}}
-    {{-- <x-offcanva></x-offcanva> --}}
+    <x-offcanva></x-offcanva>
     
     <script src="{{asset('swiper-bundle.min.js')}}"></script>
     

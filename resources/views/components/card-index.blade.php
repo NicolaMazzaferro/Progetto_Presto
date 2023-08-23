@@ -42,25 +42,25 @@
                 <h5 class="card-title text-uppercase text-arancio pt-3">{{$announcement->title}}</h5>
                 <p class="lead pt-3 text-nero">{{$announcement->description}}</p>
                 <p class="fw-semibold text-nero">€{{$announcement->price}}</p>
-                <p class="card-text text-nero blockquote-footer pt-3">Creato da: {{$announcement->user->name}} il {{$announcement->created_at->format('d/m/Y')}}</p>
+                <p class="card-text text-nero blockquote-footer pt-3">{{__('ui.CE')}} {{$announcement->user->name}} il {{$announcement->created_at->format('d/m/Y')}}</p>
                 
             </div>
             <div class="col-12 col-sm-4 d-flex justify-content-between align-items-center button-crud">
                 
                 <div class="div-button m-3">
-                    <a href="{{route('announcement_show', compact('announcement'))}}" class="btn btn-outline-primary">Dettaglio</a>
+                    <a href="{{route('announcement_show', compact('announcement'))}}" class="btn btn-outline-primary">{{__('ui.DE')}}</a>
                 </div>
                 @auth
                 @if($announcement->user_id == Auth::id())
                 <div class="div-button m-3">
-                    <a href="{{route('announcement_edit', compact('announcement'))}}" class="btn btn-outline-primary">Modifica</a>
+                    <a href="{{route('announcement_edit', compact('announcement'))}}" class="btn btn-outline-primary">{{__('ui.MO')}}</a>
                 </div>
                 <form class="p-1" action={{route('announcement_delete', compact('announcement'))}} method="POST">
                     
                     @csrf
                     @method('delete')
                     <div class="div-button m-3">
-                        <button class="btn btn-danger">Cancella</button>
+                        <button class="btn btn-danger">{{__('ui.CA')}}</button>
                     </div>
                 </form>
                 @endif
