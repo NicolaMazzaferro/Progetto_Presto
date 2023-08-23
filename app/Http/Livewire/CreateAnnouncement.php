@@ -2,6 +2,8 @@
 
 namespace App\Http\Livewire;
 
+use App\Jobs\ResizeImage;
+use Illuminate\Support\Facades\File;
 use Livewire\Component;
 use App\Models\Category;
 use App\Models\Announcement;
@@ -22,7 +24,6 @@ class CreateAnnouncement extends Component
     // Carica immagini
     public $images = [];
     public $temporary_images;
-
 
     // Validation - Nicola
     protected $rules = [
@@ -91,8 +92,14 @@ class CreateAnnouncement extends Component
         
         if(count($this->images)){
             foreach($this->images as $image){
-                $announcement->images()->create(['path'=>$image->store('images', 'public')]);
+                // $announcement->images()->create(['path'=>$image->store('images', 'public')]);
+                $newFileName = "announcements/{$announcement->id}";
+                $newImage = $announcement->images()->create(['path'=>$image->store($newFileName, 'public')]);
+
+                dispatch(new ResizeImage($newImage->path , 300, 300));
             }
+
+            File::deleteDirectory(storage_path('/app/livewire-tmp'));
         }
         
         $announcement->save();

@@ -6,7 +6,7 @@
             <p class="lead">Realizza il tuo annuncio straordinario con noi! Sfrutta il potere della creatività e della visibilità offerta dalla nostra piattaforma. Compila il modulo e dai vita al tuo annuncio, raggiungendo un vasto pubblico di potenziali interessati. Metti in risalto ciò che rende unico ciò che offri. Inizia oggi stesso a creare connessioni durature attraverso il tuo annuncio!</p>
         </div>
 
-        <form wire:submit.prevent='store'>
+        <form wire:submit.prevent='store', "announcement">
     
             {{-- Conferma Caricamento - Nicola --}}
             @if (session('message_announcement'))
