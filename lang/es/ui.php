@@ -61,11 +61,11 @@ return [
     'DE' => 'Detalle',
     'MO' => 'Editar',
     'CA' => 'Borrar',
-    'il' => 'el',
+    'il' => 'el: ',
     'CO' => 'Contactos',
     'cre-a' => '// CREAR ANUNCIO',
     'crea-n' => 'Crea tu Anuncio',
     'rea-n' => '¡Crea tu extraordinario anuncio con nosotros! Aprovecha el poder de la creatividad y la visibilidad que ofrece nuestra plataforma. Completa el formulario y da vida a tu anuncio, llegando a una amplia audiencia de posibles interesados. Resalta lo que hace única tu oferta. ¡Comienza hoy mismo a crear conexiones duraderas a través de tu anuncio!',
     'nam' => 'Nombre del Anuncio',
-    
+
 ];

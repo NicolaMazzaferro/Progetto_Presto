@@ -1,7 +1,7 @@
 <div class="container container-our-team">
         <div class="row text-center">
             <div class="col-12 text-arancio">
-                <h5 class="fs-2">{{__('ui.il')}}</h5>
+                <h5 class="fs-2">{{__('ui.titolo-team')}}</h5>
             </div>
         </div>
         <div class="row text-center">

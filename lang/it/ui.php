@@ -20,7 +20,7 @@ return [
     'ultimi' => '// ULTIMI PRODOTTI',
     'esplora' => 'Esplora le categorie',
     'dei' => 'dei nostri prodotti',
-    'il' => '// IL NOSTRO TEAM',
+    'titolo-team' => '// IL NOSTRO TEAM',
     'team' => 'Il nostro team e le nostre skills',
     'team1' => 'MATTEO FALLI',
     'job' => 'Magazziniere',
@@ -60,12 +60,12 @@ return [
     'DE' => 'Dettaglio',
     'MO' => 'Modifica',
     'CA' => 'Cancella',
-    'il' => 'il',
+    'il' => 'il: ',
     'CO' => 'Contatti',
     'cre-a' => '// CREA ANNUNCIO',
     'crea-n' => 'Crea il tuo Annuncio',
     'rea-n' => 'Realizza il tuo annuncio straordinario con noi! Sfrutta il potere della creatività e della visibilità offerta dalla nostra piattaforma. Compila il modulo e dai vita al tuo annuncio, raggiungendo un vasto pubblico di potenziali interessati. Metti in risalto ciò che rende unico ciò che offri. Inizia oggi stesso a creare connessioni durature attraverso il tuo annuncio!',
     'nam' => 'Nome annuncio',
-    
+
 
 ];
