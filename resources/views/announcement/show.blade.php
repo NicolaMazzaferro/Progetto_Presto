@@ -1,6 +1,6 @@
 <x-layout> 
     <div class="container  bg-bianco p-5">
-        <h1 class="text-center mb-5">DETTAGLI PRODOTTO</h1>
+        <h1 class="text-center mb-5">{{__('ui.DET')}}</h1>
         <div class="row">
             
             <div class="col-12 col-md-6">

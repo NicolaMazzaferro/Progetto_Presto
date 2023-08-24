@@ -44,9 +44,9 @@
             {{-- Categorie - Nicola --}}
             
             <div class="mb-3">
-                <label class="form-label" for='category'>Categoria</label>
+                <label class="form-label" for='category'>{{__('ui.cat1')}}</label>
                 <select wire:model.defer="category" id="category" class="form-control @error('category') is-invalid @enderror">
-                    <option>Scegli la categoria</option>
+                    <option>{{__('ui.scegli-cat')}}</option>
                     @foreach ($categories as $category)
                     <option value="{{$category->id}}">{{$category->name}}</option>   
                     @endforeach
@@ -56,7 +56,7 @@
                 @enderror
             </div>
             <div class="mb-3">
-                <label class="form-label" for='category'>Inserisci Immagine</label>
+                <label class="form-label" for='category'>{{__('ui.insert')}}</label>
                 <input type="file" wire:model="temporary_images" name="images" multiple class="form-control @error('temporary_images.*') is-invalid @enderror" placeholder="Img" />
                 @error('temporary_images.*')
                     <p class="text-danger mt-2">{{$message}}</p>

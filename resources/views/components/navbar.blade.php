@@ -1,5 +1,5 @@
 <!-- Navbar -->
-    
+
 <nav id="navbar" class="navbar navbar-expand-lg fixed-top fs-5">
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="{{asset('/media/logo.svg')}}" alt=""></a>
@@ -13,56 +13,56 @@
                     <a class="nav-link pt-3 " aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link pt-3" href="{{route('announcement_index')}}">Annunci</a>
+                    <a class="nav-link pt-3" href="{{route('announcement_index')}}">{{__('ui.ann')}}</a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link pt-3" href="{{route('workWithUs')}}">Lavora con noi</a>
+                    <a class="nav-link pt-3" href="{{route('workWithUs')}}">{{__('ui.lav')}}</a>
                 </li>
                 {{-- revisor_become invia mail revisore --}}
                 
                 <li class="nav-item dropdown">
                     <a class="nav-link pt-3 dropdown-toggle" id="categoriesDropDown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Categorie
+                        {{__('ui.cat')}}
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="categoriesDropDown">
-                    @foreach ($categories as $category)
-                    <li><a href="{{ route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->name}}</a></li>  
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    @endforeach
-                </ul>
-            </li>
-            @auth 
-            <li class="nav-item"> 
-                <a class="nav-link pt-3" href="{{route('announcement_create')}}">Crea Annuncio</a>
-            </li>
-            <li class="nav-item pt-2 ">
-                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-2x fa-user" style="color: #d19c0a;"></i></button>
-            </li>
-
-            @else
-            <li class="nav-item pt-2 ">
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-2x fa-user" style="color: #d19c0a;"></i></button>
-            </li>
-            @endauth          
-            <li class="nav-item dropdown ">
-                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <x-_locale  lang="{{ session('locale') }}"  /> 
-                </a>
-                <ul class="dropdown-menu">   
-                    <li> <x-_locale class="dropdown-item" lang="it" /> </li>
-                    <li> <x-_locale class="dropdown-item" lang="en" /> </li>
-                    <li> <x-_locale class="dropdown-item" lang="es" /> </li>
-                </ul>
-            </li>
-        </ul>
+                        @foreach ($categories as $category)
+                        <li><a href="{{ route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->name}}</a></li>  
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        @endforeach
+                    </ul>
+                </li>
+                @auth 
+                <li class="nav-item"> 
+                    <a class="nav-link pt-3" href="{{route('announcement_create')}}">{{__('ui.cre-ann')}}</a>
+                </li>
+                <li class="nav-item pt-2 ">
+                    <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-2x fa-user" style="color: #d19c0a;"></i></button>
+                </li>
+                
+                @else
+                <li class="nav-item pt-2 ">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-2x fa-user" style="color: #d19c0a;"></i></button>
+                </li>
+                @endauth          
+                <li class="nav-item dropdown ">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <x-_locale  lang="{{ session('locale') }}"  /> 
+                    </a>
+                    <ul class="dropdown-menu">   
+                        <li> <x-_locale class="dropdown-item" lang="it" /> </li>
+                        <li> <x-_locale class="dropdown-item" lang="en" /> </li>
+                        <li> <x-_locale class="dropdown-item" lang="es" /> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
 </nav>
 
- 
+
 
 
 
