@@ -2,9 +2,9 @@
     <x-offcanva></x-offcanva>
     <div class=" rejected-ads container p-5">
         @if (count($announcement_reject))
-        <h1 class="pb-5 text-center">Ecco l'ultimo annuncio rifiutato</h1>
+        <h1 class="pb-5 text-center">{{__('ultimo-a')}}</h1>
         @else
-        <h1 class="pb-5 text-center">Non ci sono annunci rifiutati</h1>
+        <h1 class="pb-5 text-center">{{__('ui.no-rif')}}</h1>
         @endif
         @if ($announcement_reject)
         
@@ -28,11 +28,11 @@
                         @endif
                         <button class="carousel-control-prev" type="button" data-bs-target="#{{$item->id}}" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
+                            <span class="visually-hidden">{{__('ui.previous')}}</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#{{$item->id}}" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
+                            <span class="visually-hidden">{{__('ui.next')}}</span>
                         </button>
                     </div>
                     {{-- end carousel --}}

@@ -1,2 +1,2 @@
-<p>Ciao {{ $email }},</p>
-<p>Grazie per esserti iscritto alla nostra newsletter!</p>
+<p>{{__('ui.ciao')}} {{ $email }},</p>
+<p>{{__('ui.grazie')}}</p>

@@ -8,14 +8,14 @@
 </head>
 <body>
     <div>
-        <h1>Un utente ha richiesto di lavorare con noi</h1>
-        <h2>Ecco i suoi dati:</h2>
-        <p>Nome: {{$username}}</p>
-        <p>email: {{$email}}</p>
+        <h1>{{__('ui.richiesta')}}</h1>
+        <h2>{{__('ui.suoi-dati')}}</h2>
+        <p>{{__('ui.nome-u')}} {{$username}}</p>
+        <p>email {{$email}}</p>
         <br>
         <p>{{$body}}</p>
-        <p>Se vuoi renderlo revisore clicca qui:</p>
-        <a href="{{route('revisor_make', compact('email'))}}">RENDI REVISORE</a>
+        <p>{{'ui.rendi-rev'}}</p>
+        <a href="{{route('revisor_make', compact('email'))}}">{{__('ui.REV')}}</a>
     </div>
 </body>
 </html>
