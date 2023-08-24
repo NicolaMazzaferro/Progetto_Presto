@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Announcement;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AnnouncementController extends Controller
 {
@@ -58,7 +59,10 @@ class AnnouncementController extends Controller
             $announcement->price = $request->price,
         ]);
 
-        return redirect(route('announcement_index'))->with('message', 'Annuncio modificato correttamente!');
+        $announcement->is_accepted = null;
+        $announcement->save();
+
+        return redirect(route('announcement_index'))->with('message', 'Annuncio modificato correttamente! In attesa di revisione.');
     }
 
     public function destroy(Announcement $announcement)
@@ -67,4 +71,9 @@ class AnnouncementController extends Controller
         return redirect(route('announcement_index'))->with('message', 'Annuncio correttamente cancellato!');
     }
     
+    public function indexEditAnnouncement(){
+        $user = Auth::user();
+        $announcements = Announcement::where('user_id', $user->id)->where('is_accepted', true)->orderBy('created_at', 'desc')->paginate(6);
+        return view('announcement.indexEdit', compact('announcements'));
+    }
 }

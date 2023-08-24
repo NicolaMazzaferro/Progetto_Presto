@@ -57,19 +57,26 @@
         
 {{-- nuovo form --}}
 
-<div class="container">
+<div class="container wrapper-register">
     <div class="row justify-content-center">
         <div class="main">  	
             <input class="input_login" type="checkbox" id="chk" aria-hidden="true">
             
             <div class="signup">
-                <form method="POST" action="{{route('register')}}">
+                <form method="POST" action="{{route('register')}}" >
                     @csrf
                     <label class="label_login" for="chk" aria-hidden="true">{{__('ui.REG')}}</label>
-                    <input class="input_login" type="text" name="name" placeholder="User name" required="">
+                    <input class="input_login" type="text" name="name" placeholder="Nome" required="">
+                    <input class="input_login" type="text" name="surname" placeholder="Cognome" required="">
+                    <input class="input_login" type="text" name="address" placeholder="Indirizzo">
+                    <input class="input_login" type="text" name="phone" placeholder="Cellulare">
                     <input class="input_login" type="email" name="email" placeholder="Email" required="">
                     <input class="input_login" type="password" name="password" placeholder="Password" required="">
-                    <input class="input_login" type="password_confirmation" name="password_confirmation" placeholder="Conferma Password" required="">
+                    <input class="input_login" type="password" name="password_confirmation" placeholder="Conferma Password" required="">
+                    <input type="file" wire:model="temporary_images" name="img_profile" class="form-control img_register @error('temporary_images.*') is-invalid @enderror" placeholder="Foto Profilo" />
+                    @error('temporary_images.*')
+                        <p class="text-danger mt-2">{{$message}}</p>
+                    @enderror
                     <button class="button_login" type="submit">{{__('ui.REG')}}</button>
                 </form>
             </div>

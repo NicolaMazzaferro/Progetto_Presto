@@ -72,7 +72,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link position-relative link-underline link-underline-opacity-0 text-bianco" href="#">Profilo</a>
+                    <a class="nav-link position-relative link-underline link-underline-opacity-0 text-bianco" href="{{route('profile_index')}}">Profilo</a>
                 </li>
 
                 @if (Auth::user()->is_revisor)
