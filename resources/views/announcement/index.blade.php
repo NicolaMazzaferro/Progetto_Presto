@@ -11,12 +11,26 @@
             </div>
         </div>
         <div class="row my-5 justify-content-center">
-            @foreach ($announcements as $announcement)
+            @forelse ($announcements as $announcement)
             <div class="col-12 col-md-9 my-3">
                 <x-card-index :announcement="$announcement"
                 />
             </div>
-            @endforeach
+            @empty
+            <div class="col-12">
+                <div class="alert alert-danger text-center py-3 shadow">
+                    <p class="lead">
+                        Non ci sono annunci per questa ricerca!
+                    </p>
+                </div>
+                <div class="d-flex justify-content-center text-center">
+                    <form action="{{route('announcement_search')}}" method="get" class="mt-5">
+                        <input type="search" name="searched" class=" search-header me-3 " placeholder='Es. T-shirt' aria-label="Search">
+                        <button class="btn-search p-3" type="submit">{{__('ui.cerca')}}</button>
+                    </form>
+                </div>
+            </div>
+            @endforelse
         </div>
 
         <div class="row">
