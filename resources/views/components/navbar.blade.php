@@ -49,7 +49,11 @@
                 @endauth          
                 <li class="nav-item dropdown ">
                     <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <x-_locale  lang="{{ session('locale') }}"  /> 
+                    @if(Config::get('app.locale') == 'it')
+                        <x-_locale class="dropdown-item" lang="it" />
+                    @else
+                        <x-_locale lang="{{ session('locale') }}"  /> 
+                    @endif
                     </a>
                     <ul class="dropdown-menu">   
                         <li> <x-_locale class="dropdown-item" lang="it" /> </li>
