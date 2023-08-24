@@ -7,34 +7,23 @@ use Illuminate\Database\Migrations\Migration;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-
-    //  Categorie Predefinite - Nicola
-
+    //Categorie Predefinite - Nicola
+    
     public function up(): void
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-
-            $table->string('name');
-
+            
+            $table->string('name')-> default ('');
+            
             $table->timestamps();
         });
-
-        $categories = ['Elettronica','Mobili','Abbigliamento','Musica','Libri','Casa','Motore','Alimentari','Giochi','Sport'];
-
+        
+        /* $categories = ['Elettronica','Mobili','Abbigliamento','Musica','Libri','Casa','Motore','Alimentari','Giochi','Sport'];
+        
         foreach($categories as $category) {
             Category::create(['name' => $category]);
-        }
+        }  */
     }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('categories');
-    }
+    public function down(): void{Schema::dropIfExists('categories');}
 };

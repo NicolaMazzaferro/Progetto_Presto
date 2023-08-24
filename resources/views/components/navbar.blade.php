@@ -27,7 +27,15 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="categoriesDropDown">
                         @foreach ($categories as $category)
-                        <li><a href="{{ route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->name}}</a></li>  
+                        
+                        @if(Config::get ('app.locale')== 'it')
+                        <li><a href="{{ route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->nameIt}}</a></li>  
+                        @elseif(Config::get ('app.locale')== 'en')
+                        <li><a href="{{ route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->nameEn}}</a></li>  
+                        @elseif (Config::get ('app.locale')== 'es')
+                        <li><a href="{{ route('categoryShow', compact('category'))}}" class="dropdown-item">{{$category->nameEs}}</a></li>  
+                        @endif
+                        
                         <li>
                             <hr class="dropdown-divider">
                         </li>
