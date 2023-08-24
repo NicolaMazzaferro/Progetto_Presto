@@ -33,36 +33,44 @@
 
 
     {{-- nuovo form --}}
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="main">  	
-                <input class="input_login" type="checkbox" id="chk" aria-hidden="true">
-                
-                <div class="signup">
-                    <form method="POST" action="{{route('register')}}">
-                        @csrf
-                        <label class="label_login" for="chk" aria-hidden="true">{{__('ui.REG')}}</label>
-                        <input class="input_login" type="text" name="name" placeholder="Nome" required="">
-                        <input class="input_login" type="email" name="email" placeholder="Email" required="">
-                        <input class="input_login" type="password" name="password" placeholder="Password" required="">
-                        <input class="input_login" type="password" name="password_confirmation" placeholder="Conferma Password" required="">
-                        <button class="button_login" type="submit">{{__('ui.REG')}}</button>
-                    </form>
-                </div>
-                
-                <div class="login">
-                    <form method="POST" action="{{route('login')}}">
-                        @csrf
-                        <label class="label_login" for="chk" aria-hidden="true">{{__('ui.ACC')}}</label>
-                        <input class="input_login" type="email" name="email" placeholder="Email" required="">
-                        <input class="input_login" type="password" name="password" placeholder="Password" required="">
-                        <button class="button_login" type="submit">{{__('ui.ACC')}}</button>
-                    </form>
+
+    <div class="container bg-bianco">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="main  my-5">  	
+                    <input class="input_login" type="checkbox" id="chk" aria-hidden="true">
+                    
+                    <div class="signup">
+                        <form enctype="multipart/form-data" method="POST" action="{{route('register')}}" >
+                            @csrf
+                            <label class="label_login" for="chk" aria-hidden="true">{{__('ui.REG')}}</label>
+                            <input class="input_login" type="text" name="name" placeholder="Nome" required="">
+                            <input class="input_login" type="text" name="surname" placeholder="Cognome" required="">
+                            <input class="input_login" type="text" name="address" placeholder="Indirizzo">
+                            <input class="input_login" type="text" name="phone" placeholder="Cellulare">
+                            <input class="input_login" type="email" name="email" placeholder="Email" required="">
+                            <input class="input_login" type="password" name="password" placeholder="Password" required="">
+                            <input class="input_login" type="password" name="password_confirmation" placeholder="Conferma Password" required="">
+                            <input type="file" name="img_profile" class="form-control img_register" placeholder="Foto Profilo"/>
+                            <button class="button_login" type="submit">{{__('ui.REG')}}</button>
+                        </form>
+                    </div>
+                    
+                    <div class="login">
+                        <form method="POST" action="{{route('login')}}">
+                            @csrf
+                            <label class="label_login" for="chk" aria-hidden="true">{{__('ui.ACC')}}</label>
+                            <input class="input_login" type="email" name="email" placeholder="Email" required="">
+                            <input class="input_login" type="password" name="password" placeholder="Password" required="">
+                            <button class="button_login" type="submit">{{__('ui.ACC')}}</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    
     
     {{-- fine nuovo form --}}
     <x-offcanva></x-offcanva>

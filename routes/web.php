@@ -75,3 +75,9 @@ Route::get('/newsletter/index', [NewsletterController::class, 'newsletterIndex']
 
 // Rotta Lingue - Nicola
 Route::post('/lingua/{lang}', [FrontController::class, 'setLanguage'])->name('set_language_locale');
+
+// Rotta Profilo
+Route::get('/profilo', [PublicController::class, 'profile'])->middleware('auth')->name('profile_index');
+
+// Rotta Modifica Annunci
+Route::get('/profilo/annunci/modifica', [AnnouncementController::class, 'indexEditAnnouncement'])->middleware('auth')->name('index_edit_announcement');
