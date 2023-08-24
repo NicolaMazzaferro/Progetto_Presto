@@ -2,7 +2,7 @@
     <x-offcanva></x-offcanva>
     <div class=" rejected-ads container p-5">
         @if (count($announcement_reject))
-        <h1 class="pb-5 text-center">{{__('ultimo-a')}}</h1>
+        <h1 class="pb-5 text-center">{{__('ui.ultimo-a')}}</h1>
         @else
         <h1 class="pb-5 text-center">{{__('ui.no-rif')}}</h1>
         @endif
