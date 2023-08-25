@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('img_profile')->after('name')->default('/media/default.jpg');
-            $table->integer('phone')->after('name')->nullable();
+            $table->bigInteger('phone')->after('name')->nullable();
             $table->string('address')->after('name')->nullable();
             $table->string('surname')->after('name')->nullable();
         });
