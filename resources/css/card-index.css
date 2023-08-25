@@ -1,6 +1,6 @@
 .card-img-top-index{
-    height: 185px;
-    width: 250px;
+    width: 100%;
+    object-fit: cover;
 }
 .div-button{
     display: flex;
