@@ -124,7 +124,7 @@
     
     cursor: pointer;
     overflow:hidden;
-    margin: 0 20px;
+
     background-color: var(--arancio);
 
     text-decoration: none;
@@ -155,9 +155,7 @@
   }
   
   @media screen and (max-width: 576px){
-    .btn-search{
-      width: 70px;
-    }
+
     .search-header{
       width: 200px;
     }
