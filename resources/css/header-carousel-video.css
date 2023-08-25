@@ -115,6 +115,20 @@
     border-radius: 50px;
     border: none;
     width: 100px;
+
+
+
+    text-align: center;
+    display: inline-block;
+
+    
+    cursor: pointer;
+    overflow:hidden;
+    margin: 0 20px;
+    background-color: var(--arancio);
+
+    text-decoration: none;
+    color: var(--nero);
   }
   
   .btn-search:before {
