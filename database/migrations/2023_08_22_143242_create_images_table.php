@@ -17,7 +17,7 @@ return new class extends Migration
             //FK Announcement
             $table->unsignedBigInteger('announcement_id')->nullable();
             $table->foreign('announcement_id')->references('id')->on('announcements')->onDelete('cascade');
-            $table->string('path')->nullable();
+            $table->string('path')->default('/media/default.jpg');
             $table->timestamps();
         });
     }

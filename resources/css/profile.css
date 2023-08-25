@@ -1,6 +1,13 @@
 .img_custom_profile{
-    height: 50%!important;
-    width: 50%!important;
+    height: 200px;
+    width: 210px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container-profile{
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 /* .notifica-profilo{

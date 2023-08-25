@@ -1,7 +1,7 @@
 <x-layout>
 
 
-    <section style="background-color: #eee;">
+    <section class="container p-5 annunci container-profile">
         <div class="container py-5">
           {{-- <div class="row">
             <div class="col">
@@ -20,7 +20,7 @@
               <div class="card mb-4">
                 <div class="card-body text-center">
                   <img src="{{Storage::url(Auth::user()->img_profile)}}" alt="avatar"
-                    class="rounded-circle img-fluid">
+                    class="img_custom_profile">
                   <h5 class="my-3">{{Auth::user()->name}}</h5>
                   <p class="text-muted mb-1">{{!Auth::user()->is_revisor ? 'Utente' : 'Revisore'}}</p>
                   <p class="text-muted mb-4">{{Auth::user()->address}}</p>
@@ -46,10 +46,12 @@
                       <i class="fa-solid fa-pen-to-square"></i>
                       <a class="text-black link-underline link-underline-opacity-0"  href="{{route('index_edit_announcement')}}" class="mb-0">Gestisci Annunci</a>
                     </li>
+                    @if (Auth::user()->is_revisor)
                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                       <i class="fa-solid fa-envelope text-primary"></i>
                       <a class="text-black link-underline link-underline-opacity-0"  href="{{route('newsletter_index')}}" class="mb-0">Invia Newsletter</a>
                     </li>
+                    @endif
                   </ul>
                 </div>
               </div>
