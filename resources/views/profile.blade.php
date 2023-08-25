@@ -46,10 +46,12 @@
                       <i class="fa-solid fa-pen-to-square"></i>
                       <a class="text-black link-underline link-underline-opacity-0"  href="{{route('index_edit_announcement')}}" class="mb-0">Gestisci Annunci</a>
                     </li>
+                    @if (Auth::user()->is_revisor)
                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                       <i class="fa-solid fa-envelope text-primary"></i>
                       <a class="text-black link-underline link-underline-opacity-0"  href="{{route('newsletter_index')}}" class="mb-0">Invia Newsletter</a>
                     </li>
+                    @endif
                   </ul>
                 </div>
               </div>
