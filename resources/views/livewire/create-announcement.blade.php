@@ -49,12 +49,12 @@
                     <option>{{__('ui.scegli-cat')}}</option>
                     @foreach ($categories as $category)
                     @if(Config::get ('app.locale')== 'it')
-                        <option value="{{$category->id}}">{{$category->nameIt}}</option>  
-                        @elseif(Config::get ('app.locale')== 'en')
-                        <option value="{{$category->id}}">{{$category->nameEn}}</option>  
-                        @else
-                        <option value="{{$category->id}}">{{$category->nameEs}}</option>  
-                        @endif
+                    <option value="{{$category->id}}">{{$category->nameIt}}</option>  
+                    @elseif(Config::get ('app.locale')== 'en')
+                    <option value="{{$category->id}}">{{$category->nameEn}}</option>    
+                    @elseif (Config::get ('app.locale')== 'es')
+                    <option value="{{$category->id}}">{{$category->nameEs}}</option>    
+                    @endif  
                     @endforeach
                 </select>
                 @error('category')

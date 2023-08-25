@@ -49,7 +49,7 @@
                                 @endforeach
                             </div>
                             @else
-                            <img src="\storage\default.jpg" class="card-img-top" height="350px" alt="...">
+                            <img src="\media\default.jpg" class="card-img-top img-fluid" height="350px" alt="...">
                             @endif
                             <button class="carousel-control-prev" type="button" data-bs-target="#{{$check->id}}" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
