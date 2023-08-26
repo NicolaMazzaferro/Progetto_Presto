@@ -11,32 +11,33 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                {{-- <li class="nav-item">
-                    <div class="search-box">
-                        <input type="text" placeholder="Cerca...">
-                        <label for="" class="icon">
-                            <i class="bi bi-search"></i>
-                        </label>
-                    </div>
-                </li> --}}
+                {{-- search-bar --}}
                 <div class="nav-item" id="box-search">
-                    <form class="d-flex" role="search" action="{{route('announcement_search')}}" method="get">
+                    <form class="d-flex" role="search" action="{{ route('announcement_search') }}" method="get">
                         <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
-                        <button class="btn btn-arancio d-flex align-items-center" type="submit"><i class="bi bi-search text-bianco fs-5"></i></button>
+                        <button class="btn btn-arancio d-flex align-items-center" type="submit"><i
+                                class="bi bi-search text-bianco fs-5"></i></button>
                     </form>
                 </div>
+                {{-- search-bar end --}}
+                {{-- Home --}}
                 <li class="nav-item">
                     <a class="nav-link pt-3 " aria-current="page" href="/">Home</a>
                 </li>
+                {{-- Home end --}}
+                {{-- Annunci index --}}
                 <li class="nav-item">
                     <a class="nav-link pt-3" href="{{ route('announcement_index') }}">{{ __('ui.ann') }}</a>
                 </li>
-
+                {{-- Annunci index end --}}
+                {{-- Lavora con noi --}}
                 <li class="nav-item">
                     <a class="nav-link pt-3" href="{{ route('workWithUs') }}">{{ __('ui.lav') }}</a>
                 </li>
+                {{-- Lavora con noi end --}}
                 {{-- revisor_become invia mail revisore --}}
 
+                {{-- Categorie --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link pt-3 dropdown-toggle" id="categoriesDropDown" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -62,10 +63,13 @@
                         @endforeach
                     </ul>
                 </li>
+                {{-- Categorie end --}}
+                {{-- Crea annuncio --}}
+                <li class="nav-item">
+                    <a class="nav-link pt-3" href="{{ route('announcement_create') }}">{{ __('ui.cre-ann') }}</a>
+                </li>
+                {{-- Crea annuncio end --}}
                 @auth
-                    <li class="nav-item">
-                        <a class="nav-link pt-3" href="{{ route('announcement_create') }}">{{ __('ui.cre-ann') }}</a>
-                    </li>
                     <li class="nav-item pt-2 ">
                         <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                             aria-controls="offcanvasRight"><i class="fa-solid fa-2x fa-user"
