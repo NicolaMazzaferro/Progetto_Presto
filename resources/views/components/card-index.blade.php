@@ -40,7 +40,7 @@
         <div class="col-sm-8">
             <div class="card-body ">
                 <h5 class="card-title text-uppercase text-arancio pt-3">{{$announcement->title}}</h5>
-                <p class="lead pt-3 text-nero text-tronco">{{$announcement->description}}</p>
+                <p class="lead pt-3 text-nero text-truncate">{{$announcement->description}}</p>
                 <p class="fw-semibold text-nero">€{{$announcement->price}}</p>
                 <p class="card-text text-nero blockquote-footer pt-3">{{__('ui.CE')}} {{$announcement->user->name}} il {{$announcement->created_at->format('d/m/Y')}}</p>
                 

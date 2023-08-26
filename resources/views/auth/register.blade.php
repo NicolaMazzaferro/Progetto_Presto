@@ -46,8 +46,8 @@
                             <label class="label_login" for="chk" aria-hidden="true">{{__('ui.REG')}}</label>
                             <input class="input_login" type="text" name="name" placeholder="Nome *" >
                             <input class="input_login" type="text" name="surname" placeholder="Cognome *" >
-                            <input class="input_login" type="text" name="address" placeholder="Indirizzo">
-                            <input class="input_login" type="number" name="phone" placeholder="Cellulare">
+                            <input class="input_login" type="text" name="address" placeholder="Indirizzo *">
+                            <input class="input_login" type="number" name="phone" placeholder="Cellulare *" min="10">
                             <input class="input_login" type="email" name="email" placeholder="Email *" >
                             <input class="input_login" type="password" name="password" placeholder="Password *" >
                             <input class="input_login" type="password" name="password_confirmation" placeholder="Conferma Password *" >
