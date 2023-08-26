@@ -25,7 +25,7 @@
     <div class="d-flex justify-content-center text-center">
         <form action="{{route('announcement_search')}}" method="get" class="container-searchbar">
             <input type="search" name="searched" class=" search-header me-3 " placeholder='Es. T-shirt' aria-label="Search">
-            <button class="btn-search" type="submit">{{__('ui.cerca')}}</button>
+            <button class="btn-search text-nero" type="submit">{{__('ui.cerca')}}</button>
         </form>
     </div>
     
