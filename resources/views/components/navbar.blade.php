@@ -11,6 +11,20 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                {{-- <li class="nav-item">
+                    <div class="search-box">
+                        <input type="text" placeholder="Cerca...">
+                        <label for="" class="icon">
+                            <i class="bi bi-search"></i>
+                        </label>
+                    </div>
+                </li> --}}
+                <div class="nav-item" id="box-search">
+                    <form class="d-flex" role="search" action="{{route('announcement_search')}}" method="get">
+                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+                        <button class="btn btn-arancio d-flex align-items-center" type="submit"><i class="bi bi-search text-bianco fs-5"></i></button>
+                    </form>
+                </div>
                 <li class="nav-item">
                     <a class="nav-link pt-3 " aria-current="page" href="/">Home</a>
                 </li>

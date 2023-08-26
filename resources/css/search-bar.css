@@ -1,0 +1,10 @@
+.btn-arancio{
+    border-radius: 50%;
+    background-color: var(--arancio);
+}
+
+#box-search{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
