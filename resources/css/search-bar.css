@@ -8,3 +8,32 @@
     align-items: center;
     justify-content: end;
 }
+
+/* styles.css */
+#box-search form {
+    width: 0px; /* Imposta la larghezza iniziale */
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+#box-search form.expanded {
+    width: 200px; /* Imposta la larghezza desiderata */
+}
+
+#box-search form.expanded button {
+    display: block;
+}
+
+#box-search i {
+    cursor: pointer;
+}
+
+#box-search button {
+    display: none;
+}
+
+#box-search form button i {
+    margin-left: auto;
+}
