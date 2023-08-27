@@ -15,7 +15,7 @@
 #box-search form {
     display: flex;
     overflow: hidden;
-    align-items: center; /* Per assicurarsi che l'input e il pulsante siano allineati verticalmente */
+    align-items: center; 
     
 }
 
@@ -33,13 +33,13 @@
 #box-search:hover input[type="search"] {
     width: 200px;
     opacity: 1;
-    margin-right: 10px; /* Riporta l'input nella sua posizione originale al passaggio del mouse */
+    margin-right: 10px; 
 }
 
 .btn-arancio {
     background-color: var(--arancio); 
     border: none;
-    padding: 6px 12px; /* Assicura spazio attorno all'icona */
+    padding: 6px 12px; 
     
 }
 
@@ -57,11 +57,10 @@
     color: white;
 }
 
-/* Per dispositivi con una larghezza di schermo fino a 768px */
 @media (max-width: 768px) {
     #box-search input[type="search"] {
         width: 200px;
         opacity: 1;
-        transition: none; /* Questa linea rimuove l'animazione */
+        transition: none; 
     }
 }
