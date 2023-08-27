@@ -9,7 +9,7 @@ let swiper = new Swiper(".mySwiper", {
     },
 });
 
-// e passato Stefano
+// stefano
 
 let lastScrollTop = 0;
 const navbar = document.getElementById("navbar");

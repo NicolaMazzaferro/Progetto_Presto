@@ -12,24 +12,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 {{-- search-bar --}}
-                {{-- <div class="nav-item" id="box-search">
-                    <form class="d-flex" role="search" action="{{ route('announcement_search') }}" method="get">
-                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
-                        <button class="btn btn-arancio d-flex align-items-center" type="submit"><i
-                        class="bi bi-search text-bianco fs-5"></i></button>
-                    </form>
-                </div> --}}
+
                 <div class="nav-item" id="box-search">
                     <form class="d-flex" role="search" action="{{ route('announcement_search') }}" method="get">
-                      <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
                     </form>
                     <button class="btn btn-arancio d-flex align-items-center" type="submit">
                         <i class="bi bi-search text-bianco fs-5"></i>
                     </button>
                 </div>
-
-
-
 
                 {{-- search-bar end --}}
                 {{-- Home --}}

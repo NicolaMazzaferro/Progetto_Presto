@@ -3,37 +3,65 @@
     background-color: var(--arancio);
 }
 
-#box-search{
+
+#box-search {
+    position: relative;
+    display: inline-flex;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: end; 
 }
 
-/* styles.css */
 #box-search form {
-    width: 0px; /* Imposta la larghezza iniziale */
-    overflow: hidden;
-    transition: width 0.3s ease-in-out;
     display: flex;
-    align-items: center;
+    overflow: hidden;
+    align-items: center; /* Per assicurarsi che l'input e il pulsante siano allineati verticalmente */
+    
 }
 
-#box-search form.expanded {
-    width: 200px; /* Imposta la larghezza desiderata */
+#box-search input[type="search"] {
+    width: 0;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.2s 0.1s;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 15px;
+    margin-right: -30px;
+    box-shadow: none;
 }
 
-#box-search form.expanded button {
-    display: block;
+#box-search:hover input[type="search"] {
+    width: 200px;
+    opacity: 1;
+    margin-right: 10px; /* Riporta l'input nella sua posizione originale al passaggio del mouse */
 }
 
-#box-search i {
+.btn-arancio {
+    background-color: var(--arancio); 
+    border: none;
+    padding: 6px 12px; /* Assicura spazio attorno all'icona */
+    
+}
+
+.btn-arancio i.bi-search {
     cursor: pointer;
+    color: white;
 }
 
-#box-search button {
-    display: none;
+.btn-arancio:hover{
+    background-color: var(--arancio);
+    color: white;
 }
 
-#box-search form button i {
-    margin-left: auto;
+.btn-arancio:hover i.bi-search{
+    color: white;
+}
+
+/* Per dispositivi con una larghezza di schermo fino a 768px */
+@media (max-width: 768px) {
+    #box-search input[type="search"] {
+        width: 200px;
+        opacity: 1;
+        transition: none; /* Questa linea rimuove l'animazione */
+    }
 }
