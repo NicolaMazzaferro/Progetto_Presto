@@ -52,7 +52,7 @@
                             <input class="input_login" type="password" name="password" placeholder="Password *" >
                             <input class="input_login" type="password" name="password_confirmation *" placeholder="Conferma Password *" >
                             <input type="file" name="img_profile" class="form-control img_register" placeholder="Foto Profilo"/>
-                            <button class="button_login" type="submit">{{__('ui.REG')}}</button>
+                            <button class="button_login fw-bolder" type="submit">{{__('ui.REG')}}</button>
                         </form>
                     </div>
                     
