@@ -5,11 +5,11 @@
     <div class="row bg-bianco justify-content-center text-center container-last-product">
         
         <div data-aos="fade-down-right"data-aos-duration="1000">
-            <h5 class="text-arancio fs-2 mb-4">{{__('ui.ultimi')}}</h5>
+            <h5 class="text-arancio fw-bolder mb-4">{{__('ui.ultimi')}}</h5>
         </div>
         
         <div data-aos="fade-down-left" data-aos-duration="1000">
-            <h2 class="titolo-au fw-bolder title-last-product text-center">{{__('ui.esplora')}}<br>{{__('ui.dei')}}</h2>
+            <h2 class="titolo-au fw-2 title-last-product text-center">{{__('ui.esplora')}}<br>{{__('ui.dei')}}</h2>
         </div>
 
         <div class="container swiper">
