@@ -24,6 +24,7 @@
 @import './search-bar.css';
 
 
+
 /* import swiper */
 @import 'swiper/css';
 @import 'swiper/css/bundle';
@@ -34,43 +35,43 @@
 /* COLOR */
 
 :root{
-    --arancio: #eaa636;
-    --bianco: rgb(253, 245, 235);
-    --nero: #1e1916;
-  }
-  
-  .text-arancio{
-    color: var(--arancio);
-  }
-  
-  .text-bianco{
-    color: var(--bianco);
-  }
-  
-  .text-nero{
-    color: var(--nero);
-  }
-  
-  .bg-arancio{
-    background-color: var(--arancio);
-  }
-  
-  .bg-bianco{
-    background-color: var(--bianco);
-  }
-  
-  .bg-nero{
-    background-color: var(--nero);
-  }
-  
-  /* END COLOR */
-  
+  --arancio: #eaa636;
+  --bianco: rgb(253, 245, 235);
+  --nero: #1e1916;
+}
+
+.text-arancio{
+  color: var(--arancio);
+}
+
+.text-bianco{
+  color: var(--bianco);
+}
+
+.text-nero{
+  color: var(--nero);
+}
+
+.bg-arancio{
+  background-color: var(--arancio);
+}
+
+.bg-bianco{
+  background-color: var(--bianco);
+}
+
+.bg-nero{
+  background-color: var(--nero);
+}
+
+/* END COLOR */
+
 
 .vh-40{
-    height: 40vh;
+  height: 40vh;
 }
 .vh-60{
-    height: 60vh;
+  height: 60vh;
 }
 .h-30{
   height: 30px;
