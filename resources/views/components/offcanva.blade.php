@@ -84,6 +84,10 @@
                 <li class="nav-item">
                     <a class="nav-link position-relative link-underline link-underline-opacity-0 text-bianco" href="{{route('revisor_reject')}}">{{__('ui.ann-rif')}}<span class="position-absolute top-0 badge rounded-pill bg-arancio">{{App\Models\Announcement::toBeRejectCount()}}<span class="visually-hidden">unread messages</span></span></a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link position-relative link-underline link-underline-opacity-0 text-bianco" href="{{route('revisor_accept')}}">Annunci Accettati<span class="position-absolute top-0 badge rounded-pill bg-arancio">{{App\Models\Announcement::toBeAcceptCount()}}<span class="visually-hidden">unread messages</span></span></a>
+                </li>
                 
                 <li class="nav-item">
                     <a class="nav-link position-relative link-underline link-underline-opacity-0 text-bianco" href="{{route('newsletter_index')}}">Newsletter</a>
