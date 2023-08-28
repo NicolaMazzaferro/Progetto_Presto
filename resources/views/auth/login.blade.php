@@ -30,10 +30,10 @@
 </x-layout> --}}
 
 <x-layout>
-
-
+    
+    
     {{-- nuovo form --}}
-
+    
     <div class="container bg-bianco">
         <div class="container">
             <div class="row justify-content-center">
@@ -44,15 +44,40 @@
                         <form enctype="multipart/form-data" method="POST" action="{{route('register')}}" >
                             @csrf
                             <label class="label_login" for="chk" aria-hidden="true">{{__('ui.REG')}}</label>
-                            <input class="input_login" type="text" name="name" placeholder={{__('ui.Nome')}} >
-                            <input class="input_login" type="text" name="surname" placeholder="Cognome *" >
-                            <input class="input_login" type="text" name="address" placeholder="Indirizzo ">
-                            <input class="input_login" type="number" name="phone" placeholder="Cellulare ">
+                            <input class="input_login" type="text" name="name" placeholder="Nome *" >
+                            @error('name')
+                            <p class="text-danger mt-2 ms-4">{{$message}}</p>
+                            @enderror
+                            <input class="input_login" type="text" name="surname" placeholder="Cognome" >
+                            @error('surname')
+                            <p class="text-danger mt-2 ms-4">{{$message}}</p>
+                            @enderror
+                            <input class="input_login" type="text" name="address" placeholder="Indirizzo">
+                            @error('address')
+                            <p class="text-danger mt-2 ms-4">{{$message}}</p>
+                            @enderror
+                            <input class="input_login" type="number" name="phone" placeholder="Cellulare">
+                            @error('phone')
+                            <p class="text-danger mt-2 ms-4">{{$message}}</p>
+                            @enderror
                             <input class="input_login" type="email" name="email" placeholder="Email *" >
+                            @error('email')
+                            <p class="text-danger mt-2 ms-4">{{$message}}</p>
+                            @enderror
                             <input class="input_login" type="password" name="password" placeholder="Password *" >
-                            <input class="input_login" type="password" name="password_confirmation *" placeholder="Conferma Password *" >
-                            <input type="file" name="img_profile" class="form-control img_register" placeholder="Foto Profilo"/>
-                            <button class="button_login fw-bolder" type="submit">{{__('ui.REG')}}</button>
+                            @error('password')
+                            <p class="text-danger mt-2 ms-4">{{$message}}</p>
+                            @enderror
+                            <input class="input_login" type="password" name="password_confirmation" placeholder="Conferma Password *" >
+                            @error('password_confirmation')
+                            <p class="text-danger mt-2 ms-4">{{$message}}</p>
+                            @enderror
+                            <input type="file" name="img_profile" accept="image/*" class="form-control img_register " />
+                            @error('img_profile')
+                            <p class="text-danger mt-2 ms-4">{{$message}}</p>
+                            @enderror
+                            
+                            <button class="button_login" type="submit">{{__('ui.REG')}}</button>
                         </form>
                     </div>
                     
@@ -74,4 +99,4 @@
     
     {{-- fine nuovo form --}}
     <x-offcanva></x-offcanva>
-    </x-layout>
+</x-layout>
