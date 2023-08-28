@@ -103,5 +103,12 @@ return [
     'eccolo' => 'Aquí está el anuncio para revisar',
     'no-ads' => 'No hay anuncios para revisar',
     'rifiuta' => 'Rechazar',
+    'Nome' => 'Nombre *',
+    'Cognome' => 'Apellido *',
+    'Indirizzo' => 'Dirección *',
+    'Cellulare' => 'Teléfono *',
+    'Conferma' =>'Confirmar Password *',
+    'rave' => 'Revision de Imagen',
+    
 
 ];

@@ -193,7 +193,7 @@
 
 .main{
 	width: 950px;
-	height: 800px;
+	height: 1000px;
 	background: red;
 	overflow: hidden;
 	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
@@ -252,9 +252,9 @@
 	background: var(--arancio);
 }
 .login{
-	height: 760px;
+	height: 950px;
 	background: var(--bianco);
-	border-radius: 60% / 10%;
+	border-radius: 80% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;
 }
@@ -264,7 +264,7 @@
 }
 
 #chk:checked ~ .login{
-	transform: translateY(-790px);
+	transform: translateY(-990px);
 }
 #chk:checked ~ .login label{
 	transform: scale(1);	

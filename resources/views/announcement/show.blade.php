@@ -17,14 +17,20 @@
                         @else --}}
                         {{-- <img src="\storage\default.jpg" class="card-img-top" height="350px" alt="..."> --}}
                         {{-- @endif --}}
+                        {{-- @dd($announcement->images) --}}
+                        @if(count($announcement->images) > 0)
                         
-                        @if(count($announcement->images))
                         @foreach ($announcement->images as $image)
                         <div class="swiper-slide">
                             <img src="{{Storage::url($image->path)}}">
                         </div>
                         @endforeach
+                        @else
+                        <div class="swiper-slide">
+                            <img src="{{"\media\default.jpg" }}">
+                        </div>
                         @endif
+
                     </div>
                     
                 </div>

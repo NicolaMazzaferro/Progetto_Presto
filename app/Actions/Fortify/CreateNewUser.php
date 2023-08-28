@@ -13,15 +13,30 @@ class CreateNewUser implements CreatesNewUsers
 {
     use PasswordValidationRules;
     use WithFileUploads;
-
+    
     /**
-     * Validate and create a newly registered user.
-     *
-     * @param  array<string, string>  $input
-     */
+    * Validate and create a newly registered user.
+    *
+    * @param  array<string, string>  $input
+    */
     public function create(array $input): User
     {
-
+        
+        // Validation - Nicola
+        
+        $messages = [
+            'img_profile.image' => 'L\'immagine del profilo deve essere un\'immagine valida.',
+            'img_profile.mimes' => 'L\'immagine del profilo deve essere in uno dei formati: jpeg, png, jpg, gif.',
+            'img_profile.max' => 'L\'immagine del profilo non deve superare 1MB.',
+            'required' => 'Il campo è obbligatorio.',
+            'email.unique' => 'Esiste già un account con questa email.',
+            'password_confirmation.same' => 'Le password non corrispondono.',
+            'password.min' => 'La password deve contenere almeno 8 caretteri.',
+            'phone.numeric' => 'Il numero di telefono deve essere un valore numerico.',
+            'phone.digits' => 'Il numero di telefono non è valido.',
+        ];
+        
+        
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'email' => [
@@ -31,11 +46,14 @@ class CreateNewUser implements CreatesNewUsers
                 'max:255',
                 Rule::unique(User::class),
             ],
-            'password' => $this->passwordRules(),
-        ])->validate();
-
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'password_confirmation' => ['required', 'same:password'],
+            'img_profile' => ['image', 'mimes:jpeg,png,jpg,gif', 'max:1024'],
+            'phone' => ['required', 'numeric', 'digits:10'],
+        ], $messages)->validate();
+        
         $imgPath = isset($input['img_profile']) ? $input['img_profile']->store('public/media') : '/media/default.jpg'; 
-
+        
         return User::create([
             'name' => $input['name'],
             'email' => $input['email'],

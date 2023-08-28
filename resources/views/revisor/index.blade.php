@@ -25,16 +25,15 @@
                                 </div>
                                 <div class="col-8">
                                     <div class="card-body text-tronco text-start" id="testoTroncato1">
-                                        <h5 class="text-black">Revisione Immagini</h5>
+                                        <h5 class="text-black">"{{__('ui.rave')}}"</h5>
                                         <p>Adulti: <span class="{{$image->adult}}"></span></p>
                                         <p>Satira: <span class="{{$image->spoof}}"></span></p>
                                         <p>Medicina: <span class="{{$image->medical}}"></span></p>
                                         <p>Violenza: <span class="{{$image->violence}}"></span></p>
-                                        <p>Contenuto Ammicante: <span class="{{$image->racy}}"></span></p>
+                                        <p>Contenuto Inappropriato: <span class="{{$image->racy}}"></span></p>
                                     </div>
                                     <button class="mostraPiuBtn">Mostra di più</button>
                                 </div>
-                                
                                 <div class="col-12"> 
                                     <div class="card-body text-start">
                                         <h5>Tags</h5>
@@ -49,7 +48,7 @@
                                     
                                 </div>
                                 
-                                @endforeach
+                            @endforeach
                             </div>
                             @else
                             <img src="\media\default.jpg" class="card-img-top img-fluid" height="350px" alt="...">
