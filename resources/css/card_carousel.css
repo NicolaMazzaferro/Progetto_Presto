@@ -42,7 +42,8 @@
     display: flex;
     align-items: center;
     column-gap: 12px;
-    padding: 15px;
+    padding: 20px;
+    height: 260px;
 }
 
 .card .profile-details img {
