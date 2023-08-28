@@ -41,7 +41,7 @@ class CreateAnnouncement extends Component
     protected $messages = [
         'required' => "Il campo è richiesto",
         'min' => 'Il campo è troppo corto',
-        'numeric' => 'Il campo deve contene solo numeri',
+        'numeric' => 'Il campo deve contenere solo numeri',
         'temporary_images.required' => "L'immagine è richiesta",
         'temporary_images.*.image' => "I file devono essere immagini",
         'temporary_images.*.max' => "L'immagine dev'essere massimo di 1mb",
