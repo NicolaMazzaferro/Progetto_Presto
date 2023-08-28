@@ -5,9 +5,22 @@ namespace App\Http\Controllers;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Rule;
 
 class AnnouncementController extends Controller
 {
+
+    protected $rules = [
+        'title' => 'required | min:4',
+        'description' => 'required | min:8',
+        'price' => 'required | numeric',
+    ];
+
+    protected $messages = [
+        'required' => "Il campo è richiesto",
+        'min' => 'Il campo è troppo corto',
+        'numeric' => 'Il campo deve contenere solo numeri',
+    ];
     /**
      * Display a listing of the resource.
      */
@@ -53,10 +66,16 @@ class AnnouncementController extends Controller
 
     public function update(Request $request, Announcement $announcement)
     {
+        $validatedData = $request->validate([
+            'title' => ['required', 'min:4'],
+            'description' => ['required', 'min:8'],
+            'price' => ['required', 'numeric'],
+        ], $this->messages);
+    
         $announcement->update([
-            $announcement->title = $request->title,
-            $announcement->description = $request->description,
-            $announcement->price = $request->price,
+            'title' => $validatedData['title'],
+            'description' => $validatedData['description'],
+            'price' => $validatedData['price'],
         ]);
 
         $announcement->is_accepted = null;

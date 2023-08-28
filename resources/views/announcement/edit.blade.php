@@ -18,14 +18,23 @@
                 <div class="mb-3">
                     <label for="title" class="form-label">{{__('ui.title')}}</label>
                     <input type="text" name="title" class="form-control" id="title" value="{{$announcement->title}}">
+                    @error('title')
+                    <p class="text-danger mt-2 ">{{$message}}</p>
+                    @enderror
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label">{{__('ui.dep')}}</label>
                     <textarea class="form-control" name="description" id="description" rows="5">{{$announcement->description}}</textarea>
+                    @error('description')
+                    <p class="text-danger mt-2 ">{{$message}}</p>
+                    @enderror
                 </div>
                 <div class="mb-3">
                     <label for="price" class="form-label">{{__('ui.pri')}}</label>
                     <input type="number" name="price" class="form-control" id="price" value="{{$announcement->price}}">
+                    @error('price')
+                    <p class="text-danger mt-2 ">{{$message}}</p>
+                    @enderror
                 </div>
                 
                 <div class="text-center">
