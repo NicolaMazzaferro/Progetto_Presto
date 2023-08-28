@@ -57,7 +57,7 @@
     color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 993px) {
     #box-search input[type="search"] {
         width: 200px;
         opacity: 1;
