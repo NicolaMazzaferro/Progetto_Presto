@@ -25,7 +25,7 @@
                                 </div>
                                     <div class="col-6 d-flex">
                                         <div class="card-body text-start">
-                                            <h5 class="text-black">Revisione Immagini</h5>
+                                            <h5 class="text-black">"{{__('ui.rave')}}"</h5>
                                             <p>Adulti: <span class="{{$image->adult}}"></span></p>
                                             <p>Satira: <span class="{{$image->spoof}}"></span></p>
                                             <p>Medicina: <span class="{{$image->medical}}"></span></p>
