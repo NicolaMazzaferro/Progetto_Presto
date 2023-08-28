@@ -2,15 +2,15 @@
     <x-offcanva></x-offcanva>
     <div class=" accepted-ads container p-5">
         @if (count($announcement_accept))
-        <h1 class="pb-5 text-center">Ecco l'ultimo annuncio accettato</h1>
+        <h1 class="pb-5 text-center">{{__('ui.title-acc-ann')}}</h1>
         @else
-        <h1 class="pb-5 text-center">Non ci sono annunci accettati</h1>
+        <h1 class="pb-5 text-center">{{__('ui.title-acc-ann-n')}}</h1>
         @endif
         @if ($announcement_accept)
         
         <div class="row">
             @foreach($announcement_accept as $item)
-            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center text-center">
+            <div class="col-12 col-md-4 d-flex justify-content-center align-items-center text-center h-75">
                 
                 <div class="card my-5">
                     {{-- carousel --}}
@@ -19,7 +19,7 @@
                         <div class="carousel-inner h-25">
                             @foreach ($item->images as $image)
                             <div class="carousel-item @if ($loop->first)active @endif">
-                                <img src="{{Storage::url($image->path)}}" class="card-img-top img-fluid" height="350px" alt="...">
+                                <img src="{{Storage::url($image->path)}}" class="card-img-top" height="350px" alt="...">
                             </div>
                             @endforeach
                         </div>

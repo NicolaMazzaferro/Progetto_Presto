@@ -4,7 +4,7 @@
         <div class="row justify-content-center p-5">
 
             <div class="mb-3">
-                <h1 class="text-center mb-5">{{$announcements ? "Non ci sono annunci da revisionare":"Ecco l'annuncio da revisionare"}}</h1>
+                <h1 class="text-center mb-5">{{$announcements ? "Non sono presenti gli annunci":"Ecco i tuoi annunci"}}</h1>
             </div>
         </div>
         <div class="row my-5 justify-content-center">

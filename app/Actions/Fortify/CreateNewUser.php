@@ -51,7 +51,7 @@ class CreateNewUser implements CreatesNewUsers
             'img_profile' => ['image', 'mimes:jpeg,png,jpg,gif', 'max:1024'],
         ], $messages)->validate();
         
-        $imgPath = isset($input['img_profile']) ? $input['img_profile']->store('public/media') : '/media/default.jpg'; 
+        $imgPath = isset($input['img_profile']) ? $input['img_profile']->store('public/media') : '/default.jpg'; 
         
         return User::create([
             'name' => $input['name'],

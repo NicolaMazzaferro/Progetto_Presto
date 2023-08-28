@@ -22,7 +22,7 @@
                         
                         @foreach ($announcement->images as $image)
                         <div class="swiper-slide">
-                            <img src="{{Storage::url($image->path)}}">
+                            <img src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) : "\media\default.jpg"}}">
                         </div>
                         @endforeach
                         @else
@@ -39,7 +39,7 @@
                         @if(count($announcement->images))
                         @foreach ($announcement->images as $image)
                         <div class="swiper-slide">
-                            <img src="{{Storage::url($image->path)}}">
+                            <img src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) : "\media\default.jpg"}}">
                         </div>
                         @endforeach
                         @endif

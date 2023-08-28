@@ -114,5 +114,7 @@ return [
     'cellulare' => 'Cellulare',
     'role' => 'Ruolo',
     'indirizzo' => 'Indirizzo',
-    'ur-last-ann' => 'I tuoi ultimi annunci'
+    'ur-last-ann' => 'I tuoi ultimi annunci',
+    'title-acc-ann' => 'Gli annunci accettati',
+    'title-acc-ann-n' => 'Non ci sono annunci accettati',
 ];

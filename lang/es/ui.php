@@ -115,5 +115,7 @@ return [
     'cellulare' => 'Teléfono',
     'role' => 'Papel',
     'indirizzo' => 'Dirección',
-    'ur-last-ann' => 'Tus ùltimos anuncios'
+    'ur-last-ann' => 'Tus ùltimos anuncios',
+    'title-acc-ann' => 'Los anuncios aceptados',
+    'title-acc-ann-n' => 'No hay anuncios aceptados',
 ];

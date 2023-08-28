@@ -109,10 +109,12 @@ return [
     'Conferma' => 'Confirm Password *',
     'rave' => 'Image Review',
     'send-new'=> 'Send newsletter',
-    'gest-ann' => 'Manage announcements',
-    'acc-ann' => 'Accepted announcements',
+    'gest-ann' => 'Manage advertisements',
+    'acc-ann' => 'Accepted advertisements',
     'cellulare' => 'Telephone',
     'role' => 'Role',
     'indirizzo' => 'Address',
-    'ur-last-ann' => 'Your latest announcements'
+    'ur-last-ann' => 'Latest advertisements approved',
+    'title-acc-ann' => 'Accepted advertisements',
+    'title-acc-ann-n' => 'No advertisements have been accepted',
 ];
