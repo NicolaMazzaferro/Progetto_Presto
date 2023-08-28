@@ -10,6 +10,9 @@
                     <input class="mail-newsletter" name="email" type="email" placeholder="{{__('ui.email-grigio')}}">
                     <button class="btn-newsletter" type="submit">{{__('ui.invia-n')}}</button>
                 </form>
+                @error('email')
+                <span class="text-danger">{{$message}}</span>
+                @enderror
             </div>
         </div>
     </div>

@@ -29,6 +29,7 @@
     background-color: transparent;
     padding: 20px;
     color: var(--bianco);
+    border-radius: 15px;
 }
 
 .mail-newsletter:focus-visible {
@@ -43,6 +44,7 @@
     font-size: 18px;
     font-weight: 600;
     padding: 6px 25px;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 1400px) {

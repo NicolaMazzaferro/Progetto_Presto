@@ -10,8 +10,23 @@ use Illuminate\Support\Facades\Mail;
 
 class NewsletterController extends Controller
 {
+
+    protected $rules = [
+        'email' => 'email|unique:users,email',
+    ];
+
+    protected $messages = [
+        'required' => "Il campo è richiesto",
+        'email.unique' => "Questa email è già stata sottoscritta.",
+        'email' => "Inserisci un email valida.",
+    ];
+
     public function subscribe(Request $request)
 {
+    $validatedData = $request->validate([
+        'email' => 'email|unique:users,email',
+    ], $this->messages);
+
     $subscriber = Subscriber::create([
         'email' => $request->input('email'),
     ]);

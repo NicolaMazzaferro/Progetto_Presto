@@ -94,6 +94,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Numero di righe da mostrare */
     -webkit-box-orient: vertical;
+    cursor: pointer;
 }
 
 .btn-outline-primary{
@@ -126,4 +127,13 @@
         font-size: 2em;
         width: 100%;
     }
+}
+
+.custom-height{
+    min-height: 30vh;
+}
+
+.carousel-inner{
+    /* min-height: 100vh !important;  */
+    height: fit-content;
 }

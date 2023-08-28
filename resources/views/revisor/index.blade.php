@@ -21,33 +21,34 @@
                                 <div class="carousel-inner h-25">
                                     <div class="carousel-item @if ($loop->first)active @endif">
                                         <img src="{{$image->getUrl(300,300)}}" class="card-img-top img-fluid" height="350px" alt="...">
-                                        <div class="col-12">
-                                            <div class="card-body text-start">
-                                                <h5 class="text-black">"{{__('ui.rave')}}"</h5>
-                                                <p>Adulti: <span class="{{$image->adult}}"></span></p>
-                                                <p>Satira: <span class="{{$image->spoof}}"></span></p>
-                                                <p>Medicina: <span class="{{$image->medical}}"></span></p>
-                                                <p>Violenza: <span class="{{$image->violence}}"></span></p>
-                                                <p>Contenuto Ammicante: <span class="{{$image->racy}}"></span></p>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body text-tronco text-start" id="testoTroncato1">
+                                        <h5 class="text-black">"{{__('ui.rave')}}"</h5>
+                                        <p>Adulti: <span class="{{$image->adult}}"></span></p>
+                                        <p>Satira: <span class="{{$image->spoof}}"></span></p>
+                                        <p>Medicina: <span class="{{$image->medical}}"></span></p>
+                                        <p>Violenza: <span class="{{$image->violence}}"></span></p>
+                                        <p>Contenuto Inappropriato: <span class="{{$image->racy}}"></span></p>
+                                    </div>
+                                    <button class="mostraPiuBtn">Mostra di più</button>
+                                </div>
+                                <div class="col-12"> 
+                                    <div class="card-body text-start">
+                                        <h5>Tags</h5>
+                                        <div class="p-2">
+                                            @if ($image->labels)
+                                                @foreach ($image->labels as $label)
+                                                    <p class="d-inline">{{$label}},</p>
+                                                @endforeach
+                                            @endif
                                         </div>
                                     </div>
+                                    
                                 </div>
-                                    <div class="col-6"> 
-                                       
-                                    </div>
                                 
-                                @endforeach
-                                <div class="card-body text-start">
-                                    <h5>Tags</h5>
-                                    <div class="p-2">
-                                        @if ($image->labels)
-                                            @foreach ($image->labels as $label)
-                                                <p class="d-inline">{{$label}},</p>
-                                            @endforeach
-                                        @endif
-                                    </div>
-                                </div>
+                            @endforeach
                             </div>
                             @else
                             <img src="\media\default.jpg" class="card-img-top img-fluid" height="350px" alt="...">
@@ -94,3 +95,5 @@
 </x-layout>
 
 <x-offcanva></x-offcanva>
+
+
