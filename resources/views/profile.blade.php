@@ -35,25 +35,25 @@
                     @if (Auth::user()->is_revisor)
                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                       <i class="fa-solid fa-clipboard text-warning"></i>
-                      <a class="text-black link-underline link-underline-opacity-0" href="{{route('revisor_index')}}" class="mb-0">Annunci da Revisionare<span class="position-absolute top-0 badge rounded-pill bg-arancio">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span></span></a>
+                      <a class="text-black link-underline link-underline-opacity-0" href="{{route('revisor_index')}}" class="mb-0">{{__('ui.area-rev')}}<span class="position-absolute top-0 badge rounded-pill bg-arancio">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span></span></a>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                       <i class="fa-solid fa-clipboard text-success"></i>
-                      <a class="text-black link-underline link-underline-opacity-0"  href="{{route('revisor_accept')}}" class="mb-0">Annunci Accettati<span class="position-absolute top-0 badge rounded-pill bg-success">{{App\Models\Announcement::toBeAcceptCount()}}<span class="visually-hidden">unread messages</span></span></a>
+                      <a class="text-black link-underline link-underline-opacity-0"  href="{{route('revisor_accept')}}" class="mb-0">{{__('ui.acc-ann')}}<span class="position-absolute top-0 badge rounded-pill bg-success">{{App\Models\Announcement::toBeAcceptCount()}}<span class="visually-hidden">unread messages</span></span></a>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                       <i class="fa-solid fa-clipboard text-danger"></i>
-                      <a class="text-black link-underline link-underline-opacity-0"  href="{{route('revisor_reject')}}" class="mb-0">Annunci Rifiutati<span class="position-absolute top-0 badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRejectCount()}}<span class="visually-hidden">unread messages</span></span></a>
+                      <a class="text-black link-underline link-underline-opacity-0"  href="{{route('revisor_reject')}}" class="mb-0">{{__('ui.ann-rif')}}<span class="position-absolute top-0 badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRejectCount()}}<span class="visually-hidden">unread messages</span></span></a>
                     </li>
                     @endif
                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                       <i class="fa-solid fa-pen-to-square"></i>
-                      <a class="text-black link-underline link-underline-opacity-0"  href="{{route('index_edit_announcement')}}" class="mb-0">Gestisci Annunci</a>
+                      <a class="text-black link-underline link-underline-opacity-0"  href="{{route('index_edit_announcement')}}" class="mb-0">{{__('ui.gest-ann')}}</a>
                     </li>
                     @if (Auth::user()->is_revisor)
                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                       <i class="fa-solid fa-envelope text-primary"></i>
-                      <a class="text-black link-underline link-underline-opacity-0"  href="{{route('newsletter_index')}}" class="mb-0">Invia Newsletter</a>
+                      <a class="text-black link-underline link-underline-opacity-0"  href="{{route('newsletter_index')}}" class="mb-0">{{__('ui.send-new')}}</a>
                     </li>
                     @endif
                   </ul>
@@ -65,7 +65,7 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col-sm-3">
-                      <p class="mb-0">Nome</p>
+                      <p class="mb-0">{{__('ui.nome-u')}}</p>
                     </div>
                     <div class="col-sm-9">
                       <p class="text-muted mb-0">{{Auth::user()->name}}</p>
@@ -83,7 +83,7 @@
                   <hr>
                   <div class="row">
                     <div class="col-sm-3">
-                      <p class="mb-0">Telefono</p>
+                      <p class="mb-0">{{__('ui.cellulare')}}</p>
                     </div>
                     <div class="col-sm-9">
                       <p class="text-muted mb-0">{{Auth::user()->phone}}</p>
@@ -92,7 +92,7 @@
                   <hr>
                   <div class="row">
                     <div class="col-sm-3">
-                      <p class="mb-0">Ruolo</p>
+                      <p class="mb-0">{{__('ui.role')}}</p>
                     </div>
                     <div class="col-sm-9">
                       <p class="text-muted mb-0">{{!Auth::user()->is_revisor ? 'Utente' : 'Revisore'}}</p>
@@ -101,7 +101,7 @@
                   <hr>
                   <div class="row">
                     <div class="col-sm-3">
-                      <p class="mb-0">Indirizzo</p>
+                      <p class="mb-0">{{__('ui.indirizzo')}}</p>
                     </div>
                     <div class="col-sm-9">
                       <p class="text-muted mb-0">{{Auth::user()->address}}</p>
@@ -112,7 +112,7 @@
     
               <div class="container">
                 <div class="row">
-                  <h3 class="text-center text-black mt-3">I tuoi ultimi Annunci</h3>
+                  <h3 class="text-center text-black mt-3">{{__('ui.ur-last-ann')}}</h3>
                     @foreach ($announcements as $announcement)
         
                     <div class="col-12 col-md-4 p-3">
