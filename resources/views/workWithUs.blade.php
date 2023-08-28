@@ -7,6 +7,7 @@
                 <h1 class="text-center mb-5">{{__('ui.sotto-work')}}</h1>
                 <p class="lead">{{__('ui.para-work')}}</p>
             </div>
+            @if (!Auth::user()->is_revisor)
             <form class="mb-5" method="POST" action="{{route('revisor_become')}}">
                 @csrf
                 <div class="mb-3">
@@ -25,6 +26,9 @@
                     <button type="submit" class="btn-nicola fs-5 mt-5">{{__('ui.invia-n')}}</button>
                 </div>
             </form>
+            @else
+            <h1 class="text-center display-1">Sei già un Revisore di Presto.it</h1>
+            @endif
         </div>
     </div>
     

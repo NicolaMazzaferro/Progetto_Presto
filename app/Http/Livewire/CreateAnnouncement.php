@@ -30,8 +30,8 @@ class CreateAnnouncement extends Component
 
     // Validation - Nicola
     protected $rules = [
-        'title' => 'required | min:4',
-        'description' => 'required | min:8',
+        'title' => 'required | max:30',
+        'description' => 'required | min:100',
         'price' => 'required | numeric',
         'category' => 'required',
         'images.*'=> 'image|max:1024',

@@ -49,7 +49,6 @@ class CreateNewUser implements CreatesNewUsers
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'password_confirmation' => ['required', 'same:password'],
             'img_profile' => ['image', 'mimes:jpeg,png,jpg,gif', 'max:1024'],
-            'phone' => ['required', 'numeric', 'digits:10'],
         ], $messages)->validate();
         
         $imgPath = isset($input['img_profile']) ? $input['img_profile']->store('public/media') : '/media/default.jpg'; 

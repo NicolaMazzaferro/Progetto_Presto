@@ -11,8 +11,8 @@ class AnnouncementController extends Controller
 {
 
     protected $rules = [
-        'title' => 'required | min:4',
-        'description' => 'required | min:8',
+        'title' => 'required | max:30',
+        'description' => 'required | min:100',
         'price' => 'required | numeric',
     ];
 
@@ -67,8 +67,8 @@ class AnnouncementController extends Controller
     public function update(Request $request, Announcement $announcement)
     {
         $validatedData = $request->validate([
-            'title' => ['required', 'min:4'],
-            'description' => ['required', 'min:8'],
+            'title' => ['required', 'max:30'],
+            'description' => ['required', 'min:100'],
             'price' => ['required', 'numeric'],
         ], $this->messages);
     
