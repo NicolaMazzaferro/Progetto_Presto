@@ -108,5 +108,11 @@ return [
     'Cellulare' => 'Cellulare *',
     'Conferma' => 'Conferma Password *',
     'rave' => 'Revisione Immagini',
-
+    'send-new' => 'Invia newsletter',
+    'gest-ann' => 'Gestire annunci',
+    'acc-ann' => 'Annunci accettati',
+    'cellulare' => 'Cellulare',
+    'role' => 'Ruolo',
+    'indirizzo' => 'Indirizzo',
+    'ur-last-ann' => 'I tuoi ultimi annunci'
 ];
