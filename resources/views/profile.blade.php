@@ -118,7 +118,7 @@
                     <div class="col-12 col-md-4 p-3">
             
                         <div class="card h-100">
-                          <img src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) : "\storage\default.jpg"}}" class="card-img-top mb-4" alt="immagine_prodotto">
+                          <img src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) : "\media\default.jpg"}}" class="card-img-top mb-4" alt="immagine_prodotto">
                             <div class="card-body">
                               <h5 class="card-title">{{$announcement->title}}</h5>
                               <p class="card-text text-tronco">{{$announcement->description}}</p>
