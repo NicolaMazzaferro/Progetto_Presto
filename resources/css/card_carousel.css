@@ -12,14 +12,13 @@
 }
 
 .container-cards{
-    max-width: 1400px !important;
+    max-width: 100% !important;
     width: 100% !important;
-    padding: 60px 0;
 }
 
 .slide-container {
     margin: 0 30px !important;
-    overflow: hidden;
+    
 }
 
 .card {
@@ -40,11 +39,9 @@
 }
 
 .card .profile-details {
-    display: flex;
-    align-items: center;
     column-gap: 12px;
     padding: 20px;
-    height: 260px;
+    height: 100%;
 }
 
 .card .profile-details img {
