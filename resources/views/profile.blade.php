@@ -38,6 +38,10 @@
                       <a class="text-black link-underline link-underline-opacity-0" href="{{route('revisor_index')}}" class="mb-0">Annunci da Revisionare<span class="position-absolute top-0 badge rounded-pill bg-arancio">{{App\Models\Announcement::toBeRevisionedCount()}}<span class="visually-hidden">unread messages</span></span></a>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                      <i class="fa-solid fa-clipboard text-success"></i>
+                      <a class="text-black link-underline link-underline-opacity-0"  href="{{route('revisor_accept')}}" class="mb-0">Annunci Accettati<span class="position-absolute top-0 badge rounded-pill bg-success">{{App\Models\Announcement::toBeAcceptCount()}}<span class="visually-hidden">unread messages</span></span></a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center p-3">
                       <i class="fa-solid fa-clipboard text-danger"></i>
                       <a class="text-black link-underline link-underline-opacity-0"  href="{{route('revisor_reject')}}" class="mb-0">Annunci Rifiutati<span class="position-absolute top-0 badge rounded-pill bg-danger">{{App\Models\Announcement::toBeRejectCount()}}<span class="visually-hidden">unread messages</span></span></a>
                     </li>

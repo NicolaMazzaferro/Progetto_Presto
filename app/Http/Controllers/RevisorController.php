@@ -37,6 +37,12 @@ class RevisorController extends Controller
         $announcement_reject = Announcement::where('is_accepted' , false)->orderBy('created_at', 'desc')->get();
         return view('announcement.reject', compact('announcement_reject'));
     }
+
+    public function accept()
+    {
+        $announcement_accept = Announcement::where('is_accepted' , true)->orderBy('created_at', 'desc')->get();
+        return view('announcement.accept', compact('announcement_accept'));
+    }
     
     // public function becomeRevisor() {
         //     Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user()));

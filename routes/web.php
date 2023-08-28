@@ -51,6 +51,9 @@ Route::patch('/rifiuta/annucio/{announcement}', [RevisorController::class, 'reje
 // Rotta Vista annunci rifiutati - Nicola
 Route::get('/revisor/annunci/rifiutati', [RevisorController::class, 'reject'])->middleware('isRevisor')->name('revisor_reject');
 
+// Rotta Vista annunci accettati - Nicola
+Route::get('/revisor/annunci/accettati', [RevisorController::class, 'accept'])->middleware('isRevisor')->name('revisor_accept');
+
 // Rotta diventa revisore - Nicola
 Route::post('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('revisor_become');
 
