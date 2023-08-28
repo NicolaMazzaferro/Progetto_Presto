@@ -44,7 +44,7 @@
                         <form enctype="multipart/form-data" method="POST" action="{{route('register')}}" >
                             @csrf
                             <label class="label_login" for="chk" aria-hidden="true">{{__('ui.REG')}}</label>
-                            <input class="input_login" type="text" name="name" placeholder="Nome *" >
+                            <input class="input_login" type="text" name="name" placeholder={{__('ui.Nome')}} >
                             <input class="input_login" type="text" name="surname" placeholder="Cognome *" >
                             <input class="input_login" type="text" name="address" placeholder="Indirizzo ">
                             <input class="input_login" type="number" name="phone" placeholder="Cellulare ">

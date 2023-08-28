@@ -43,14 +43,14 @@
                     <div class="signup">
                         <form enctype="multipart/form-data" method="POST" action="{{route('register')}}" >
                             @csrf
-                            <label class="label_login" for="chk" aria-hidden="true">{{__('ui.REG')}}</label>
-                            <input class="input_login" type="text" name="name" placeholder="Nome *" >
-                            <input class="input_login" type="text" name="surname" placeholder="Cognome *" >
-                            <input class="input_login" type="text" name="address" placeholder="Indirizzo *">
-                            <input class="input_login" type="number" name="phone" placeholder="Cellulare *" min="10">
+                            <label class="label_login" for="chk" aria-hidden="true">"{{__('ui.REG')}}"</label>
+                            <input class="input_login" type="text" name="name" placeholder="{{__('ui.Nome')}}" >
+                            <input class="input_login" type="text" name="surname" placeholder="{{__('ui.Cognome')}}" >
+                            <input class="input_login" type="text" name="address" placeholder="{{__('ui.Indirizzo')}}">
+                            <input class="input_login" type="number" name="phone" placeholder="{{__('ui.Cellulare')}}" min="10">
                             <input class="input_login" type="email" name="email" placeholder="Email *" >
                             <input class="input_login" type="password" name="password" placeholder="Password *" >
-                            <input class="input_login" type="password" name="password_confirmation" placeholder="Conferma Password *" >
+                            <input class="input_login" type="password" name="password_confirmation" placeholder="{{__('ui.Conferma')}}" >
                             <input type="file" name="img_profile" class="form-control img_register" placeholder="Foto Profilo"/>
                             <button class="button_login" type="submit">{{__('ui.REG')}}</button>
                         </form>

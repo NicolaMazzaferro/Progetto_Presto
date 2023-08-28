@@ -101,5 +101,12 @@ return [
     'a-tutti' => 'INVIA A TUTTI',
     'eccolo' => "Ecco l'annuncio da revisionare",
     'no-ads' => 'Non ci sono annunci da revisionare',
-    'riufita' => 'Rifiuta',
+    'rifiuta' => 'Rifiuta',
+    'Nome' => 'Nome *',
+    'Cognome' => 'Cognome *',
+    'Indirizzo' => 'Indirizzo *',
+    'Cellulare' => 'Cellulare *',
+    'Conferma' => 'Conferma Password *',
+    'rave' => 'Revisione Immagini',
+
 ];
