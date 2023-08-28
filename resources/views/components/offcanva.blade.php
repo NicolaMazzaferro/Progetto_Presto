@@ -72,7 +72,7 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link position-relative link-underline link-underline-opacity-0 text-bianco" href="{{route('profile_index')}}">Profilo</a>
+                    <a class="nav-link position-relative link-underline link-underline-opacity-0 text-bianco" href="{{route('profile_index')}}">{{__('ui.prof')}}</a>
                 </li>
                 
                 @if (Auth::user()->is_revisor)
@@ -86,7 +86,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link position-relative link-underline link-underline-opacity-0 text-bianco" href="{{route('revisor_accept')}}">Annunci Accettati<span class="position-absolute top-0 badge rounded-pill bg-arancio">{{App\Models\Announcement::toBeAcceptCount()}}<span class="visually-hidden">unread messages</span></span></a>
+                    <a class="nav-link position-relative link-underline link-underline-opacity-0 text-bianco" href="{{route('revisor_accept')}}">{{__('ui.acc-ann')}}<span class="position-absolute top-0 badge rounded-pill bg-arancio">{{App\Models\Announcement::toBeAcceptCount()}}<span class="visually-hidden">unread messages</span></span></a>
                 </li>
                 
                 <li class="nav-item">
