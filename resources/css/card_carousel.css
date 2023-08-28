@@ -24,7 +24,8 @@
 
 .card {
     background: #fff;
-    border-radius: 8px;
+    border-radius: 8px; 
+    border: none;
     /* box-shadow: 3px 3px 6px lightslategray;  */
 }
 
@@ -35,7 +36,7 @@
 .card .image-box img {
     width: 100%;
     height: 100%;
-    /* border-radius: 8px 8px 0 0; */
+    border-radius: 30px 30px 0 0;
 }
 
 .card .profile-details {

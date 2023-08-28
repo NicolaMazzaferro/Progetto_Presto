@@ -108,6 +108,11 @@ return [
     'Cellulare' => 'Telephone *',
     'Conferma' => 'Confirm Password *',
     'rave' => 'Image Review',
-    
-
+    'send-new'=> 'Send newsletter',
+    'gest-ann' => 'Manage announcements',
+    'acc-ann' => 'Accepted announcements',
+    'cellulare' => 'Telephone',
+    'role' => 'Role',
+    'indirizzo' => 'Address',
+    'ur-last-ann' => 'Your latest announcements'
 ];
