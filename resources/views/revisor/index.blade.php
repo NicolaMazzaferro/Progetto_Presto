@@ -74,9 +74,9 @@
                         </div>
                             @else
                         <img src="\media\default.jpg" class="card-img-top" height="350px" alt="...">
-                        <div class="row revisione-immagini">
-                              <a tabindex="0" class="btn m-0 p-0 border border-0" role="button"  data-bs-placement="top" data-bs-toggle="popover"   data-bs-title="Non sono presenti immagini."> {{__('ui.rave')}}</a>
-                        </div>
+                        <div class="row revisione-immagini bg-body-secondary">
+                            <a tabindex="0" class="btn m-0 p-0 border border-0" role="button"  data-bs-placement="top" data-bs-toggle="popover"   data-bs-title="Non sono presenti immagini."> Non ci sono dettagli</a>
+                      </div>
                         @endif
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel_{{$check->id}}" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
