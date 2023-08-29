@@ -2,9 +2,9 @@
     
     <div class=" revisor container p-5">
         @if (count($announcement_reject))
-        <h1 class="pb-5 text-center">{{__('ui.eccolo')}}</h1>
+        <h1 class="pb-5 text-center">{{__('ui.ultimo-a')}}</h1>
         @else
-        <h1 class="pb-5 text-center">{{__('ui.no-ads')}}</h1>
+        <h1 class="pb-5 text-center">{{__('ui.no-rif')}}</h1>
         @endif
         {{-- <h1 class="pb-5 text-center">{{$announcement_reject ? "Non ci sono annunci da revisionare":"Ecco l'annuncio da revisionare"}}</h1> --}}
         @if ($announcement_reject)
@@ -19,7 +19,7 @@
                         <div class="carousel-inner h-25">
                             @foreach ($item->images as $index => $image)
                             <div class="carousel-item @if ($loop->first)active @endif">
-                                <img src="{{Storage::url($image->path)}}" class="card-img-top" height="350px" alt="...">
+                                <img src="{{$image->getUrl(300, 300)}}" class="card-img-top" height="350px" alt="...">
                                 
                                 {{-- Affidabilità --}}
                                 <div class="row">

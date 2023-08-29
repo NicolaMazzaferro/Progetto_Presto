@@ -20,7 +20,7 @@
                         <div class="carousel-inner h-25">
                             @foreach ($check->images as $index => $image)
                             <div class="carousel-item @if ($loop->first)active @endif">
-                                <img src="{{Storage::url($image->path)}}" class="card-img-top" height="350px" alt="...">
+                                <img src="{{$image->getUrl(300, 300)}}" class="card-img-top" height="350px" alt="...">
                                 
                                 {{-- Affidabilità --}}
                                 <div class="row">

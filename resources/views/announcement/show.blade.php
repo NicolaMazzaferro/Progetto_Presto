@@ -6,42 +6,28 @@
             <div class="col-12 col-md-6">
                 
                 <div class="swiper mySwiper2">
-                    {{-- @if(count($announcements->images)) --}}
-
                     <div class="swiper-wrapper">
-                       {{-- @foreach($announcements->images as $image)  --}}
-                        {{-- <div class="swiper-slide">
-                            <img src="{{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) : "\storage\default.jpg"}}" />
-                        </div> --}}
-                        {{-- @endforeach
-                        @else --}}
-                        {{-- <img src="\storage\default.jpg" class="card-img-top" height="350px" alt="..."> --}}
-                        {{-- @endif --}}
-                        {{-- @dd($announcement->images) --}}
-                        @if(count($announcement->images) > 0)
-                        
-                        @foreach ($announcement->images as $image)
-                        <div class="swiper-slide">
-                            <img src="{{Storage::url($image->path)}}">
-                        </div>
-                        @endforeach
+                        @if (count($announcement->images) > 0)
+                            @foreach ($announcement->images as $image)
+                                <div class="swiper-slide">
+                                    <img src="{{$image->getUrl(300, 300)}}">
+                                </div>
+                            @endforeach
                         @else
-                        <div class="swiper-slide">
-                            <img src="{{"\media\default.jpg" }}">
-                        </div>
+                            <div class="swiper-slide">
+                                <img src="{{asset('media/default.jpg')}}">
+                            </div>
                         @endif
-
                     </div>
-                    
                 </div>
                 <div thumbsSlider="" class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        @if(count($announcement->images))
-                        @foreach ($announcement->images as $image)
-                        <div class="swiper-slide">
-                            <img src="{{Storage::url($image->path)}}">
-                        </div>
-                        @endforeach
+                        @if (count($announcement->images))
+                            @foreach ($announcement->images as $image)
+                                <div class="swiper-slide">
+                                    <img src="{{Storage::url($image->path)}}">
+                                </div>
+                            @endforeach
                         @endif
                     </div>
                 </div>
