@@ -37,3 +37,16 @@ textarea {
   width: 200px;
   background-size: cover;
 }
+
+.revisione-immagini{
+  width: 100%;
+  margin: 0;
+  background-color: #ffc107;
+  margin-top: 8px;
+  margin-bottom: 7px;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+}

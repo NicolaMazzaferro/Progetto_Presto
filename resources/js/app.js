@@ -7,3 +7,5 @@ import './my_button';
 import './counter';
 import './show';
 import './tronco';
+require('./bootstrap');
+

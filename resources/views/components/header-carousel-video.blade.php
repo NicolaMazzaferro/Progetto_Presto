@@ -33,7 +33,7 @@
     
     <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade bg-body" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
         <div class="video-filter"></div>
-        <div class="carousel-inner">
+        <div class="carousel-inner-header">
             <div class="carousel-item active">
                 <video autoplay muted loop>
                     <source src="./media/AdobeStock_221975011.mov" type="video/mp4">

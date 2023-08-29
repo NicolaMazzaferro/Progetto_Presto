@@ -4,7 +4,7 @@
     </div>
     <div class="profile-details">
         <div class="name-job">
-            <h3 class="name fs-3 fw-bolder">{{$announcement->title}}</h3>
+            <h3 class="name fs-5 fw-bolder">{{$announcement->title}}</h3>
             <h4 class="job fw-bold">{{$announcement->category ? $announcement->category->name : ''}}</h4>
             <p class="text-tronco fs-6 m-0">{{$announcement->description}}!</p>
             <p class="lead fw-bold">{{$announcement->price}} €</p>

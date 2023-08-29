@@ -1,7 +1,6 @@
 .swiper1 {
     width: 100%;
     height: 100%;
-    
 }
 
 .swiper-slide {
@@ -64,6 +63,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
    
 }
 
