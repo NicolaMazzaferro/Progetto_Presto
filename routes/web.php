@@ -87,16 +87,13 @@ Route::get('/profilo', [PublicController::class, 'profile'])->middleware('auth')
 Route::get('/profilo/annunci/modifica', [AnnouncementController::class, 'indexEditAnnouncement'])->middleware('auth')->name('index_edit_announcement');
 
 // Rotta Carrello
-Route::get('/carrello', [CartController::class, 'cartIndex'])->middleware('auth')->name('cart_index');
+Route::get('/carrello', [CartController::class, 'cartIndex'])->name('cart_index');
 
 // Rotta Aggiungi al carrello
-Route::post('/carrello/aggiungi/{announcementId}', [CartController::class, 'addToCart'])->middleware('auth')->name('add_to_cart');
+Route::post('/carrello/aggiungi/{announcementId}', [CartController::class, 'addToCart'])->name('add_to_cart');
 
 // Rotta Checkout Carrello
 Route::post('/carrello/checkout', [CartController::class, 'checkout'])->middleware('auth')->name('cart_checkout');
-
-// Rotta Pagamento Carrello
-// Route::post('/carrello/pagamento', [AnnouncementController::class, 'payment'])->middleware('auth')->name('cart_payment');
 
 // Rotta Carrello Success
 Route::get('carrello/successo', [CartController::class, 'success'])->middleware('auth')->name('success');

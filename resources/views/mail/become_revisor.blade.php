@@ -14,7 +14,6 @@
         <p>email {{$email}}</p>
         <br>
         <p>{{$body}}</p>
-        <p>{{'ui.rendi-rev'}}</p>
         <a href="{{route('revisor_make', compact('email'))}}">{{__('ui.REV')}}</a>
     </div>
 </body>

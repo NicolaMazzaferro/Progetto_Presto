@@ -82,8 +82,7 @@
                     @else
                     <li class="nav-item pt-2 ">
                         <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                        aria-controls="offcanvasRight"><i class="fa-solid fa-2x fa-user"
-                        style="color: #d19c0a;"></i></button>
+                        aria-controls="offcanvasRight"><i class="fa-solid fa-2x fa-user text-arancio"></i></button>
                     </li>
                     @endauth
 

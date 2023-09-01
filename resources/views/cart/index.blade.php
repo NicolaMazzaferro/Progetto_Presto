@@ -19,7 +19,7 @@
                 <tr>
                     <td>{{ $item['title'] }}</td>
                     <td>€ {{ $item['price']  }}</td>
-                    <td>1</td> <!-- Quantità fissa a 1, puoi personalizzare questo -->
+                    <td>1</td>
                     <td>€ {{ $item['price'] }}</td>
                 </tr>
                 @endforeach
@@ -27,15 +27,21 @@
             </tbody>
         </table>
 
-        {{-- <p class="text-end fw-bold pe-2">TOTALE € {{ ($totalAmount /10000) }}</p> --}}
-        
-        <form action="{{route('cart_checkout')}}" method="POST">
-            @csrf
-            <button type="submit">Paga</button>
-        </form>
-        @else
-        <p>Il tuo carrello è vuoto.</p>
-        @endif
-    </div>
+        <div class="row d-inline">
+            <span><a class="btn btn-primary" href="{{route('announcement_index')}}">Continua acquisti</a></span>
+
+            <form action="{{route('cart_checkout')}}" method="POST" class="d-inline">
+                @csrf
+                <span><button class="btn btn-success" type="submit">Paga</button></span>
+            </form>
+            @else
+            <p>Il tuo carrello è vuoto.</p>
+            @endif
+        </div>
+
+        </div>
     
 </x-layout>
+
+
+<x-offcanva></x-offcanva>
