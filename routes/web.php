@@ -2,6 +2,7 @@
 
 use App\Models\Announcement;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\RevisorController;
@@ -84,3 +85,22 @@ Route::get('/profilo', [PublicController::class, 'profile'])->middleware('auth')
 
 // Rotta Modifica Annunci
 Route::get('/profilo/annunci/modifica', [AnnouncementController::class, 'indexEditAnnouncement'])->middleware('auth')->name('index_edit_announcement');
+
+// Rotta Carrello
+Route::get('/carrello', [CartController::class, 'cartIndex'])->middleware('auth')->name('cart_index');
+
+// Rotta Aggiungi al carrello
+Route::post('/carrello/aggiungi/{announcementId}', [CartController::class, 'addToCart'])->middleware('auth')->name('add_to_cart');
+
+// Rotta Checkout Carrello
+Route::post('/carrello/checkout', [CartController::class, 'checkout'])->middleware('auth')->name('cart_checkout');
+
+// Rotta Pagamento Carrello
+// Route::post('/carrello/pagamento', [AnnouncementController::class, 'payment'])->middleware('auth')->name('cart_payment');
+
+// Rotta Carrello Success
+Route::get('carrello/successo', [CartController::class, 'success'])->middleware('auth')->name('success');
+
+// Rotta Carrello Success
+Route::get('carrello/fallito', [CartController::class, 'failed'])->middleware('auth')->name('failed');
+

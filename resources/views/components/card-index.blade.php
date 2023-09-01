@@ -50,6 +50,10 @@
                 <div class="div-button m-3">
                     <a href="{{route('announcement_show', compact('announcement'))}}" class="btn btn-outline-primary">{{__('ui.DE')}}</a>
                 </div>
+                <form action="{{route('add_to_cart', $announcement->id)}}" method="POST">
+                    @csrf
+                    <button class="btn btn-link text-arancio hover-arancio" type="submit"><i class="fa-solid fa-cart-shopping fa-2xl"></i></button>
+                </form>
                 @if(Request::route()->getName() === 'index_edit_announcement')
                 <div class="div-button m-3">
                     <a href="{{route('announcement_edit', compact('announcement'))}}" class="btn btn-outline-primary">{{__('ui.MO')}}</a>

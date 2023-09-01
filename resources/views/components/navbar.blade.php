@@ -86,6 +86,13 @@
                         style="color: #d19c0a;"></i></button>
                     </li>
                     @endauth
+
+                    <li class="nav-item pt-2 ">
+                        <form action="{{route('cart_index')}}" method="GET">
+                            @csrf
+                            <button class="btn btn-link text-arancio hover-arancio" type="submit"><i class="fa-solid fa-cart-shopping fa-2xl"></i></button>
+                        </form>
+                    </li>
                     
                     <li class="nav-item dropdown ">
                         <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
