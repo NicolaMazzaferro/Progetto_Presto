@@ -39,7 +39,7 @@ class CartController extends Controller
         return redirect()->route('cart_index')->with('success', 'Annuncio aggiunto al carrello');
     }
     
-    public function checkout()
+    public function checkout(Request $request)
     {
         $user = Auth::user();
         $cart = Session::get('cart', []);
@@ -52,12 +52,18 @@ class CartController extends Controller
         }
         
         if (!$user->stripe_id) {
-            $user->createAsStripeCustomer();
+            $stripeCustomer = $stripe->customers->create([
+                'email' => $user->email,
+            ]);
+
+            $user->update(['stripe_id' => $stripeCustomer->id]);
         }
         
         // $paymentMethod = 'pm_card_visa_chargeDeclined'; //carta test stripe rifiutata
         
-        $paymentMethod = 'pm_card_visa'; // carta test stripe accettata
+        // $paymentMethod = 'pm_card_visa'; // carta test stripe accettata
+
+        $paymentMethod = $request->input('paymentMethodId');
         
         $totalAmount = 0;
         foreach ($cart as $item) {
@@ -92,13 +98,21 @@ class CartController extends Controller
             Session::forget('cart');
             
             
-            return view('cart.success', compact('paymentIntent', 'cart'));
+            // return view('cart.success', compact('paymentIntent', 'cart'));
+
+            return response()->json(['success' => true, 'message' => 'Pagamento completato con successo']);
             
         } catch (CardException $e) {
             
-            return view('cart.failed', ['errorMessage' => $errorMessage]);
+            // return view('cart.failed', ['errorMessage' => $errorMessage]);
+
+            return response()->json(['success' => false, 'message' => $e->getMessage()]);
         }
         
+    }
+
+    public function payment(){
+        return view('cart.payment');
     }
     
 }

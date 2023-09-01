@@ -64,7 +64,9 @@
     {{$slot}}
     <x-footer></x-footer>
 
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://js.stripe.com/v3/"></script>
     
     <script src="{{asset('swiper-bundle.min.js')}}"></script>
     

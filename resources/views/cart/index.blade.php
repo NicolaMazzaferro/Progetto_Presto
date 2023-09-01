@@ -30,10 +30,12 @@
         <div class="row d-inline">
             <span><a class="btn btn-primary" href="{{route('announcement_index')}}">Continua acquisti</a></span>
 
-            <form action="{{route('cart_checkout')}}" method="POST" class="d-inline">
+            {{-- <form action="{{route('cart_checkout')}}" method="POST" class="d-inline">
                 @csrf
                 <span><button class="btn btn-success" type="submit">Paga</button></span>
-            </form>
+            </form> --}}
+
+            <a href="{{route('cart_payment')}}">checkout</a>
             @else
             <p>Il tuo carrello è vuoto.</p>
             @endif

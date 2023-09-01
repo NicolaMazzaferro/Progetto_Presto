@@ -95,6 +95,9 @@ Route::post('/carrello/aggiungi/{announcementId}', [CartController::class, 'addT
 // Rotta Checkout Carrello
 Route::post('/carrello/checkout', [CartController::class, 'checkout'])->middleware('auth')->name('cart_checkout');
 
+// Rotta Pagamento
+Route::get('/carrello/pagamento', [CartController::class, 'payment'])->middleware('auth')->name('cart_payment');
+
 // Rotta Carrello Success
 Route::get('carrello/successo', [CartController::class, 'success'])->middleware('auth')->name('success');
 
