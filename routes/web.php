@@ -104,3 +104,8 @@ Route::get('carrello/successo', [CartController::class, 'success'])->middleware(
 // Rotta Carrello Success
 Route::get('carrello/fallito', [CartController::class, 'failed'])->middleware('auth')->name('failed');
 
+// Rotta Svuota Carrello
+Route::post('/carrello/svuota', [CartController::class, 'cartClear'])->name('cart_clear');
+
+// Rotta Elimina prodotto dal carrello
+Route::post('/carrello/rimuovi/{announcementId}', [CartController::class, 'cartAnnouncementClear'])->name('cart_announcement_clear');

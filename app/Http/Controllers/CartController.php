@@ -25,7 +25,7 @@ class CartController extends Controller
         $announcement = Announcement::find($announcementId);
         
         if (!$announcement) {
-            return redirect()->back()->with('error', 'Annuncio non trovato');
+            return redirect()->back()->with('access.denied', 'Annuncio non trovato');
         }
         
         $cart = Session::get('cart', []);
@@ -36,7 +36,7 @@ class CartController extends Controller
         
         Session::put('cart', $cart);
         
-        return redirect()->route('cart_index')->with('success', 'Annuncio aggiunto al carrello');
+        return redirect()->route('cart_index')->with('message', 'Annuncio aggiunto al carrello');
     }
     
     public function checkout(Request $request)
@@ -48,7 +48,7 @@ class CartController extends Controller
         
         
         if (empty($cart)) {
-            return redirect()->route('cart_index')->with('error', 'Il carrello è vuoto');
+            return redirect()->route('cart_index')->with('access.denied', 'Il carrello è vuoto');
         }
         
         if (!$user->stripe_id) {
@@ -114,5 +114,26 @@ class CartController extends Controller
     public function payment(){
         return view('cart.payment');
     }
+
+    public function cartClear(){
+        Session::forget('cart');
+        return redirect()->route('cart_index')->with('message', 'Carrello svuotato con successo');
+    }
+
+    public function cartAnnouncementClear($announcementId)
+{
+    $cart = session('cart', []);
+
+    if (array_key_exists($announcementId, $cart)) {
+        
+        unset($cart[$announcementId]);
+
+        session(['cart' => $cart]);
+
+        return response()->json(['success' => true]);
+    }
+
+    return response()->json(['success' => false, 'message' => 'Elemento non trovato nel carrello']);
+}
     
 }

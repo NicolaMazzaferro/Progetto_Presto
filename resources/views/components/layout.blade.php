@@ -64,6 +64,8 @@
     {{$slot}}
     <x-footer></x-footer>
 
+    
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://js.stripe.com/v3/"></script>
@@ -71,8 +73,6 @@
     <script src="{{asset('swiper-bundle.min.js')}}"></script>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    
     @livewireScripts
     @vite('resources/js/app.js')
 </body>

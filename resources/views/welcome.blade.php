@@ -87,6 +87,8 @@
     
     {{-- end footer Stefano --}}
     <x-offcanva></x-offcanva>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
     <script src="{{asset('swiper-bundle.min.js')}}"></script>
     
