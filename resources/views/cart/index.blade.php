@@ -22,16 +22,22 @@
 
                         <td>{{ $item['title'] }}</td>
                         <td>€ {{ $item['price']  }}</td>
-                        <td>1</td>
-                        <td>€ {{ $item['price'] }}</td>
-                        <td><button class="remove-item" data-announcement-id="{{ $announcementId }}">Rimuovi</button></td>
+                        <td>{{ $item['quantity'] }}</td>
+                        <td>€ {{ $item['price'] * $item['quantity'] }}</td>
+                        <td>
+                            <button class="remove-item" data-announcement-id="{{ $announcementId }}">Rimuovi</button>
+                            <button class="increase-quantity" data-announcement-id="{{ $announcementId }}">Aggiungi</button>
+                        </td>
+                        @endforeach
                     </div>
-                    
                 </tr>
-                @endforeach
-                
             </tbody>
         </table>
+
+        <div class="text-end">
+            <strong>Totale del Carrello:</strong> € {{ $cartTotal }}
+        </div>
+
 
         <div class="row d-inline">
             <span><a class="btn btn-primary" href="{{route('announcement_index')}}">Continua acquisti</a></span>

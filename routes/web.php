@@ -108,4 +108,7 @@ Route::get('carrello/fallito', [CartController::class, 'failed'])->middleware('a
 Route::post('/carrello/svuota', [CartController::class, 'cartClear'])->name('cart_clear');
 
 // Rotta Elimina prodotto dal carrello
-Route::post('/carrello/rimuovi/{announcementId}', [CartController::class, 'cartAnnouncementClear'])->name('cart_announcement_clear');
+Route::post('/carrello/rimuovi/quantita/{announcementId}', [CartController::class, 'cartAnnouncementClear'])->name('cart_announcement_clear');
+
+// Rotta Aumenta quantità
+Route::post('/carrello/aggiungi/quantita/{announcementId}', [CartController::class, 'cartAnnouncementAdd'])->name('cart_announcement_add');
