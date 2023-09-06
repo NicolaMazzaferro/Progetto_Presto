@@ -98,12 +98,6 @@ Route::post('/carrello/checkout', [CartController::class, 'checkout'])->middlewa
 // Rotta Pagamento
 Route::get('/carrello/pagamento', [CartController::class, 'payment'])->middleware('auth')->name('cart_payment');
 
-// Rotta Carrello Success
-Route::get('carrello/successo', [CartController::class, 'success'])->middleware('auth')->name('success');
-
-// Rotta Carrello Success
-Route::get('carrello/fallito', [CartController::class, 'failed'])->middleware('auth')->name('failed');
-
 // Rotta Svuota Carrello
 Route::post('/carrello/svuota', [CartController::class, 'cartClear'])->name('cart_clear');
 

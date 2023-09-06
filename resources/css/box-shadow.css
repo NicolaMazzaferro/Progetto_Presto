@@ -59,3 +59,11 @@
     background-color: var(--bianco);
     box-shadow: 3px 3px 6px lightslategray;
 }
+
+.carrello{
+    border: solid 2px var(--arancio);
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--bianco);
+    box-shadow: 3px 3px 6px lightslategray;
+}
