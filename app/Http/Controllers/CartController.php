@@ -122,11 +122,13 @@ class CartController extends Controller
                 
                 Session::forget('cart');
                 
-                return response()->json(['success' => true, 'message' => 'Pagamento completato con successo']);
+                session()->flash('success', 'Pagamento completato con successo');
+                return response()->json(['success' => true]);
                 
             } catch (CardException $e) {
                 
-                return response()->json(['success' => false, 'message' => $e->getMessage()]);
+                session()->flash('error', 'Il pagamento non è andato a buon fine');
+                return response()->json(['success' => false]);
             }
             
         }
